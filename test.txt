@@ -1,0 +1,5 @@
+docker run --name my-own-mysql -e MYSQL_ROOT_PASSWORD=mypass123 -d mysql:5
+
+>docker run --name my-own-phpmyadmin -d --link my-own-mysql:db -p 8081:80 phpmyadmin/phpmyadmin
+
+ docker run -ti --name my-docker-name -e DB_SERVER=my-own-mysql --link my-own-mysql:mysql -v $PWD/:/var/www/html -e PS_DEV_MODE=false -e PS_INSTALL_AUTO=0 -p 8080:80 -d prestashop/prestashop:1.6

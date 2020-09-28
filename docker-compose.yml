@@ -1,0 +1,54 @@
+version: '2'
+
+volumes:
+  db-data:
+  vendor:
+  var:
+
+services:
+  db:
+    image: library/mysql:5
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: prestashop
+      MYSQL_DATABASE: prestashop
+      MYSQL_USER: user
+      MYSQL_PASSWORD: test
+    restart: always
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db:db
+    environment:
+      MYSQL_USER: user
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: test
+    restart: always
+    ports:
+      - 8081:80
+  apache:
+    container_name: prestashop-test
+    image: prestashop/prestashop:1.6
+    environment:
+      DB_USER: user
+      PS_INSTALL_AUTO: 1
+      PS_HANDLE_DYNAMIC_DOMAIN: 1
+      DB_PASSWD: test
+      DB_NAME: prestashop
+      DB_SERVER: db
+      PS_FOLDER_INSTALL: install-dev
+      PS_FOLDER_ADMIN: admin-dev
+      ADMIN_MAIL: test@example.com
+      ADMIN_PASSWD: password
+      PS_DEV_MODE: 1
+    ports:
+      - "8001:80"
+    links:
+      - db:mysql
+    volumes:
+      - ./:/var/www/html/:delegated
+      - vendor:/var/www/html/vendor
+      - var:/var/www/html/var
+    restart: always
