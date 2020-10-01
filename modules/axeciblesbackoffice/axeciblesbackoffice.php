@@ -34,7 +34,9 @@ class AxeciblesBackOffice extends Module
             Shop::setContext(Shop::CONTEXT_ALL);
         }
 
-        if (!parent::install() || !$this->_installSql()) {
+        if (!parent::install()
+            || !$this->_installSql()
+            || !$this->registerHook('displayFooterProduct')) {
             return false;
         }
 
@@ -69,5 +71,24 @@ class AxeciblesBackOffice extends Module
         $returnSqlProductShop = Db::getInstance()->execute($sqlInstallProductShop);
 
         return $returnSqlProduct && $returnSqlProductShop;
+    }
+
+
+    /**
+     * hookDisplayFooterProduct
+     *
+     * Product footer
+     * Add new blocks under the product description
+     **/
+    public function hookDisplayFooterProduct($params)
+    {
+        $product = $params['product'];
+        if ($product instanceof Product /* or ObjectModel */) {
+            $product = (array) $product;
+        }
+        if($product['cart_plus']){
+            // Getting product details.
+            return $this->display(__FILE__, 'views/templates/front/cart_plus.tpl');
+        }
     }
 }
