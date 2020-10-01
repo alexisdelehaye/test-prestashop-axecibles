@@ -10,6 +10,8 @@ services:
     image: library/mysql:5
     ports:
       - 3306:3306
+    volumes:
+      - ./mysql-data/prestashop-install.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: prestashop
       MYSQL_DATABASE: prestashop
@@ -33,7 +35,7 @@ services:
     image: prestashop/prestashop:1.6
     environment:
       DB_USER: user
-      PS_INSTALL_AUTO: 1
+      PS_INSTALL_AUTO: 0
       PS_HANDLE_DYNAMIC_DOMAIN: 1
       DB_PASSWD: test
       DB_NAME: prestashop

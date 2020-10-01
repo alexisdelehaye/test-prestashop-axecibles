@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Oct 01, 2020 at 03:08 PM
+-- Generation Time: Oct 01, 2020 at 04:31 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.4.9
 
@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `ps_access`
 --
 
+DROP TABLE IF EXISTS `ps_access`;
 CREATE TABLE `ps_access` (
   `id_profile` int(10) UNSIGNED NOT NULL,
   `id_tab` int(10) UNSIGNED NOT NULL,
@@ -455,6 +456,7 @@ INSERT INTO `ps_access` (`id_profile`, `id_tab`, `view`, `add`, `edit`, `delete`
 -- Table structure for table `ps_accessory`
 --
 
+DROP TABLE IF EXISTS `ps_accessory`;
 CREATE TABLE `ps_accessory` (
   `id_product_1` int(10) UNSIGNED NOT NULL,
   `id_product_2` int(10) UNSIGNED NOT NULL
@@ -466,6 +468,7 @@ CREATE TABLE `ps_accessory` (
 -- Table structure for table `ps_address`
 --
 
+DROP TABLE IF EXISTS `ps_address`;
 CREATE TABLE `ps_address` (
   `id_address` int(10) UNSIGNED NOT NULL,
   `id_country` int(10) UNSIGNED NOT NULL,
@@ -510,6 +513,7 @@ INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`,
 -- Table structure for table `ps_address_format`
 --
 
+DROP TABLE IF EXISTS `ps_address_format`;
 CREATE TABLE `ps_address_format` (
   `id_country` int(10) UNSIGNED NOT NULL,
   `format` varchar(255) NOT NULL DEFAULT ''
@@ -771,6 +775,7 @@ INSERT INTO `ps_address_format` (`id_country`, `format`) VALUES
 -- Table structure for table `ps_advice`
 --
 
+DROP TABLE IF EXISTS `ps_advice`;
 CREATE TABLE `ps_advice` (
   `id_advice` int(11) NOT NULL,
   `id_ps_advice` int(11) NOT NULL,
@@ -845,6 +850,7 @@ INSERT INTO `ps_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `vali
 -- Table structure for table `ps_advice_lang`
 --
 
+DROP TABLE IF EXISTS `ps_advice_lang`;
 CREATE TABLE `ps_advice_lang` (
   `id_advice` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
@@ -912,6 +918,7 @@ INSERT INTO `ps_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
 -- Table structure for table `ps_alias`
 --
 
+DROP TABLE IF EXISTS `ps_alias`;
 CREATE TABLE `ps_alias` (
   `id_alias` int(10) UNSIGNED NOT NULL,
   `alias` varchar(255) NOT NULL,
@@ -933,6 +940,7 @@ INSERT INTO `ps_alias` (`id_alias`, `alias`, `search`, `active`) VALUES
 -- Table structure for table `ps_attachment`
 --
 
+DROP TABLE IF EXISTS `ps_attachment`;
 CREATE TABLE `ps_attachment` (
   `id_attachment` int(10) UNSIGNED NOT NULL,
   `file` varchar(40) NOT NULL,
@@ -947,6 +955,7 @@ CREATE TABLE `ps_attachment` (
 -- Table structure for table `ps_attachment_lang`
 --
 
+DROP TABLE IF EXISTS `ps_attachment_lang`;
 CREATE TABLE `ps_attachment_lang` (
   `id_attachment` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -960,6 +969,7 @@ CREATE TABLE `ps_attachment_lang` (
 -- Table structure for table `ps_attribute`
 --
 
+DROP TABLE IF EXISTS `ps_attribute`;
 CREATE TABLE `ps_attribute` (
   `id_attribute` int(10) UNSIGNED NOT NULL,
   `id_attribute_group` int(10) UNSIGNED NOT NULL,
@@ -1003,6 +1013,7 @@ INSERT INTO `ps_attribute` (`id_attribute`, `id_attribute_group`, `color`, `posi
 -- Table structure for table `ps_attribute_group`
 --
 
+DROP TABLE IF EXISTS `ps_attribute_group`;
 CREATE TABLE `ps_attribute_group` (
   `id_attribute_group` int(10) UNSIGNED NOT NULL,
   `is_color_group` tinyint(1) NOT NULL DEFAULT '0',
@@ -1025,6 +1036,7 @@ INSERT INTO `ps_attribute_group` (`id_attribute_group`, `is_color_group`, `group
 -- Table structure for table `ps_attribute_group_lang`
 --
 
+DROP TABLE IF EXISTS `ps_attribute_group_lang`;
 CREATE TABLE `ps_attribute_group_lang` (
   `id_attribute_group` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -1047,6 +1059,7 @@ INSERT INTO `ps_attribute_group_lang` (`id_attribute_group`, `id_lang`, `name`, 
 -- Table structure for table `ps_attribute_group_shop`
 --
 
+DROP TABLE IF EXISTS `ps_attribute_group_shop`;
 CREATE TABLE `ps_attribute_group_shop` (
   `id_attribute_group` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -1067,6 +1080,7 @@ INSERT INTO `ps_attribute_group_shop` (`id_attribute_group`, `id_shop`) VALUES
 -- Table structure for table `ps_attribute_impact`
 --
 
+DROP TABLE IF EXISTS `ps_attribute_impact`;
 CREATE TABLE `ps_attribute_impact` (
   `id_attribute_impact` int(10) UNSIGNED NOT NULL,
   `id_product` int(11) UNSIGNED NOT NULL,
@@ -1081,6 +1095,7 @@ CREATE TABLE `ps_attribute_impact` (
 -- Table structure for table `ps_attribute_lang`
 --
 
+DROP TABLE IF EXISTS `ps_attribute_lang`;
 CREATE TABLE `ps_attribute_lang` (
   `id_attribute` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -1123,6 +1138,7 @@ INSERT INTO `ps_attribute_lang` (`id_attribute`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_attribute_shop`
 --
 
+DROP TABLE IF EXISTS `ps_attribute_shop`;
 CREATE TABLE `ps_attribute_shop` (
   `id_attribute` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -1164,6 +1180,7 @@ INSERT INTO `ps_attribute_shop` (`id_attribute`, `id_shop`) VALUES
 -- Table structure for table `ps_badge`
 --
 
+DROP TABLE IF EXISTS `ps_badge`;
 CREATE TABLE `ps_badge` (
   `id_badge` int(11) NOT NULL,
   `id_ps_badge` int(11) NOT NULL,
@@ -1421,6 +1438,7 @@ INSERT INTO `ps_badge` (`id_badge`, `id_ps_badge`, `type`, `id_group`, `group_po
 -- Table structure for table `ps_badge_lang`
 --
 
+DROP TABLE IF EXISTS `ps_badge_lang`;
 CREATE TABLE `ps_badge_lang` (
   `id_badge` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
@@ -1675,6 +1693,7 @@ INSERT INTO `ps_badge_lang` (`id_badge`, `id_lang`, `name`, `description`, `grou
 -- Table structure for table `ps_carrier`
 --
 
+DROP TABLE IF EXISTS `ps_carrier`;
 CREATE TABLE `ps_carrier` (
   `id_carrier` int(10) UNSIGNED NOT NULL,
   `id_reference` int(10) UNSIGNED NOT NULL,
@@ -1728,6 +1747,7 @@ INSERT INTO `ps_carrier` (`id_carrier`, `id_reference`, `id_tax_rules_group`, `n
 -- Table structure for table `ps_carrier_group`
 --
 
+DROP TABLE IF EXISTS `ps_carrier_group`;
 CREATE TABLE `ps_carrier_group` (
   `id_carrier` int(10) UNSIGNED NOT NULL,
   `id_group` int(10) UNSIGNED NOT NULL
@@ -1803,6 +1823,7 @@ INSERT INTO `ps_carrier_group` (`id_carrier`, `id_group`) VALUES
 -- Table structure for table `ps_carrier_lang`
 --
 
+DROP TABLE IF EXISTS `ps_carrier_lang`;
 CREATE TABLE `ps_carrier_lang` (
   `id_carrier` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -1839,6 +1860,7 @@ INSERT INTO `ps_carrier_lang` (`id_carrier`, `id_shop`, `id_lang`, `delay`) VALU
 -- Table structure for table `ps_carrier_shop`
 --
 
+DROP TABLE IF EXISTS `ps_carrier_shop`;
 CREATE TABLE `ps_carrier_shop` (
   `id_carrier` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -1873,6 +1895,7 @@ INSERT INTO `ps_carrier_shop` (`id_carrier`, `id_shop`) VALUES
 -- Table structure for table `ps_carrier_tax_rules_group_shop`
 --
 
+DROP TABLE IF EXISTS `ps_carrier_tax_rules_group_shop`;
 CREATE TABLE `ps_carrier_tax_rules_group_shop` (
   `id_carrier` int(11) UNSIGNED NOT NULL,
   `id_tax_rules_group` int(11) UNSIGNED NOT NULL,
@@ -1908,6 +1931,7 @@ INSERT INTO `ps_carrier_tax_rules_group_shop` (`id_carrier`, `id_tax_rules_group
 -- Table structure for table `ps_carrier_zone`
 --
 
+DROP TABLE IF EXISTS `ps_carrier_zone`;
 CREATE TABLE `ps_carrier_zone` (
   `id_carrier` int(10) UNSIGNED NOT NULL,
   `id_zone` int(10) UNSIGNED NOT NULL
@@ -2048,6 +2072,7 @@ INSERT INTO `ps_carrier_zone` (`id_carrier`, `id_zone`) VALUES
 -- Table structure for table `ps_cart`
 --
 
+DROP TABLE IF EXISTS `ps_cart`;
 CREATE TABLE `ps_cart` (
   `id_cart` int(10) UNSIGNED NOT NULL,
   `id_shop_group` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -2090,6 +2115,7 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 -- Table structure for table `ps_cart_cart_rule`
 --
 
+DROP TABLE IF EXISTS `ps_cart_cart_rule`;
 CREATE TABLE `ps_cart_cart_rule` (
   `id_cart` int(10) UNSIGNED NOT NULL,
   `id_cart_rule` int(10) UNSIGNED NOT NULL
@@ -2101,6 +2127,7 @@ CREATE TABLE `ps_cart_cart_rule` (
 -- Table structure for table `ps_cart_product`
 --
 
+DROP TABLE IF EXISTS `ps_cart_product`;
 CREATE TABLE `ps_cart_product` (
   `id_cart` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -2142,6 +2169,7 @@ INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `
 -- Table structure for table `ps_cart_rule`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule`;
 CREATE TABLE `ps_cart_rule` (
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_customer` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -2183,6 +2211,7 @@ CREATE TABLE `ps_cart_rule` (
 -- Table structure for table `ps_cart_rule_carrier`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_carrier`;
 CREATE TABLE `ps_cart_rule_carrier` (
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_carrier` int(10) UNSIGNED NOT NULL
@@ -2194,6 +2223,7 @@ CREATE TABLE `ps_cart_rule_carrier` (
 -- Table structure for table `ps_cart_rule_combination`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_combination`;
 CREATE TABLE `ps_cart_rule_combination` (
   `id_cart_rule_1` int(10) UNSIGNED NOT NULL,
   `id_cart_rule_2` int(10) UNSIGNED NOT NULL
@@ -2205,6 +2235,7 @@ CREATE TABLE `ps_cart_rule_combination` (
 -- Table structure for table `ps_cart_rule_country`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_country`;
 CREATE TABLE `ps_cart_rule_country` (
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_country` int(10) UNSIGNED NOT NULL
@@ -2216,6 +2247,7 @@ CREATE TABLE `ps_cart_rule_country` (
 -- Table structure for table `ps_cart_rule_group`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_group`;
 CREATE TABLE `ps_cart_rule_group` (
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_group` int(10) UNSIGNED NOT NULL
@@ -2227,6 +2259,7 @@ CREATE TABLE `ps_cart_rule_group` (
 -- Table structure for table `ps_cart_rule_lang`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_lang`;
 CREATE TABLE `ps_cart_rule_lang` (
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -2239,6 +2272,7 @@ CREATE TABLE `ps_cart_rule_lang` (
 -- Table structure for table `ps_cart_rule_product_rule`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_product_rule`;
 CREATE TABLE `ps_cart_rule_product_rule` (
   `id_product_rule` int(10) UNSIGNED NOT NULL,
   `id_product_rule_group` int(10) UNSIGNED NOT NULL,
@@ -2251,6 +2285,7 @@ CREATE TABLE `ps_cart_rule_product_rule` (
 -- Table structure for table `ps_cart_rule_product_rule_group`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_product_rule_group`;
 CREATE TABLE `ps_cart_rule_product_rule_group` (
   `id_product_rule_group` int(10) UNSIGNED NOT NULL,
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
@@ -2263,6 +2298,7 @@ CREATE TABLE `ps_cart_rule_product_rule_group` (
 -- Table structure for table `ps_cart_rule_product_rule_value`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_product_rule_value`;
 CREATE TABLE `ps_cart_rule_product_rule_value` (
   `id_product_rule` int(10) UNSIGNED NOT NULL,
   `id_item` int(10) UNSIGNED NOT NULL
@@ -2274,6 +2310,7 @@ CREATE TABLE `ps_cart_rule_product_rule_value` (
 -- Table structure for table `ps_cart_rule_shop`
 --
 
+DROP TABLE IF EXISTS `ps_cart_rule_shop`;
 CREATE TABLE `ps_cart_rule_shop` (
   `id_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL
@@ -2285,6 +2322,7 @@ CREATE TABLE `ps_cart_rule_shop` (
 -- Table structure for table `ps_category`
 --
 
+DROP TABLE IF EXISTS `ps_category`;
 CREATE TABLE `ps_category` (
   `id_category` int(10) UNSIGNED NOT NULL,
   `id_parent` int(10) UNSIGNED NOT NULL,
@@ -2334,6 +2372,7 @@ INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level
 -- Table structure for table `ps_category_group`
 --
 
+DROP TABLE IF EXISTS `ps_category_group`;
 CREATE TABLE `ps_category_group` (
   `id_category` int(10) UNSIGNED NOT NULL,
   `id_group` int(10) UNSIGNED NOT NULL
@@ -2418,6 +2457,7 @@ INSERT INTO `ps_category_group` (`id_category`, `id_group`) VALUES
 -- Table structure for table `ps_category_lang`
 --
 
+DROP TABLE IF EXISTS `ps_category_lang`;
 CREATE TABLE `ps_category_lang` (
   `id_category` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -2465,6 +2505,7 @@ INSERT INTO `ps_category_lang` (`id_category`, `id_shop`, `id_lang`, `name`, `de
 -- Table structure for table `ps_category_product`
 --
 
+DROP TABLE IF EXISTS `ps_category_product`;
 CREATE TABLE `ps_category_product` (
   `id_category` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -2551,6 +2592,7 @@ INSERT INTO `ps_category_product` (`id_category`, `id_product`, `position`) VALU
 -- Table structure for table `ps_category_shop`
 --
 
+DROP TABLE IF EXISTS `ps_category_shop`;
 CREATE TABLE `ps_category_shop` (
   `id_category` int(11) NOT NULL,
   `id_shop` int(11) NOT NULL,
@@ -2592,6 +2634,7 @@ INSERT INTO `ps_category_shop` (`id_category`, `id_shop`, `position`) VALUES
 -- Table structure for table `ps_cms`
 --
 
+DROP TABLE IF EXISTS `ps_cms`;
 CREATE TABLE `ps_cms` (
   `id_cms` int(10) UNSIGNED NOT NULL,
   `id_cms_category` int(10) UNSIGNED NOT NULL,
@@ -2617,6 +2660,7 @@ INSERT INTO `ps_cms` (`id_cms`, `id_cms_category`, `position`, `active`, `indexa
 -- Table structure for table `ps_cms_block`
 --
 
+DROP TABLE IF EXISTS `ps_cms_block`;
 CREATE TABLE `ps_cms_block` (
   `id_cms_block` int(10) UNSIGNED NOT NULL,
   `id_cms_category` int(10) UNSIGNED NOT NULL,
@@ -2638,6 +2682,7 @@ INSERT INTO `ps_cms_block` (`id_cms_block`, `id_cms_category`, `location`, `posi
 -- Table structure for table `ps_cms_block_lang`
 --
 
+DROP TABLE IF EXISTS `ps_cms_block_lang`;
 CREATE TABLE `ps_cms_block_lang` (
   `id_cms_block` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -2657,6 +2702,7 @@ INSERT INTO `ps_cms_block_lang` (`id_cms_block`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_cms_block_page`
 --
 
+DROP TABLE IF EXISTS `ps_cms_block_page`;
 CREATE TABLE `ps_cms_block_page` (
   `id_cms_block_page` int(10) UNSIGNED NOT NULL,
   `id_cms_block` int(10) UNSIGNED NOT NULL,
@@ -2681,6 +2727,7 @@ INSERT INTO `ps_cms_block_page` (`id_cms_block_page`, `id_cms_block`, `id_cms`, 
 -- Table structure for table `ps_cms_block_shop`
 --
 
+DROP TABLE IF EXISTS `ps_cms_block_shop`;
 CREATE TABLE `ps_cms_block_shop` (
   `id_cms_block` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL
@@ -2699,6 +2746,7 @@ INSERT INTO `ps_cms_block_shop` (`id_cms_block`, `id_shop`) VALUES
 -- Table structure for table `ps_cms_category`
 --
 
+DROP TABLE IF EXISTS `ps_cms_category`;
 CREATE TABLE `ps_cms_category` (
   `id_cms_category` int(10) UNSIGNED NOT NULL,
   `id_parent` int(10) UNSIGNED NOT NULL,
@@ -2722,6 +2770,7 @@ INSERT INTO `ps_cms_category` (`id_cms_category`, `id_parent`, `level_depth`, `a
 -- Table structure for table `ps_cms_category_lang`
 --
 
+DROP TABLE IF EXISTS `ps_cms_category_lang`;
 CREATE TABLE `ps_cms_category_lang` (
   `id_cms_category` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -2747,6 +2796,7 @@ INSERT INTO `ps_cms_category_lang` (`id_cms_category`, `id_lang`, `id_shop`, `na
 -- Table structure for table `ps_cms_category_shop`
 --
 
+DROP TABLE IF EXISTS `ps_cms_category_shop`;
 CREATE TABLE `ps_cms_category_shop` (
   `id_cms_category` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -2765,6 +2815,7 @@ INSERT INTO `ps_cms_category_shop` (`id_cms_category`, `id_shop`) VALUES
 -- Table structure for table `ps_cms_lang`
 --
 
+DROP TABLE IF EXISTS `ps_cms_lang`;
 CREATE TABLE `ps_cms_lang` (
   `id_cms` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -2793,6 +2844,7 @@ INSERT INTO `ps_cms_lang` (`id_cms`, `id_lang`, `id_shop`, `meta_title`, `meta_d
 -- Table structure for table `ps_cms_role`
 --
 
+DROP TABLE IF EXISTS `ps_cms_role`;
 CREATE TABLE `ps_cms_role` (
   `id_cms_role` int(11) UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -2805,6 +2857,7 @@ CREATE TABLE `ps_cms_role` (
 -- Table structure for table `ps_cms_role_lang`
 --
 
+DROP TABLE IF EXISTS `ps_cms_role_lang`;
 CREATE TABLE `ps_cms_role_lang` (
   `id_cms_role` int(11) UNSIGNED NOT NULL,
   `id_lang` int(11) UNSIGNED NOT NULL,
@@ -2818,6 +2871,7 @@ CREATE TABLE `ps_cms_role_lang` (
 -- Table structure for table `ps_cms_shop`
 --
 
+DROP TABLE IF EXISTS `ps_cms_shop`;
 CREATE TABLE `ps_cms_shop` (
   `id_cms` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -2840,6 +2894,7 @@ INSERT INTO `ps_cms_shop` (`id_cms`, `id_shop`) VALUES
 -- Table structure for table `ps_compare`
 --
 
+DROP TABLE IF EXISTS `ps_compare`;
 CREATE TABLE `ps_compare` (
   `id_compare` int(10) UNSIGNED NOT NULL,
   `id_customer` int(10) UNSIGNED NOT NULL
@@ -2851,6 +2906,7 @@ CREATE TABLE `ps_compare` (
 -- Table structure for table `ps_compare_product`
 --
 
+DROP TABLE IF EXISTS `ps_compare_product`;
 CREATE TABLE `ps_compare_product` (
   `id_compare` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -2864,6 +2920,7 @@ CREATE TABLE `ps_compare_product` (
 -- Table structure for table `ps_condition`
 --
 
+DROP TABLE IF EXISTS `ps_condition`;
 CREATE TABLE `ps_condition` (
   `id_condition` int(11) NOT NULL,
   `id_ps_condition` int(11) NOT NULL,
@@ -3136,6 +3193,7 @@ INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`
 -- Table structure for table `ps_condition_advice`
 --
 
+DROP TABLE IF EXISTS `ps_condition_advice`;
 CREATE TABLE `ps_condition_advice` (
   `id_condition` int(11) NOT NULL,
   `id_advice` int(11) NOT NULL,
@@ -3214,6 +3272,7 @@ INSERT INTO `ps_condition_advice` (`id_condition`, `id_advice`, `display`) VALUE
 -- Table structure for table `ps_condition_badge`
 --
 
+DROP TABLE IF EXISTS `ps_condition_badge`;
 CREATE TABLE `ps_condition_badge` (
   `id_condition` int(11) NOT NULL,
   `id_badge` int(11) NOT NULL
@@ -3467,6 +3526,7 @@ INSERT INTO `ps_condition_badge` (`id_condition`, `id_badge`) VALUES
 -- Table structure for table `ps_configuration`
 --
 
+DROP TABLE IF EXISTS `ps_configuration`;
 CREATE TABLE `ps_configuration` (
   `id_configuration` int(10) UNSIGNED NOT NULL,
   `id_shop_group` int(11) UNSIGNED DEFAULT NULL,
@@ -3897,6 +3957,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 -- Table structure for table `ps_configuration_kpi`
 --
 
+DROP TABLE IF EXISTS `ps_configuration_kpi`;
 CREATE TABLE `ps_configuration_kpi` (
   `id_configuration_kpi` int(10) UNSIGNED NOT NULL,
   `id_shop_group` int(11) UNSIGNED DEFAULT NULL,
@@ -3956,6 +4017,7 @@ INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id
 -- Table structure for table `ps_configuration_kpi_lang`
 --
 
+DROP TABLE IF EXISTS `ps_configuration_kpi_lang`;
 CREATE TABLE `ps_configuration_kpi_lang` (
   `id_configuration_kpi` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -3969,6 +4031,7 @@ CREATE TABLE `ps_configuration_kpi_lang` (
 -- Table structure for table `ps_configuration_lang`
 --
 
+DROP TABLE IF EXISTS `ps_configuration_lang`;
 CREATE TABLE `ps_configuration_lang` (
   `id_configuration` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -3997,6 +4060,7 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 -- Table structure for table `ps_connections`
 --
 
+DROP TABLE IF EXISTS `ps_connections`;
 CREATE TABLE `ps_connections` (
   `id_connections` int(10) UNSIGNED NOT NULL,
   `id_shop_group` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -4029,6 +4093,7 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 -- Table structure for table `ps_connections_page`
 --
 
+DROP TABLE IF EXISTS `ps_connections_page`;
 CREATE TABLE `ps_connections_page` (
   `id_connections` int(10) UNSIGNED NOT NULL,
   `id_page` int(10) UNSIGNED NOT NULL,
@@ -4038,251 +4103,13 @@ CREATE TABLE `ps_connections_page` (
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `ps_connections_source`
---
-
-CREATE TABLE `ps_connections_source` (
-  `id_connections_source` int(10) UNSIGNED NOT NULL,
-  `id_connections` int(10) UNSIGNED NOT NULL,
-  `http_referer` varchar(255) DEFAULT NULL,
-  `request_uri` varchar(255) DEFAULT NULL,
-  `keywords` varchar(255) DEFAULT NULL,
-  `date_add` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `ps_connections_source`
---
-
-INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, `http_referer`, `request_uri`, `keywords`, `date_add`) VALUES
-(1, 3, 'http://localhost:8001/admin-dev/index.php?controller=AdminProducts&id_product=1&updateproduct&token=76e2b1cff7ffdb528e65393cf7f99d24', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-09-28 14:11:28'),
-(2, 3, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?id_product=7&controller=product&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', '', '2020-09-28 14:11:30'),
-(3, 3, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?id_product=7&controller=product&content_only=1', '', '2020-09-28 14:11:44'),
-(4, 3, 'http://localhost:8001/admin-dev/index.php?controller=AdminProducts&id_product=1&updateproduct&token=76e2b1cff7ffdb528e65393cf7f99d24', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-09-28 14:11:59'),
-(5, 3, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?id_product=7&controller=product&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', '', '2020-09-28 14:12:01'),
-(6, 3, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?id_product=7&controller=product&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', '', '2020-09-28 14:12:37'),
-(7, 3, 'http://localhost:8001/index.php?id_product=7&controller=product&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', 'localhost:8001/index.php?controller=order&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', '', '2020-09-28 14:18:19'),
-(8, 3, 'http://localhost:8001/index.php?controller=order&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', 'localhost:8001/index.php?controller=authentication&back=http%3A%2F%2Flocalhost%3A8001%2Findex.php%3Fcontroller%3Dorder%26step%3D1', '', '2020-09-28 14:18:20'),
-(9, 3, 'http://localhost:8001/index.php?controller=authentication&back=http%3A%2F%2Flocalhost%3A8001%2Findex.php%3Fcontroller%3Dorder%26step%3D1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 14:18:37'),
-(10, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=address&back=order.php%3Fstep%3D1', '', '2020-09-28 14:18:40'),
-(11, 3, 'http://localhost:8001/index.php?controller=address&back=order.php%3Fstep%3D1', 'localhost:8001/index.php?controller=order?step=1', '', '2020-09-28 14:18:44'),
-(12, 3, 'http://localhost:8001/index.php?controller=order?step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 14:18:46'),
-(13, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=Faded+Short+Sleeves+T-shirt&submit_search=', '', '2020-09-28 15:16:05'),
-(14, 3, 'http://localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=Faded+Short+Sleeves+T-shirt&submit_search=', 'localhost:8001/index.php?id_product=1&controller=product&search_query=Faded+Short+Sleeves+T-shirt&results=4&content_only=1', '', '2020-09-28 15:16:08'),
-(15, 3, 'http://localhost:8001/index.php?id_product=1&controller=product&search_query=Faded+Short+Sleeves+T-shirt&results=4&content_only=1', 'localhost:8001/index.php?controller=order&ipa=1', '', '2020-09-28 15:16:14'),
-(16, 3, 'http://localhost:8001/index.php?controller=order&ipa=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-28 15:16:27'),
-(17, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 15:16:28'),
-(18, 3, 'http://localhost:8001/index.php?controller=order&ipa=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-28 15:36:35'),
-(19, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 15:36:36'),
-(20, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-28 15:38:39'),
-(21, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=2', '', '2020-09-28 16:09:55'),
-(22, 3, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:22:19'),
-(23, 3, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:22:36'),
-(24, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-09-28 16:22:55'),
-(25, 3, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:22:57'),
-(26, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-28 16:23:03'),
-(27, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:23:05'),
-(28, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:23:09'),
-(29, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:24:39'),
-(30, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?id_product=1&controller=product', '', '2020-09-28 16:24:51'),
-(31, 3, 'http://localhost:8001/index.php?id_product=1&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:24:57'),
-(32, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:25:21'),
-(33, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-09-28 16:25:22'),
-(34, 3, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=1&controller=product', '', '2020-09-28 16:25:43'),
-(35, 3, 'http://localhost:8001/index.php?id_product=1&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:25:50'),
-(36, 3, 'http://localhost:8001/index.php?id_product=1&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:26:39'),
-(37, 3, 'http://localhost:8001/index.php?id_product=1&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:27:20'),
-(38, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-28 16:27:27'),
-(39, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:27:29'),
-(40, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?id_product=1&controller=product', '', '2020-09-28 16:29:37'),
-(41, 3, 'http://localhost:8001/index.php?id_product=1&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:29:40'),
-(42, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-28 16:30:04'),
-(43, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:30:06'),
-(44, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:31:51'),
-(45, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-09-28 16:33:33'),
-(46, 3, 'http://localhost:8001/index.php', 'localhost:8001/index.php', '', '2020-09-28 16:34:36'),
-(47, 3, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:34:38'),
-(48, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-28 16:34:41'),
-(49, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:34:42'),
-(50, 3, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:36:01'),
-(51, 3, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-28 16:36:30'),
-(52, 4, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-09-29 09:59:25'),
-(53, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 09:59:41'),
-(54, 4, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-29 09:59:43'),
-(55, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 09:59:49'),
-(56, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:11:21'),
-(57, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:13:41'),
-(58, 4, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:13:43'),
-(59, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:13:49'),
-(60, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:16:26'),
-(61, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:16:31'),
-(62, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:17:22'),
-(63, 4, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:25:05'),
-(64, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:29:04'),
-(65, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=my-account', '', '2020-09-29 10:35:03'),
-(66, 5, 'http://localhost:8001/index.php?controller=my-account', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:36:22'),
-(67, 5, 'http://localhost:8001/index.php?controller=my-account', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:37:03'),
-(68, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:37:04'),
-(69, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:37:09'),
-(70, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:37:47'),
-(71, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:37:48'),
-(72, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:41:39'),
-(73, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:41:40'),
-(74, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:41:44'),
-(75, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-09-29 10:43:45'),
-(76, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:43:47'),
-(77, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:43:48'),
-(78, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:44:06'),
-(79, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:45:49'),
-(80, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:45:51'),
-(81, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:48:04'),
-(82, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:48:06'),
-(83, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:48:27'),
-(84, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:48:28'),
-(85, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:48:36'),
-(86, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:49:19'),
-(87, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php', '', '2020-09-29 10:49:30'),
-(88, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:49:50'),
-(89, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:49:51'),
-(90, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-29 10:54:11'),
-(91, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:54:12'),
-(92, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:57:21'),
-(93, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:58:42'),
-(94, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 10:59:46'),
-(95, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 11:00:04'),
-(96, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 11:02:56'),
-(97, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 11:03:00'),
-(98, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 11:03:16'),
-(99, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 11:03:23'),
-(100, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php', '', '2020-09-29 11:07:01'),
-(101, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:07:04'),
-(102, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:12:53'),
-(103, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:13:20'),
-(104, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:13:34'),
-(105, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:18:49'),
-(106, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:24:22'),
-(107, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:27:05'),
-(108, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:27:22'),
-(109, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:27:33'),
-(110, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:28:05'),
-(111, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:28:17'),
-(112, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:28:17'),
-(113, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:28:26'),
-(114, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:28:27'),
-(115, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:30:45'),
-(116, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:30:45'),
-(117, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=7&controller=product', '', '2020-09-29 11:32:15'),
-(118, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 11:32:29'),
-(119, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php', '', '2020-09-29 11:32:32'),
-(120, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php', '', '2020-09-29 11:36:09'),
-(121, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php', '', '2020-09-29 11:37:11'),
-(122, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=1&controller=product', '', '2020-09-29 11:37:18'),
-(123, 5, 'http://localhost:8001/index.php?id_product=1&controller=product', 'localhost:8001/index.php?id_product=1&controller=product', '', '2020-09-29 11:37:21'),
-(124, 5, 'http://localhost:8001/admin-dev/index.php?controller=AdminProducts&id_product=1&updateproduct&token=76e2b1cff7ffdb528e65393cf7f99d24', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-09-29 15:12:49'),
-(125, 5, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=Faded+Short+Sleeves+T-shirt&submit_search=', '', '2020-09-29 15:12:55'),
-(126, 5, 'http://localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=Faded+Short+Sleeves+T-shirt&submit_search=', 'localhost:8001/index.php', '', '2020-09-29 15:13:09'),
-(127, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=demo_1&submit_search=', '', '2020-09-29 15:13:18'),
-(128, 5, 'http://localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=demo_1&submit_search=', 'localhost:8001/index.php?id_product=2&controller=product&search_query=demo_1&results=6', '', '2020-09-29 15:13:22'),
-(129, 5, 'http://localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=demo_1&submit_search=', 'localhost:8001/index.php?id_product=3&controller=product&search_query=demo_1&results=6', '', '2020-09-29 15:13:31'),
-(130, 5, 'http://localhost:8001/index.php?controller=search&orderby=position&orderway=desc&search_query=demo_1&submit_search=', 'localhost:8001/index.php?id_product=2&controller=product&search_query=demo_1&results=6', '', '2020-09-29 15:14:13'),
-(131, 5, 'http://localhost:8001/index.php?id_product=2&controller=product&search_query=demo_1&results=6', 'localhost:8001/index.php?controller=order', '', '2020-09-29 15:17:08'),
-(132, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:17:16'),
-(133, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&ipa=1', '', '2020-09-29 15:17:27'),
-(134, 5, 'http://localhost:8001/index.php?controller=order&ipa=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:17:31'),
-(135, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-29 15:20:47'),
-(136, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:21:02'),
-(137, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:23:54'),
-(138, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:27:10'),
-(139, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php', '', '2020-09-29 15:27:22'),
-(140, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=5&controller=product&content_only=1', '', '2020-09-29 15:27:27'),
-(141, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=5&controller=product', '', '2020-09-29 15:27:34'),
-(142, 5, 'http://localhost:8001/index.php?id_product=5&controller=product', 'localhost:8001/index.php', '', '2020-09-29 15:27:47'),
-(143, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=2&controller=product&content_only=1', '', '2020-09-29 15:27:52'),
-(144, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=2&controller=product&content_only=1', '', '2020-09-29 15:27:59'),
-(145, 5, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_product=2&controller=product', '', '2020-09-29 15:28:07'),
-(146, 5, 'http://localhost:8001/index.php?id_product=2&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-09-29 15:28:16'),
-(147, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:28:21'),
-(148, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:30:41'),
-(149, 5, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=my-account', '', '2020-09-29 15:34:10'),
-(150, 5, 'http://localhost:8001/index.php?controller=my-account', 'localhost:8001/index.php?controller=order', '', '2020-09-29 15:34:24'),
-(151, 5, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-29 15:34:28'),
-(152, 6, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:11:41'),
-(153, 6, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-30 17:11:46'),
-(154, 6, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:11:50'),
-(155, 6, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:11:59'),
-(156, 6, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-09-30 17:12:04'),
-(157, 7, 'http://localhost:8001/index.php?controller=order&step=3', 'localhost:8001/index.php?controller=order&step=2', '', '2020-09-30 17:15:04'),
-(158, 7, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:20:35'),
-(159, 7, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:20:49'),
-(160, 7, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:21:21'),
-(161, 7, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:22:56'),
-(162, 7, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=2', '', '2020-09-30 17:23:01'),
-(163, 7, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php?controller=order', '', '2020-09-30 17:23:11'),
-(164, 7, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?fc=module&module=cheque&controller=payment', '', '2020-09-30 17:23:28'),
-(165, 7, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?fc=module&module=cheque&controller=payment', '', '2020-09-30 17:23:29'),
-(166, 8, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-10-01 10:43:14'),
-(167, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-10-01 10:45:15'),
-(168, 8, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-10-01 10:45:18'),
-(169, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 10:46:11'),
-(170, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 10:52:10'),
-(171, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 10:53:42'),
-(172, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 10:58:28'),
-(173, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:06:58'),
-(174, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:10:46'),
-(175, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:11:19'),
-(176, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:11:58'),
-(177, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:31:24'),
-(178, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:31:52'),
-(179, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?fc=module&module=bankwire&controller=payment', '', '2020-10-01 11:32:32'),
-(180, 8, 'http://localhost:8001/index.php?fc=module&module=bankwire&controller=payment', 'localhost:8001/index.php?controller=order-confirmation&id_cart=6&id_module=3&id_order=6&key=da44926f3143b9d09ce6b3be4d0699fe', '', '2020-10-01 11:32:40'),
-(181, 8, 'http://localhost:8001/index.php?controller=order-confirmation&id_cart=6&id_module=3&id_order=6&key=da44926f3143b9d09ce6b3be4d0699fe', 'localhost:8001/index.php?controller=order&step=2', '', '2020-10-01 11:32:46'),
-(182, 8, 'http://localhost:8001/index.php?controller=order&step=2', 'localhost:8001/index.php', '', '2020-10-01 11:32:52'),
-(183, 8, 'http://localhost:8001/index.php', 'localhost:8001/index.php?controller=order', '', '2020-10-01 11:33:00'),
-(184, 8, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-10-01 11:33:06'),
-(185, 8, 'http://localhost:8001/admin-dev/index.php?controller=AdminPerformance&token=e62e4adbdd91ad60de89a6c5511d2ac9', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 15:37:20'),
-(186, 8, 'http://localhost:8001/admin-dev/index.php?controller=AdminPerformance&token=e62e4adbdd91ad60de89a6c5511d2ac9', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 15:38:20'),
-(187, 8, 'http://localhost:8001/admin-dev/index.php?controller=AdminModulesPositions&conf=17&token=83a2dcdbce926fadac90afa21a19785c', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 15:57:58'),
-(188, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 15:58:10'),
-(189, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 15:58:57'),
-(190, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 15:59:00'),
-(191, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 16:00:07'),
-(192, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php', '', '2020-10-01 16:00:18'),
-(193, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php', '', '2020-10-01 16:03:10'),
-(194, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php', '', '2020-10-01 16:07:18'),
-(195, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php', '', '2020-10-01 16:07:37'),
-(196, 9, 'http://localhost:8001/admin-dev/index.php?controller=AdminProducts&conf=4&token=76e2b1cff7ffdb528e65393cf7f99d24', 'localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', '', '2020-10-01 16:51:58'),
-(197, 9, 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1', 'localhost:8001/index.php?controller=order&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', '', '2020-10-01 16:59:08'),
-(198, 9, 'http://localhost:8001/index.php?controller=order&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', 'localhost:8001/index.php?controller=authentication&back=http%3A%2F%2Flocalhost%3A8001%2Findex.php%3Fcontroller%3Dorder%26step%3D1', '', '2020-10-01 16:59:11'),
-(199, 9, 'http://localhost:8001/index.php?controller=order&live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_shop=1&id_employee=1&theme=&theme_font=', 'localhost:8001/index.php?controller=authentication&back=http%3A%2F%2Flocalhost%3A8001%2Findex.php%3Fcontroller%3Dorder%26step%3D1', '', '2020-10-01 16:59:20'),
-(200, 9, 'http://localhost:8001/index.php?controller=authentication&back=http%3A%2F%2Flocalhost%3A8001%2Findex.php%3Fcontroller%3Dorder%26step%3D1', '', '', '2020-10-01 16:59:23'),
-(201, 9, 'http://localhost:8001/index.php?controller=http://localhost:8001/index.php?controller=order&amp;step=1', 'localhost:8001/index.php?controller=order', '', '2020-10-01 16:59:27'),
-(202, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-10-01 16:59:28'),
-(203, 9, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-10-01 16:59:30'),
-(204, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 16:59:40'),
-(205, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?fc=module&module=cashondelivery&controller=validation', '', '2020-10-01 16:59:44'),
-(206, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 17:00:12'),
-(207, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-10-01 17:05:55'),
-(208, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?id_category=3&controller=category', '', '2020-10-01 17:05:56'),
-(209, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-10-01 17:06:46'),
-(210, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php', '', '2020-10-01 17:07:21'),
-(211, 9, 'http://localhost:8001/index.php', 'localhost:8001/index.php?id_category=20&controller=category', '', '2020-10-01 17:07:30'),
-(212, 9, 'http://localhost:8001/index.php?id_category=20&controller=category', 'localhost:8001/index.php?id_product=22&controller=product', '', '2020-10-01 17:07:36'),
-(213, 9, 'http://localhost:8001/index.php?id_product=22&controller=product', 'localhost:8001/index.php?controller=order', '', '2020-10-01 17:07:42'),
-(214, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order&step=1', '', '2020-10-01 17:07:46'),
-(215, 9, 'http://localhost:8001/index.php?controller=order&step=1', 'localhost:8001/index.php?controller=order', '', '2020-10-01 17:07:48'),
-(216, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?controller=order', '', '2020-10-01 17:07:56'),
-(217, 9, 'http://localhost:8001/index.php?controller=order', 'localhost:8001/index.php?fc=module&module=cashondelivery&controller=validation', '', '2020-10-01 17:07:58'),
-(218, 9, 'http://localhost:8001/index.php?fc=module&module=cashondelivery&controller=validation', 'localhost:8001/index.php?controller=order-confirmation?key=da44926f3143b9d09ce6b3be4d0699fe&id_cart=8&id_module=75&id_order=7', '', '2020-10-01 17:08:03'),
-(219, 9, 'http://localhost:8001/index.php?controller=order-confirmation?key=da44926f3143b9d09ce6b3be4d0699fe&id_cart=8&id_module=75&id_order=7', 'localhost:8001/index.php?controller=my-account', '', '2020-10-01 17:08:06'),
-(220, 9, 'http://localhost:8001/index.php?controller=my-account', 'localhost:8001/index.php?controller=history', '', '2020-10-01 17:08:07');
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `ps_contact`
 --
 
+DROP TABLE IF EXISTS `ps_contact`;
 CREATE TABLE `ps_contact` (
   `id_contact` int(10) UNSIGNED NOT NULL,
   `email` varchar(128) NOT NULL,
@@ -4304,6 +4131,7 @@ INSERT INTO `ps_contact` (`id_contact`, `email`, `customer_service`, `position`)
 -- Table structure for table `ps_contact_lang`
 --
 
+DROP TABLE IF EXISTS `ps_contact_lang`;
 CREATE TABLE `ps_contact_lang` (
   `id_contact` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -4325,6 +4153,7 @@ INSERT INTO `ps_contact_lang` (`id_contact`, `id_lang`, `name`, `description`) V
 -- Table structure for table `ps_contact_shop`
 --
 
+DROP TABLE IF EXISTS `ps_contact_shop`;
 CREATE TABLE `ps_contact_shop` (
   `id_contact` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -4344,6 +4173,7 @@ INSERT INTO `ps_contact_shop` (`id_contact`, `id_shop`) VALUES
 -- Table structure for table `ps_country`
 --
 
+DROP TABLE IF EXISTS `ps_country`;
 CREATE TABLE `ps_country` (
   `id_country` int(10) UNSIGNED NOT NULL,
   `id_zone` int(10) UNSIGNED NOT NULL,
@@ -4614,6 +4444,7 @@ INSERT INTO `ps_country` (`id_country`, `id_zone`, `id_currency`, `iso_code`, `c
 -- Table structure for table `ps_country_lang`
 --
 
+DROP TABLE IF EXISTS `ps_country_lang`;
 CREATE TABLE `ps_country_lang` (
   `id_country` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -4876,6 +4707,7 @@ INSERT INTO `ps_country_lang` (`id_country`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_country_shop`
 --
 
+DROP TABLE IF EXISTS `ps_country_shop`;
 CREATE TABLE `ps_country_shop` (
   `id_country` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -5137,6 +4969,7 @@ INSERT INTO `ps_country_shop` (`id_country`, `id_shop`) VALUES
 -- Table structure for table `ps_currency`
 --
 
+DROP TABLE IF EXISTS `ps_currency`;
 CREATE TABLE `ps_currency` (
   `id_currency` int(10) UNSIGNED NOT NULL,
   `name` varchar(32) NOT NULL,
@@ -5165,6 +4998,7 @@ INSERT INTO `ps_currency` (`id_currency`, `name`, `iso_code`, `iso_code_num`, `s
 -- Table structure for table `ps_currency_shop`
 --
 
+DROP TABLE IF EXISTS `ps_currency_shop`;
 CREATE TABLE `ps_currency_shop` (
   `id_currency` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL,
@@ -5185,6 +5019,7 @@ INSERT INTO `ps_currency_shop` (`id_currency`, `id_shop`, `conversion_rate`) VAL
 -- Table structure for table `ps_customer`
 --
 
+DROP TABLE IF EXISTS `ps_customer`;
 CREATE TABLE `ps_customer` (
   `id_customer` int(10) UNSIGNED NOT NULL,
   `id_shop_group` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -5233,6 +5068,7 @@ INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender
 -- Table structure for table `ps_customer_group`
 --
 
+DROP TABLE IF EXISTS `ps_customer_group`;
 CREATE TABLE `ps_customer_group` (
   `id_customer` int(10) UNSIGNED NOT NULL,
   `id_group` int(10) UNSIGNED NOT NULL
@@ -5252,6 +5088,7 @@ INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
 -- Table structure for table `ps_customer_message`
 --
 
+DROP TABLE IF EXISTS `ps_customer_message`;
 CREATE TABLE `ps_customer_message` (
   `id_customer_message` int(10) UNSIGNED NOT NULL,
   `id_customer_thread` int(11) DEFAULT NULL,
@@ -5272,6 +5109,7 @@ CREATE TABLE `ps_customer_message` (
 -- Table structure for table `ps_customer_message_sync_imap`
 --
 
+DROP TABLE IF EXISTS `ps_customer_message_sync_imap`;
 CREATE TABLE `ps_customer_message_sync_imap` (
   `md5_header` varbinary(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -5282,6 +5120,7 @@ CREATE TABLE `ps_customer_message_sync_imap` (
 -- Table structure for table `ps_customer_thread`
 --
 
+DROP TABLE IF EXISTS `ps_customer_thread`;
 CREATE TABLE `ps_customer_thread` (
   `id_customer_thread` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -5303,6 +5142,7 @@ CREATE TABLE `ps_customer_thread` (
 -- Table structure for table `ps_customization`
 --
 
+DROP TABLE IF EXISTS `ps_customization`;
 CREATE TABLE `ps_customization` (
   `id_customization` int(10) UNSIGNED NOT NULL,
   `id_product_attribute` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -5321,6 +5161,7 @@ CREATE TABLE `ps_customization` (
 -- Table structure for table `ps_customization_field`
 --
 
+DROP TABLE IF EXISTS `ps_customization_field`;
 CREATE TABLE `ps_customization_field` (
   `id_customization_field` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -5334,6 +5175,7 @@ CREATE TABLE `ps_customization_field` (
 -- Table structure for table `ps_customization_field_lang`
 --
 
+DROP TABLE IF EXISTS `ps_customization_field_lang`;
 CREATE TABLE `ps_customization_field_lang` (
   `id_customization_field` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -5347,6 +5189,7 @@ CREATE TABLE `ps_customization_field_lang` (
 -- Table structure for table `ps_customized_data`
 --
 
+DROP TABLE IF EXISTS `ps_customized_data`;
 CREATE TABLE `ps_customized_data` (
   `id_customization` int(10) UNSIGNED NOT NULL,
   `type` tinyint(1) NOT NULL,
@@ -5360,6 +5203,7 @@ CREATE TABLE `ps_customized_data` (
 -- Table structure for table `ps_date_range`
 --
 
+DROP TABLE IF EXISTS `ps_date_range`;
 CREATE TABLE `ps_date_range` (
   `id_date_range` int(10) UNSIGNED NOT NULL,
   `time_start` datetime NOT NULL,
@@ -5372,6 +5216,7 @@ CREATE TABLE `ps_date_range` (
 -- Table structure for table `ps_delivery`
 --
 
+DROP TABLE IF EXISTS `ps_delivery`;
 CREATE TABLE `ps_delivery` (
   `id_delivery` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED DEFAULT NULL,
@@ -5644,69 +5489,10 @@ INSERT INTO `ps_delivery` (`id_delivery`, `id_shop`, `id_shop_group`, `id_carrie
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ps_employee`
---
-
-CREATE TABLE `ps_employee` (
-  `id_employee` int(10) UNSIGNED NOT NULL,
-  `id_profile` int(10) UNSIGNED NOT NULL,
-  `id_lang` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `lastname` varchar(32) NOT NULL,
-  `firstname` varchar(32) NOT NULL,
-  `email` varchar(128) NOT NULL,
-  `passwd` varchar(32) NOT NULL,
-  `last_passwd_gen` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `stats_date_from` date DEFAULT NULL,
-  `stats_date_to` date DEFAULT NULL,
-  `stats_compare_from` date DEFAULT NULL,
-  `stats_compare_to` date DEFAULT NULL,
-  `stats_compare_option` int(1) UNSIGNED NOT NULL DEFAULT '1',
-  `preselect_date_range` varchar(32) DEFAULT NULL,
-  `bo_color` varchar(32) DEFAULT NULL,
-  `bo_theme` varchar(32) DEFAULT NULL,
-  `bo_css` varchar(64) DEFAULT NULL,
-  `default_tab` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `bo_width` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `bo_menu` tinyint(1) NOT NULL DEFAULT '1',
-  `active` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
-  `optin` tinyint(1) UNSIGNED NOT NULL DEFAULT '1',
-  `id_last_order` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `id_last_customer_message` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `id_last_customer` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `last_connection_date` date DEFAULT '0000-00-00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `ps_employee`
---
-
-INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`) VALUES
-(1, 1, 1, 'Doe', 'John', 'test@example.com', '0399cd21ccf4961ffb0b77b538887f8a', '2020-09-28 06:09:23', '2020-08-28', '2020-09-28', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'admin-theme.css', 1, 0, 1, 1, 1, 0, 0, 0, '2020-10-01');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `ps_employee_shop`
---
-
-CREATE TABLE `ps_employee_shop` (
-  `id_employee` int(11) UNSIGNED NOT NULL,
-  `id_shop` int(11) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `ps_employee_shop`
---
-
-INSERT INTO `ps_employee_shop` (`id_employee`, `id_shop`) VALUES
-(1, 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `ps_feature`
 --
 
+DROP TABLE IF EXISTS `ps_feature`;
 CREATE TABLE `ps_feature` (
   `id_feature` int(10) UNSIGNED NOT NULL,
   `position` int(10) UNSIGNED NOT NULL DEFAULT '0'
@@ -5731,6 +5517,7 @@ INSERT INTO `ps_feature` (`id_feature`, `position`) VALUES
 -- Table structure for table `ps_feature_lang`
 --
 
+DROP TABLE IF EXISTS `ps_feature_lang`;
 CREATE TABLE `ps_feature_lang` (
   `id_feature` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -5756,6 +5543,7 @@ INSERT INTO `ps_feature_lang` (`id_feature`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_feature_product`
 --
 
+DROP TABLE IF EXISTS `ps_feature_product`;
 CREATE TABLE `ps_feature_product` (
   `id_feature` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -5795,6 +5583,7 @@ INSERT INTO `ps_feature_product` (`id_feature`, `id_product`, `id_feature_value`
 -- Table structure for table `ps_feature_shop`
 --
 
+DROP TABLE IF EXISTS `ps_feature_shop`;
 CREATE TABLE `ps_feature_shop` (
   `id_feature` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -5819,6 +5608,7 @@ INSERT INTO `ps_feature_shop` (`id_feature`, `id_shop`) VALUES
 -- Table structure for table `ps_feature_value`
 --
 
+DROP TABLE IF EXISTS `ps_feature_value`;
 CREATE TABLE `ps_feature_value` (
   `id_feature_value` int(10) UNSIGNED NOT NULL,
   `id_feature` int(10) UNSIGNED NOT NULL,
@@ -5870,6 +5660,7 @@ INSERT INTO `ps_feature_value` (`id_feature_value`, `id_feature`, `custom`) VALU
 -- Table structure for table `ps_feature_value_lang`
 --
 
+DROP TABLE IF EXISTS `ps_feature_value_lang`;
 CREATE TABLE `ps_feature_value_lang` (
   `id_feature_value` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -5921,6 +5712,7 @@ INSERT INTO `ps_feature_value_lang` (`id_feature_value`, `id_lang`, `value`) VAL
 -- Table structure for table `ps_gender`
 --
 
+DROP TABLE IF EXISTS `ps_gender`;
 CREATE TABLE `ps_gender` (
   `id_gender` int(11) NOT NULL,
   `type` tinyint(1) NOT NULL
@@ -5940,6 +5732,7 @@ INSERT INTO `ps_gender` (`id_gender`, `type`) VALUES
 -- Table structure for table `ps_gender_lang`
 --
 
+DROP TABLE IF EXISTS `ps_gender_lang`;
 CREATE TABLE `ps_gender_lang` (
   `id_gender` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -5960,6 +5753,7 @@ INSERT INTO `ps_gender_lang` (`id_gender`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_group`
 --
 
+DROP TABLE IF EXISTS `ps_group`;
 CREATE TABLE `ps_group` (
   `id_group` int(10) UNSIGNED NOT NULL,
   `reduction` decimal(17,2) NOT NULL DEFAULT '0.00',
@@ -5985,6 +5779,7 @@ INSERT INTO `ps_group` (`id_group`, `reduction`, `price_display_method`, `show_p
 -- Table structure for table `ps_group_lang`
 --
 
+DROP TABLE IF EXISTS `ps_group_lang`;
 CREATE TABLE `ps_group_lang` (
   `id_group` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -6007,6 +5802,7 @@ INSERT INTO `ps_group_lang` (`id_group`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_group_reduction`
 --
 
+DROP TABLE IF EXISTS `ps_group_reduction`;
 CREATE TABLE `ps_group_reduction` (
   `id_group_reduction` mediumint(8) UNSIGNED NOT NULL,
   `id_group` int(10) UNSIGNED NOT NULL,
@@ -6020,6 +5816,7 @@ CREATE TABLE `ps_group_reduction` (
 -- Table structure for table `ps_group_shop`
 --
 
+DROP TABLE IF EXISTS `ps_group_shop`;
 CREATE TABLE `ps_group_shop` (
   `id_group` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -6041,6 +5838,7 @@ INSERT INTO `ps_group_shop` (`id_group`, `id_shop`) VALUES
 -- Table structure for table `ps_guest`
 --
 
+DROP TABLE IF EXISTS `ps_guest`;
 CREATE TABLE `ps_guest` (
   `id_guest` int(10) UNSIGNED NOT NULL,
   `id_operating_system` int(10) UNSIGNED DEFAULT NULL,
@@ -6074,6 +5872,7 @@ INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id
 -- Table structure for table `ps_homeslider`
 --
 
+DROP TABLE IF EXISTS `ps_homeslider`;
 CREATE TABLE `ps_homeslider` (
   `id_homeslider_slides` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL
@@ -6094,6 +5893,7 @@ INSERT INTO `ps_homeslider` (`id_homeslider_slides`, `id_shop`) VALUES
 -- Table structure for table `ps_homeslider_slides`
 --
 
+DROP TABLE IF EXISTS `ps_homeslider_slides`;
 CREATE TABLE `ps_homeslider_slides` (
   `id_homeslider_slides` int(10) UNSIGNED NOT NULL,
   `position` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -6115,6 +5915,7 @@ INSERT INTO `ps_homeslider_slides` (`id_homeslider_slides`, `position`, `active`
 -- Table structure for table `ps_homeslider_slides_lang`
 --
 
+DROP TABLE IF EXISTS `ps_homeslider_slides_lang`;
 CREATE TABLE `ps_homeslider_slides_lang` (
   `id_homeslider_slides` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -6140,6 +5941,7 @@ INSERT INTO `ps_homeslider_slides_lang` (`id_homeslider_slides`, `id_lang`, `tit
 -- Table structure for table `ps_hook`
 --
 
+DROP TABLE IF EXISTS `ps_hook`;
 CREATE TABLE `ps_hook` (
   `id_hook` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -6329,6 +6131,7 @@ INSERT INTO `ps_hook` (`id_hook`, `name`, `title`, `description`, `position`, `l
 -- Table structure for table `ps_hook_alias`
 --
 
+DROP TABLE IF EXISTS `ps_hook_alias`;
 CREATE TABLE `ps_hook_alias` (
   `id_hook_alias` int(10) UNSIGNED NOT NULL,
   `alias` varchar(64) NOT NULL,
@@ -6433,6 +6236,7 @@ INSERT INTO `ps_hook_alias` (`id_hook_alias`, `alias`, `name`) VALUES
 -- Table structure for table `ps_hook_module`
 --
 
+DROP TABLE IF EXISTS `ps_hook_module`;
 CREATE TABLE `ps_hook_module` (
   `id_module` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -6714,6 +6518,7 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 -- Table structure for table `ps_hook_module_exceptions`
 --
 
+DROP TABLE IF EXISTS `ps_hook_module_exceptions`;
 CREATE TABLE `ps_hook_module_exceptions` (
   `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -6739,6 +6544,7 @@ INSERT INTO `ps_hook_module_exceptions` (`id_hook_module_exceptions`, `id_shop`,
 -- Table structure for table `ps_image`
 --
 
+DROP TABLE IF EXISTS `ps_image`;
 CREATE TABLE `ps_image` (
   `id_image` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -6781,6 +6587,7 @@ INSERT INTO `ps_image` (`id_image`, `id_product`, `position`, `cover`) VALUES
 -- Table structure for table `ps_image_lang`
 --
 
+DROP TABLE IF EXISTS `ps_image_lang`;
 CREATE TABLE `ps_image_lang` (
   `id_image` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -6822,6 +6629,7 @@ INSERT INTO `ps_image_lang` (`id_image`, `id_lang`, `legend`) VALUES
 -- Table structure for table `ps_image_shop`
 --
 
+DROP TABLE IF EXISTS `ps_image_shop`;
 CREATE TABLE `ps_image_shop` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_image` int(11) UNSIGNED NOT NULL,
@@ -6864,6 +6672,7 @@ INSERT INTO `ps_image_shop` (`id_product`, `id_image`, `id_shop`, `cover`) VALUE
 -- Table structure for table `ps_image_type`
 --
 
+DROP TABLE IF EXISTS `ps_image_type`;
 CREATE TABLE `ps_image_type` (
   `id_image_type` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -6898,6 +6707,7 @@ INSERT INTO `ps_image_type` (`id_image_type`, `name`, `width`, `height`, `produc
 -- Table structure for table `ps_import_match`
 --
 
+DROP TABLE IF EXISTS `ps_import_match`;
 CREATE TABLE `ps_import_match` (
   `id_import_match` int(10) NOT NULL,
   `name` varchar(32) NOT NULL,
@@ -6911,6 +6721,7 @@ CREATE TABLE `ps_import_match` (
 -- Table structure for table `ps_info`
 --
 
+DROP TABLE IF EXISTS `ps_info`;
 CREATE TABLE `ps_info` (
   `id_info` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED DEFAULT NULL
@@ -6929,6 +6740,7 @@ INSERT INTO `ps_info` (`id_info`, `id_shop`) VALUES
 -- Table structure for table `ps_info_lang`
 --
 
+DROP TABLE IF EXISTS `ps_info_lang`;
 CREATE TABLE `ps_info_lang` (
   `id_info` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -6948,6 +6760,7 @@ INSERT INTO `ps_info_lang` (`id_info`, `id_lang`, `text`) VALUES
 -- Table structure for table `ps_lang`
 --
 
+DROP TABLE IF EXISTS `ps_lang`;
 CREATE TABLE `ps_lang` (
   `id_lang` int(10) UNSIGNED NOT NULL,
   `name` varchar(32) NOT NULL,
@@ -6972,6 +6785,7 @@ INSERT INTO `ps_lang` (`id_lang`, `name`, `active`, `iso_code`, `language_code`,
 -- Table structure for table `ps_lang_shop`
 --
 
+DROP TABLE IF EXISTS `ps_lang_shop`;
 CREATE TABLE `ps_lang_shop` (
   `id_lang` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -6990,6 +6804,7 @@ INSERT INTO `ps_lang_shop` (`id_lang`, `id_shop`) VALUES
 -- Table structure for table `ps_layered_category`
 --
 
+DROP TABLE IF EXISTS `ps_layered_category`;
 CREATE TABLE `ps_layered_category` (
   `id_layered_category` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL,
@@ -7090,6 +6905,7 @@ INSERT INTO `ps_layered_category` (`id_layered_category`, `id_shop`, `id_categor
 -- Table structure for table `ps_layered_filter`
 --
 
+DROP TABLE IF EXISTS `ps_layered_filter`;
 CREATE TABLE `ps_layered_filter` (
   `id_layered_filter` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -7111,6 +6927,7 @@ INSERT INTO `ps_layered_filter` (`id_layered_filter`, `name`, `filters`, `n_cate
 -- Table structure for table `ps_layered_filter_shop`
 --
 
+DROP TABLE IF EXISTS `ps_layered_filter_shop`;
 CREATE TABLE `ps_layered_filter_shop` (
   `id_layered_filter` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -7129,6 +6946,7 @@ INSERT INTO `ps_layered_filter_shop` (`id_layered_filter`, `id_shop`) VALUES
 -- Table structure for table `ps_layered_friendly_url`
 --
 
+DROP TABLE IF EXISTS `ps_layered_friendly_url`;
 CREATE TABLE `ps_layered_friendly_url` (
   `id_layered_friendly_url` int(11) NOT NULL,
   `url_key` varchar(32) NOT NULL,
@@ -7203,6 +7021,7 @@ INSERT INTO `ps_layered_friendly_url` (`id_layered_friendly_url`, `url_key`, `da
 -- Table structure for table `ps_layered_indexable_attribute_group`
 --
 
+DROP TABLE IF EXISTS `ps_layered_indexable_attribute_group`;
 CREATE TABLE `ps_layered_indexable_attribute_group` (
   `id_attribute_group` int(11) NOT NULL,
   `indexable` tinyint(1) NOT NULL DEFAULT '0'
@@ -7223,6 +7042,7 @@ INSERT INTO `ps_layered_indexable_attribute_group` (`id_attribute_group`, `index
 -- Table structure for table `ps_layered_indexable_attribute_group_lang_value`
 --
 
+DROP TABLE IF EXISTS `ps_layered_indexable_attribute_group_lang_value`;
 CREATE TABLE `ps_layered_indexable_attribute_group_lang_value` (
   `id_attribute_group` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
@@ -7236,6 +7056,7 @@ CREATE TABLE `ps_layered_indexable_attribute_group_lang_value` (
 -- Table structure for table `ps_layered_indexable_attribute_lang_value`
 --
 
+DROP TABLE IF EXISTS `ps_layered_indexable_attribute_lang_value`;
 CREATE TABLE `ps_layered_indexable_attribute_lang_value` (
   `id_attribute` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
@@ -7249,6 +7070,7 @@ CREATE TABLE `ps_layered_indexable_attribute_lang_value` (
 -- Table structure for table `ps_layered_indexable_feature`
 --
 
+DROP TABLE IF EXISTS `ps_layered_indexable_feature`;
 CREATE TABLE `ps_layered_indexable_feature` (
   `id_feature` int(11) NOT NULL,
   `indexable` tinyint(1) NOT NULL DEFAULT '0'
@@ -7273,6 +7095,7 @@ INSERT INTO `ps_layered_indexable_feature` (`id_feature`, `indexable`) VALUES
 -- Table structure for table `ps_layered_indexable_feature_lang_value`
 --
 
+DROP TABLE IF EXISTS `ps_layered_indexable_feature_lang_value`;
 CREATE TABLE `ps_layered_indexable_feature_lang_value` (
   `id_feature` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
@@ -7286,6 +7109,7 @@ CREATE TABLE `ps_layered_indexable_feature_lang_value` (
 -- Table structure for table `ps_layered_indexable_feature_value_lang_value`
 --
 
+DROP TABLE IF EXISTS `ps_layered_indexable_feature_value_lang_value`;
 CREATE TABLE `ps_layered_indexable_feature_value_lang_value` (
   `id_feature_value` int(11) NOT NULL,
   `id_lang` int(11) NOT NULL,
@@ -7299,6 +7123,7 @@ CREATE TABLE `ps_layered_indexable_feature_value_lang_value` (
 -- Table structure for table `ps_layered_price_index`
 --
 
+DROP TABLE IF EXISTS `ps_layered_price_index`;
 CREATE TABLE `ps_layered_price_index` (
   `id_product` int(11) NOT NULL,
   `id_currency` int(11) NOT NULL,
@@ -7363,6 +7188,7 @@ INSERT INTO `ps_layered_price_index` (`id_product`, `id_currency`, `id_shop`, `p
 -- Table structure for table `ps_layered_product_attribute`
 --
 
+DROP TABLE IF EXISTS `ps_layered_product_attribute`;
 CREATE TABLE `ps_layered_product_attribute` (
   `id_attribute` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -7418,6 +7244,7 @@ INSERT INTO `ps_layered_product_attribute` (`id_attribute`, `id_product`, `id_at
 -- Table structure for table `ps_linksmenutop`
 --
 
+DROP TABLE IF EXISTS `ps_linksmenutop`;
 CREATE TABLE `ps_linksmenutop` (
   `id_linksmenutop` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL,
@@ -7430,6 +7257,7 @@ CREATE TABLE `ps_linksmenutop` (
 -- Table structure for table `ps_linksmenutop_lang`
 --
 
+DROP TABLE IF EXISTS `ps_linksmenutop_lang`;
 CREATE TABLE `ps_linksmenutop_lang` (
   `id_linksmenutop` int(11) UNSIGNED NOT NULL,
   `id_lang` int(11) UNSIGNED NOT NULL,
@@ -7444,6 +7272,7 @@ CREATE TABLE `ps_linksmenutop_lang` (
 -- Table structure for table `ps_log`
 --
 
+DROP TABLE IF EXISTS `ps_log`;
 CREATE TABLE `ps_log` (
   `id_log` int(10) UNSIGNED NOT NULL,
   `severity` tinyint(1) NOT NULL,
@@ -7603,6 +7432,7 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 -- Table structure for table `ps_mail`
 --
 
+DROP TABLE IF EXISTS `ps_mail`;
 CREATE TABLE `ps_mail` (
   `id_mail` int(11) UNSIGNED NOT NULL,
   `recipient` varchar(126) NOT NULL,
@@ -7618,6 +7448,7 @@ CREATE TABLE `ps_mail` (
 -- Table structure for table `ps_manufacturer`
 --
 
+DROP TABLE IF EXISTS `ps_manufacturer`;
 CREATE TABLE `ps_manufacturer` (
   `id_manufacturer` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -7639,6 +7470,7 @@ INSERT INTO `ps_manufacturer` (`id_manufacturer`, `name`, `date_add`, `date_upd`
 -- Table structure for table `ps_manufacturer_lang`
 --
 
+DROP TABLE IF EXISTS `ps_manufacturer_lang`;
 CREATE TABLE `ps_manufacturer_lang` (
   `id_manufacturer` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -7662,6 +7494,7 @@ INSERT INTO `ps_manufacturer_lang` (`id_manufacturer`, `id_lang`, `description`,
 -- Table structure for table `ps_manufacturer_shop`
 --
 
+DROP TABLE IF EXISTS `ps_manufacturer_shop`;
 CREATE TABLE `ps_manufacturer_shop` (
   `id_manufacturer` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -7680,6 +7513,7 @@ INSERT INTO `ps_manufacturer_shop` (`id_manufacturer`, `id_shop`) VALUES
 -- Table structure for table `ps_memcached_servers`
 --
 
+DROP TABLE IF EXISTS `ps_memcached_servers`;
 CREATE TABLE `ps_memcached_servers` (
   `id_memcached_server` int(11) UNSIGNED NOT NULL,
   `ip` varchar(254) NOT NULL,
@@ -7693,6 +7527,7 @@ CREATE TABLE `ps_memcached_servers` (
 -- Table structure for table `ps_message`
 --
 
+DROP TABLE IF EXISTS `ps_message`;
 CREATE TABLE `ps_message` (
   `id_message` int(10) UNSIGNED NOT NULL,
   `id_cart` int(10) UNSIGNED DEFAULT NULL,
@@ -7710,6 +7545,7 @@ CREATE TABLE `ps_message` (
 -- Table structure for table `ps_message_readed`
 --
 
+DROP TABLE IF EXISTS `ps_message_readed`;
 CREATE TABLE `ps_message_readed` (
   `id_message` int(10) UNSIGNED NOT NULL,
   `id_employee` int(10) UNSIGNED NOT NULL,
@@ -7722,6 +7558,7 @@ CREATE TABLE `ps_message_readed` (
 -- Table structure for table `ps_meta`
 --
 
+DROP TABLE IF EXISTS `ps_meta`;
 CREATE TABLE `ps_meta` (
   `id_meta` int(10) UNSIGNED NOT NULL,
   `page` varchar(64) NOT NULL,
@@ -7776,6 +7613,7 @@ INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
 -- Table structure for table `ps_meta_lang`
 --
 
+DROP TABLE IF EXISTS `ps_meta_lang`;
 CREATE TABLE `ps_meta_lang` (
   `id_meta` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -7826,6 +7664,7 @@ INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descripti
 -- Table structure for table `ps_module`
 --
 
+DROP TABLE IF EXISTS `ps_module`;
 CREATE TABLE `ps_module` (
   `id_module` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -7914,6 +7753,7 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 -- Table structure for table `ps_modules_perfs`
 --
 
+DROP TABLE IF EXISTS `ps_modules_perfs`;
 CREATE TABLE `ps_modules_perfs` (
   `id_modules_perfs` int(11) UNSIGNED NOT NULL,
   `session` int(11) UNSIGNED NOT NULL,
@@ -7931,6 +7771,7 @@ CREATE TABLE `ps_modules_perfs` (
 -- Table structure for table `ps_module_access`
 --
 
+DROP TABLE IF EXISTS `ps_module_access`;
 CREATE TABLE `ps_module_access` (
   `id_profile` int(10) UNSIGNED NOT NULL,
   `id_module` int(10) UNSIGNED NOT NULL,
@@ -8158,6 +7999,7 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_module`, `view`, `configure`, 
 -- Table structure for table `ps_module_country`
 --
 
+DROP TABLE IF EXISTS `ps_module_country`;
 CREATE TABLE `ps_module_country` (
   `id_module` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -8423,6 +8265,7 @@ INSERT INTO `ps_module_country` (`id_module`, `id_shop`, `id_country`) VALUES
 -- Table structure for table `ps_module_currency`
 --
 
+DROP TABLE IF EXISTS `ps_module_currency`;
 CREATE TABLE `ps_module_currency` (
   `id_module` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -8449,6 +8292,7 @@ INSERT INTO `ps_module_currency` (`id_module`, `id_shop`, `id_currency`) VALUES
 -- Table structure for table `ps_module_group`
 --
 
+DROP TABLE IF EXISTS `ps_module_group`;
 CREATE TABLE `ps_module_group` (
   `id_module` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -8743,6 +8587,7 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 -- Table structure for table `ps_module_preference`
 --
 
+DROP TABLE IF EXISTS `ps_module_preference`;
 CREATE TABLE `ps_module_preference` (
   `id_module_preference` int(11) NOT NULL,
   `id_employee` int(11) NOT NULL,
@@ -8757,6 +8602,7 @@ CREATE TABLE `ps_module_preference` (
 -- Table structure for table `ps_module_shop`
 --
 
+DROP TABLE IF EXISTS `ps_module_shop`;
 CREATE TABLE `ps_module_shop` (
   `id_module` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL,
@@ -8843,6 +8689,7 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 -- Table structure for table `ps_newsletter`
 --
 
+DROP TABLE IF EXISTS `ps_newsletter`;
 CREATE TABLE `ps_newsletter` (
   `id` int(6) NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL DEFAULT '1',
@@ -8860,6 +8707,7 @@ CREATE TABLE `ps_newsletter` (
 -- Table structure for table `ps_operating_system`
 --
 
+DROP TABLE IF EXISTS `ps_operating_system`;
 CREATE TABLE `ps_operating_system` (
   `id_operating_system` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) DEFAULT NULL
@@ -8884,6 +8732,7 @@ INSERT INTO `ps_operating_system` (`id_operating_system`, `name`) VALUES
 -- Table structure for table `ps_orders`
 --
 
+DROP TABLE IF EXISTS `ps_orders`;
 CREATE TABLE `ps_orders` (
   `id_order` int(10) UNSIGNED NOT NULL,
   `reference` varchar(9) DEFAULT NULL,
@@ -8952,6 +8801,7 @@ INSERT INTO `ps_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `i
 -- Table structure for table `ps_order_carrier`
 --
 
+DROP TABLE IF EXISTS `ps_order_carrier`;
 CREATE TABLE `ps_order_carrier` (
   `id_order_carrier` int(11) NOT NULL,
   `id_order` int(11) UNSIGNED NOT NULL,
@@ -8983,6 +8833,7 @@ INSERT INTO `ps_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `i
 -- Table structure for table `ps_order_cart_rule`
 --
 
+DROP TABLE IF EXISTS `ps_order_cart_rule`;
 CREATE TABLE `ps_order_cart_rule` (
   `id_order_cart_rule` int(10) UNSIGNED NOT NULL,
   `id_order` int(10) UNSIGNED NOT NULL,
@@ -9000,6 +8851,7 @@ CREATE TABLE `ps_order_cart_rule` (
 -- Table structure for table `ps_order_detail`
 --
 
+DROP TABLE IF EXISTS `ps_order_detail`;
 CREATE TABLE `ps_order_detail` (
   `id_order_detail` int(10) UNSIGNED NOT NULL,
   `id_order` int(10) UNSIGNED NOT NULL,
@@ -9077,6 +8929,7 @@ INSERT INTO `ps_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`
 -- Table structure for table `ps_order_detail_tax`
 --
 
+DROP TABLE IF EXISTS `ps_order_detail_tax`;
 CREATE TABLE `ps_order_detail_tax` (
   `id_order_detail` int(11) NOT NULL,
   `id_tax` int(11) NOT NULL,
@@ -9090,6 +8943,7 @@ CREATE TABLE `ps_order_detail_tax` (
 -- Table structure for table `ps_order_history`
 --
 
+DROP TABLE IF EXISTS `ps_order_history`;
 CREATE TABLE `ps_order_history` (
   `id_order_history` int(10) UNSIGNED NOT NULL,
   `id_employee` int(10) UNSIGNED NOT NULL,
@@ -9119,6 +8973,7 @@ INSERT INTO `ps_order_history` (`id_order_history`, `id_employee`, `id_order`, `
 -- Table structure for table `ps_order_invoice`
 --
 
+DROP TABLE IF EXISTS `ps_order_invoice`;
 CREATE TABLE `ps_order_invoice` (
   `id_order_invoice` int(11) UNSIGNED NOT NULL,
   `id_order` int(11) NOT NULL,
@@ -9156,6 +9011,7 @@ INSERT INTO `ps_order_invoice` (`id_order_invoice`, `id_order`, `number`, `deliv
 -- Table structure for table `ps_order_invoice_payment`
 --
 
+DROP TABLE IF EXISTS `ps_order_invoice_payment`;
 CREATE TABLE `ps_order_invoice_payment` (
   `id_order_invoice` int(11) UNSIGNED NOT NULL,
   `id_order_payment` int(11) UNSIGNED NOT NULL,
@@ -9175,6 +9031,7 @@ INSERT INTO `ps_order_invoice_payment` (`id_order_invoice`, `id_order_payment`, 
 -- Table structure for table `ps_order_invoice_tax`
 --
 
+DROP TABLE IF EXISTS `ps_order_invoice_tax`;
 CREATE TABLE `ps_order_invoice_tax` (
   `id_order_invoice` int(11) NOT NULL,
   `type` varchar(15) NOT NULL,
@@ -9188,6 +9045,7 @@ CREATE TABLE `ps_order_invoice_tax` (
 -- Table structure for table `ps_order_message`
 --
 
+DROP TABLE IF EXISTS `ps_order_message`;
 CREATE TABLE `ps_order_message` (
   `id_order_message` int(10) UNSIGNED NOT NULL,
   `date_add` datetime NOT NULL
@@ -9206,6 +9064,7 @@ INSERT INTO `ps_order_message` (`id_order_message`, `date_add`) VALUES
 -- Table structure for table `ps_order_message_lang`
 --
 
+DROP TABLE IF EXISTS `ps_order_message_lang`;
 CREATE TABLE `ps_order_message_lang` (
   `id_order_message` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -9226,6 +9085,7 @@ INSERT INTO `ps_order_message_lang` (`id_order_message`, `id_lang`, `name`, `mes
 -- Table structure for table `ps_order_payment`
 --
 
+DROP TABLE IF EXISTS `ps_order_payment`;
 CREATE TABLE `ps_order_payment` (
   `id_order_payment` int(11) NOT NULL,
   `order_reference` varchar(9) DEFAULT NULL,
@@ -9254,6 +9114,7 @@ INSERT INTO `ps_order_payment` (`id_order_payment`, `order_reference`, `id_curre
 -- Table structure for table `ps_order_return`
 --
 
+DROP TABLE IF EXISTS `ps_order_return`;
 CREATE TABLE `ps_order_return` (
   `id_order_return` int(10) UNSIGNED NOT NULL,
   `id_customer` int(10) UNSIGNED NOT NULL,
@@ -9270,6 +9131,7 @@ CREATE TABLE `ps_order_return` (
 -- Table structure for table `ps_order_return_detail`
 --
 
+DROP TABLE IF EXISTS `ps_order_return_detail`;
 CREATE TABLE `ps_order_return_detail` (
   `id_order_return` int(10) UNSIGNED NOT NULL,
   `id_order_detail` int(10) UNSIGNED NOT NULL,
@@ -9283,6 +9145,7 @@ CREATE TABLE `ps_order_return_detail` (
 -- Table structure for table `ps_order_return_state`
 --
 
+DROP TABLE IF EXISTS `ps_order_return_state`;
 CREATE TABLE `ps_order_return_state` (
   `id_order_return_state` int(10) UNSIGNED NOT NULL,
   `color` varchar(32) DEFAULT NULL
@@ -9305,6 +9168,7 @@ INSERT INTO `ps_order_return_state` (`id_order_return_state`, `color`) VALUES
 -- Table structure for table `ps_order_return_state_lang`
 --
 
+DROP TABLE IF EXISTS `ps_order_return_state_lang`;
 CREATE TABLE `ps_order_return_state_lang` (
   `id_order_return_state` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -9328,6 +9192,7 @@ INSERT INTO `ps_order_return_state_lang` (`id_order_return_state`, `id_lang`, `n
 -- Table structure for table `ps_order_slip`
 --
 
+DROP TABLE IF EXISTS `ps_order_slip`;
 CREATE TABLE `ps_order_slip` (
   `id_order_slip` int(10) UNSIGNED NOT NULL,
   `conversion_rate` decimal(13,6) NOT NULL DEFAULT '1.000000',
@@ -9352,6 +9217,7 @@ CREATE TABLE `ps_order_slip` (
 -- Table structure for table `ps_order_slip_detail`
 --
 
+DROP TABLE IF EXISTS `ps_order_slip_detail`;
 CREATE TABLE `ps_order_slip_detail` (
   `id_order_slip` int(10) UNSIGNED NOT NULL,
   `id_order_detail` int(10) UNSIGNED NOT NULL,
@@ -9370,6 +9236,7 @@ CREATE TABLE `ps_order_slip_detail` (
 -- Table structure for table `ps_order_slip_detail_tax`
 --
 
+DROP TABLE IF EXISTS `ps_order_slip_detail_tax`;
 CREATE TABLE `ps_order_slip_detail_tax` (
   `id_order_slip_detail` int(11) UNSIGNED NOT NULL,
   `id_tax` int(11) UNSIGNED NOT NULL,
@@ -9383,6 +9250,7 @@ CREATE TABLE `ps_order_slip_detail_tax` (
 -- Table structure for table `ps_order_state`
 --
 
+DROP TABLE IF EXISTS `ps_order_state`;
 CREATE TABLE `ps_order_state` (
   `id_order_state` int(10) UNSIGNED NOT NULL,
   `invoice` tinyint(1) UNSIGNED DEFAULT '0',
@@ -9432,6 +9300,7 @@ INSERT INTO `ps_order_state` (`id_order_state`, `invoice`, `send_email`, `module
 -- Table structure for table `ps_order_state_lang`
 --
 
+DROP TABLE IF EXISTS `ps_order_state_lang`;
 CREATE TABLE `ps_order_state_lang` (
   `id_order_state` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -9471,6 +9340,7 @@ INSERT INTO `ps_order_state_lang` (`id_order_state`, `id_lang`, `name`, `templat
 -- Table structure for table `ps_pack`
 --
 
+DROP TABLE IF EXISTS `ps_pack`;
 CREATE TABLE `ps_pack` (
   `id_product_pack` int(10) UNSIGNED NOT NULL,
   `id_product_item` int(10) UNSIGNED NOT NULL,
@@ -9484,6 +9354,7 @@ CREATE TABLE `ps_pack` (
 -- Table structure for table `ps_page`
 --
 
+DROP TABLE IF EXISTS `ps_page`;
 CREATE TABLE `ps_page` (
   `id_page` int(10) UNSIGNED NOT NULL,
   `id_page_type` int(10) UNSIGNED NOT NULL,
@@ -9505,6 +9376,7 @@ INSERT INTO `ps_page` (`id_page`, `id_page_type`, `id_object`) VALUES
 -- Table structure for table `ps_pagenotfound`
 --
 
+DROP TABLE IF EXISTS `ps_pagenotfound`;
 CREATE TABLE `ps_pagenotfound` (
   `id_pagenotfound` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL DEFAULT '1',
@@ -9520,6 +9392,7 @@ CREATE TABLE `ps_pagenotfound` (
 -- Table structure for table `ps_page_type`
 --
 
+DROP TABLE IF EXISTS `ps_page_type`;
 CREATE TABLE `ps_page_type` (
   `id_page_type` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL
@@ -9539,6 +9412,7 @@ INSERT INTO `ps_page_type` (`id_page_type`, `name`) VALUES
 -- Table structure for table `ps_page_viewed`
 --
 
+DROP TABLE IF EXISTS `ps_page_viewed`;
 CREATE TABLE `ps_page_viewed` (
   `id_page` int(10) UNSIGNED NOT NULL,
   `id_shop_group` int(10) UNSIGNED NOT NULL DEFAULT '1',
@@ -9553,6 +9427,7 @@ CREATE TABLE `ps_page_viewed` (
 -- Table structure for table `ps_product`
 --
 
+DROP TABLE IF EXISTS `ps_product`;
 CREATE TABLE `ps_product` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_supplier` int(10) UNSIGNED DEFAULT NULL,
@@ -9637,6 +9512,7 @@ INSERT INTO `ps_product` (`id_product`, `id_supplier`, `id_manufacturer`, `id_ca
 -- Table structure for table `ps_product_attachment`
 --
 
+DROP TABLE IF EXISTS `ps_product_attachment`;
 CREATE TABLE `ps_product_attachment` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_attachment` int(10) UNSIGNED NOT NULL
@@ -9648,6 +9524,7 @@ CREATE TABLE `ps_product_attachment` (
 -- Table structure for table `ps_product_attribute`
 --
 
+DROP TABLE IF EXISTS `ps_product_attribute`;
 CREATE TABLE `ps_product_attribute` (
   `id_product_attribute` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -9724,6 +9601,7 @@ INSERT INTO `ps_product_attribute` (`id_product_attribute`, `id_product`, `refer
 -- Table structure for table `ps_product_attribute_combination`
 --
 
+DROP TABLE IF EXISTS `ps_product_attribute_combination`;
 CREATE TABLE `ps_product_attribute_combination` (
   `id_attribute` int(10) UNSIGNED NOT NULL,
   `id_product_attribute` int(10) UNSIGNED NOT NULL
@@ -9831,6 +9709,7 @@ INSERT INTO `ps_product_attribute_combination` (`id_attribute`, `id_product_attr
 -- Table structure for table `ps_product_attribute_image`
 --
 
+DROP TABLE IF EXISTS `ps_product_attribute_image`;
 CREATE TABLE `ps_product_attribute_image` (
   `id_product_attribute` int(10) UNSIGNED NOT NULL,
   `id_image` int(10) UNSIGNED NOT NULL
@@ -9911,6 +9790,7 @@ INSERT INTO `ps_product_attribute_image` (`id_product_attribute`, `id_image`) VA
 -- Table structure for table `ps_product_attribute_shop`
 --
 
+DROP TABLE IF EXISTS `ps_product_attribute_shop`;
 CREATE TABLE `ps_product_attribute_shop` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_product_attribute` int(10) UNSIGNED NOT NULL,
@@ -9982,6 +9862,7 @@ INSERT INTO `ps_product_attribute_shop` (`id_product`, `id_product_attribute`, `
 -- Table structure for table `ps_product_carrier`
 --
 
+DROP TABLE IF EXISTS `ps_product_carrier`;
 CREATE TABLE `ps_product_carrier` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_carrier_reference` int(10) UNSIGNED NOT NULL,
@@ -9994,6 +9875,7 @@ CREATE TABLE `ps_product_carrier` (
 -- Table structure for table `ps_product_country_tax`
 --
 
+DROP TABLE IF EXISTS `ps_product_country_tax`;
 CREATE TABLE `ps_product_country_tax` (
   `id_product` int(11) NOT NULL,
   `id_country` int(11) NOT NULL,
@@ -10006,6 +9888,7 @@ CREATE TABLE `ps_product_country_tax` (
 -- Table structure for table `ps_product_download`
 --
 
+DROP TABLE IF EXISTS `ps_product_download`;
 CREATE TABLE `ps_product_download` (
   `id_product_download` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -10025,6 +9908,7 @@ CREATE TABLE `ps_product_download` (
 -- Table structure for table `ps_product_group_reduction_cache`
 --
 
+DROP TABLE IF EXISTS `ps_product_group_reduction_cache`;
 CREATE TABLE `ps_product_group_reduction_cache` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_group` int(10) UNSIGNED NOT NULL,
@@ -10037,6 +9921,7 @@ CREATE TABLE `ps_product_group_reduction_cache` (
 -- Table structure for table `ps_product_lang`
 --
 
+DROP TABLE IF EXISTS `ps_product_lang`;
 CREATE TABLE `ps_product_lang` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -10085,6 +9970,7 @@ INSERT INTO `ps_product_lang` (`id_product`, `id_shop`, `id_lang`, `description`
 -- Table structure for table `ps_product_sale`
 --
 
+DROP TABLE IF EXISTS `ps_product_sale`;
 CREATE TABLE `ps_product_sale` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `quantity` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -10111,6 +9997,7 @@ INSERT INTO `ps_product_sale` (`id_product`, `quantity`, `sale_nbr`, `date_upd`)
 -- Table structure for table `ps_product_shop`
 --
 
+DROP TABLE IF EXISTS `ps_product_shop`;
 CREATE TABLE `ps_product_shop` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL,
@@ -10178,6 +10065,7 @@ INSERT INTO `ps_product_shop` (`id_product`, `id_shop`, `id_category_default`, `
 -- Table structure for table `ps_product_supplier`
 --
 
+DROP TABLE IF EXISTS `ps_product_supplier`;
 CREATE TABLE `ps_product_supplier` (
   `id_product_supplier` int(11) UNSIGNED NOT NULL,
   `id_product` int(11) UNSIGNED NOT NULL,
@@ -10213,6 +10101,7 @@ INSERT INTO `ps_product_supplier` (`id_product_supplier`, `id_product`, `id_prod
 -- Table structure for table `ps_product_tag`
 --
 
+DROP TABLE IF EXISTS `ps_product_tag`;
 CREATE TABLE `ps_product_tag` (
   `id_product` int(10) UNSIGNED NOT NULL,
   `id_tag` int(10) UNSIGNED NOT NULL,
@@ -10225,6 +10114,7 @@ CREATE TABLE `ps_product_tag` (
 -- Table structure for table `ps_profile`
 --
 
+DROP TABLE IF EXISTS `ps_profile`;
 CREATE TABLE `ps_profile` (
   `id_profile` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -10245,6 +10135,7 @@ INSERT INTO `ps_profile` (`id_profile`) VALUES
 -- Table structure for table `ps_profile_lang`
 --
 
+DROP TABLE IF EXISTS `ps_profile_lang`;
 CREATE TABLE `ps_profile_lang` (
   `id_lang` int(10) UNSIGNED NOT NULL,
   `id_profile` int(10) UNSIGNED NOT NULL,
@@ -10267,6 +10158,7 @@ INSERT INTO `ps_profile_lang` (`id_lang`, `id_profile`, `name`) VALUES
 -- Table structure for table `ps_pscheckout_order_matrice`
 --
 
+DROP TABLE IF EXISTS `ps_pscheckout_order_matrice`;
 CREATE TABLE `ps_pscheckout_order_matrice` (
   `id_order_matrice` int(10) UNSIGNED NOT NULL,
   `id_order_prestashop` int(10) UNSIGNED NOT NULL,
@@ -10279,6 +10171,7 @@ CREATE TABLE `ps_pscheckout_order_matrice` (
 -- Table structure for table `ps_quick_access`
 --
 
+DROP TABLE IF EXISTS `ps_quick_access`;
 CREATE TABLE `ps_quick_access` (
   `id_quick_access` int(10) UNSIGNED NOT NULL,
   `new_window` tinyint(1) NOT NULL DEFAULT '0',
@@ -10300,6 +10193,7 @@ INSERT INTO `ps_quick_access` (`id_quick_access`, `new_window`, `link`) VALUES
 -- Table structure for table `ps_quick_access_lang`
 --
 
+DROP TABLE IF EXISTS `ps_quick_access_lang`;
 CREATE TABLE `ps_quick_access_lang` (
   `id_quick_access` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -10321,6 +10215,7 @@ INSERT INTO `ps_quick_access_lang` (`id_quick_access`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_range_price`
 --
 
+DROP TABLE IF EXISTS `ps_range_price`;
 CREATE TABLE `ps_range_price` (
   `id_range_price` int(10) UNSIGNED NOT NULL,
   `id_carrier` int(10) UNSIGNED NOT NULL,
@@ -10341,6 +10236,7 @@ INSERT INTO `ps_range_price` (`id_range_price`, `id_carrier`, `delimiter1`, `del
 -- Table structure for table `ps_range_weight`
 --
 
+DROP TABLE IF EXISTS `ps_range_weight`;
 CREATE TABLE `ps_range_weight` (
   `id_range_weight` int(10) UNSIGNED NOT NULL,
   `id_carrier` int(10) UNSIGNED NOT NULL,
@@ -10375,6 +10271,7 @@ INSERT INTO `ps_range_weight` (`id_range_weight`, `id_carrier`, `delimiter1`, `d
 -- Table structure for table `ps_referrer`
 --
 
+DROP TABLE IF EXISTS `ps_referrer`;
 CREATE TABLE `ps_referrer` (
   `id_referrer` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -10399,6 +10296,7 @@ CREATE TABLE `ps_referrer` (
 -- Table structure for table `ps_referrer_cache`
 --
 
+DROP TABLE IF EXISTS `ps_referrer_cache`;
 CREATE TABLE `ps_referrer_cache` (
   `id_connections_source` int(11) UNSIGNED NOT NULL,
   `id_referrer` int(11) UNSIGNED NOT NULL
@@ -10410,6 +10308,7 @@ CREATE TABLE `ps_referrer_cache` (
 -- Table structure for table `ps_referrer_shop`
 --
 
+DROP TABLE IF EXISTS `ps_referrer_shop`;
 CREATE TABLE `ps_referrer_shop` (
   `id_referrer` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL DEFAULT '1',
@@ -10429,6 +10328,7 @@ CREATE TABLE `ps_referrer_shop` (
 -- Table structure for table `ps_request_sql`
 --
 
+DROP TABLE IF EXISTS `ps_request_sql`;
 CREATE TABLE `ps_request_sql` (
   `id_request_sql` int(11) NOT NULL,
   `name` varchar(200) NOT NULL,
@@ -10441,6 +10341,7 @@ CREATE TABLE `ps_request_sql` (
 -- Table structure for table `ps_required_field`
 --
 
+DROP TABLE IF EXISTS `ps_required_field`;
 CREATE TABLE `ps_required_field` (
   `id_required_field` int(11) NOT NULL,
   `object_name` varchar(32) NOT NULL,
@@ -10453,6 +10354,7 @@ CREATE TABLE `ps_required_field` (
 -- Table structure for table `ps_risk`
 --
 
+DROP TABLE IF EXISTS `ps_risk`;
 CREATE TABLE `ps_risk` (
   `id_risk` int(11) UNSIGNED NOT NULL,
   `percent` tinyint(3) NOT NULL,
@@ -10475,6 +10377,7 @@ INSERT INTO `ps_risk` (`id_risk`, `percent`, `color`) VALUES
 -- Table structure for table `ps_risk_lang`
 --
 
+DROP TABLE IF EXISTS `ps_risk_lang`;
 CREATE TABLE `ps_risk_lang` (
   `id_risk` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -10497,6 +10400,7 @@ INSERT INTO `ps_risk_lang` (`id_risk`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_scene`
 --
 
+DROP TABLE IF EXISTS `ps_scene`;
 CREATE TABLE `ps_scene` (
   `id_scene` int(10) UNSIGNED NOT NULL,
   `active` tinyint(1) NOT NULL DEFAULT '1'
@@ -10508,6 +10412,7 @@ CREATE TABLE `ps_scene` (
 -- Table structure for table `ps_scene_category`
 --
 
+DROP TABLE IF EXISTS `ps_scene_category`;
 CREATE TABLE `ps_scene_category` (
   `id_scene` int(10) UNSIGNED NOT NULL,
   `id_category` int(10) UNSIGNED NOT NULL
@@ -10519,6 +10424,7 @@ CREATE TABLE `ps_scene_category` (
 -- Table structure for table `ps_scene_lang`
 --
 
+DROP TABLE IF EXISTS `ps_scene_lang`;
 CREATE TABLE `ps_scene_lang` (
   `id_scene` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -10531,6 +10437,7 @@ CREATE TABLE `ps_scene_lang` (
 -- Table structure for table `ps_scene_products`
 --
 
+DROP TABLE IF EXISTS `ps_scene_products`;
 CREATE TABLE `ps_scene_products` (
   `id_scene` int(10) UNSIGNED NOT NULL,
   `id_product` int(10) UNSIGNED NOT NULL,
@@ -10546,6 +10453,7 @@ CREATE TABLE `ps_scene_products` (
 -- Table structure for table `ps_scene_shop`
 --
 
+DROP TABLE IF EXISTS `ps_scene_shop`;
 CREATE TABLE `ps_scene_shop` (
   `id_scene` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -10557,6 +10465,7 @@ CREATE TABLE `ps_scene_shop` (
 -- Table structure for table `ps_search_engine`
 --
 
+DROP TABLE IF EXISTS `ps_search_engine`;
 CREATE TABLE `ps_search_engine` (
   `id_search_engine` int(10) UNSIGNED NOT NULL,
   `server` varchar(64) NOT NULL,
@@ -10613,6 +10522,7 @@ INSERT INTO `ps_search_engine` (`id_search_engine`, `server`, `getvar`) VALUES
 -- Table structure for table `ps_search_index`
 --
 
+DROP TABLE IF EXISTS `ps_search_index`;
 CREATE TABLE `ps_search_index` (
   `id_product` int(11) UNSIGNED NOT NULL,
   `id_word` int(11) UNSIGNED NOT NULL,
@@ -11254,6 +11164,7 @@ INSERT INTO `ps_search_index` (`id_product`, `id_word`, `weight`) VALUES
 -- Table structure for table `ps_search_word`
 --
 
+DROP TABLE IF EXISTS `ps_search_word`;
 CREATE TABLE `ps_search_word` (
   `id_word` int(10) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL DEFAULT '1',
@@ -11475,6 +11386,7 @@ INSERT INTO `ps_search_word` (`id_word`, `id_shop`, `id_lang`, `word`) VALUES
 -- Table structure for table `ps_sekeyword`
 --
 
+DROP TABLE IF EXISTS `ps_sekeyword`;
 CREATE TABLE `ps_sekeyword` (
   `id_sekeyword` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL DEFAULT '1',
@@ -11489,6 +11401,7 @@ CREATE TABLE `ps_sekeyword` (
 -- Table structure for table `ps_shop`
 --
 
+DROP TABLE IF EXISTS `ps_shop`;
 CREATE TABLE `ps_shop` (
   `id_shop` int(11) UNSIGNED NOT NULL,
   `id_shop_group` int(11) UNSIGNED NOT NULL,
@@ -11512,6 +11425,7 @@ INSERT INTO `ps_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `id_th
 -- Table structure for table `ps_shop_group`
 --
 
+DROP TABLE IF EXISTS `ps_shop_group`;
 CREATE TABLE `ps_shop_group` (
   `id_shop_group` int(11) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -11535,6 +11449,7 @@ INSERT INTO `ps_shop_group` (`id_shop_group`, `name`, `share_customer`, `share_o
 -- Table structure for table `ps_shop_url`
 --
 
+DROP TABLE IF EXISTS `ps_shop_url`;
 CREATE TABLE `ps_shop_url` (
   `id_shop_url` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL,
@@ -11559,6 +11474,7 @@ INSERT INTO `ps_shop_url` (`id_shop_url`, `id_shop`, `domain`, `domain_ssl`, `ph
 -- Table structure for table `ps_smarty_cache`
 --
 
+DROP TABLE IF EXISTS `ps_smarty_cache`;
 CREATE TABLE `ps_smarty_cache` (
   `id_smarty_cache` char(40) NOT NULL,
   `name` char(40) NOT NULL,
@@ -11573,6 +11489,7 @@ CREATE TABLE `ps_smarty_cache` (
 -- Table structure for table `ps_smarty_last_flush`
 --
 
+DROP TABLE IF EXISTS `ps_smarty_last_flush`;
 CREATE TABLE `ps_smarty_last_flush` (
   `type` enum('compile','template') NOT NULL,
   `last_flush` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
@@ -11592,6 +11509,7 @@ INSERT INTO `ps_smarty_last_flush` (`type`, `last_flush`) VALUES
 -- Table structure for table `ps_smarty_lazy_cache`
 --
 
+DROP TABLE IF EXISTS `ps_smarty_lazy_cache`;
 CREATE TABLE `ps_smarty_lazy_cache` (
   `template_hash` varchar(32) NOT NULL DEFAULT '',
   `cache_id` varchar(255) NOT NULL DEFAULT '',
@@ -11641,6 +11559,7 @@ INSERT INTO `ps_smarty_lazy_cache` (`template_hash`, `cache_id`, `compile_id`, `
 -- Table structure for table `ps_specific_price`
 --
 
+DROP TABLE IF EXISTS `ps_specific_price`;
 CREATE TABLE `ps_specific_price` (
   `id_specific_price` int(10) UNSIGNED NOT NULL,
   `id_specific_price_rule` int(11) UNSIGNED NOT NULL,
@@ -11676,6 +11595,7 @@ INSERT INTO `ps_specific_price` (`id_specific_price`, `id_specific_price_rule`, 
 -- Table structure for table `ps_specific_price_priority`
 --
 
+DROP TABLE IF EXISTS `ps_specific_price_priority`;
 CREATE TABLE `ps_specific_price_priority` (
   `id_specific_price_priority` int(11) NOT NULL,
   `id_product` int(11) NOT NULL,
@@ -11710,6 +11630,7 @@ INSERT INTO `ps_specific_price_priority` (`id_specific_price_priority`, `id_prod
 -- Table structure for table `ps_specific_price_rule`
 --
 
+DROP TABLE IF EXISTS `ps_specific_price_rule`;
 CREATE TABLE `ps_specific_price_rule` (
   `id_specific_price_rule` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -11732,6 +11653,7 @@ CREATE TABLE `ps_specific_price_rule` (
 -- Table structure for table `ps_specific_price_rule_condition`
 --
 
+DROP TABLE IF EXISTS `ps_specific_price_rule_condition`;
 CREATE TABLE `ps_specific_price_rule_condition` (
   `id_specific_price_rule_condition` int(11) UNSIGNED NOT NULL,
   `id_specific_price_rule_condition_group` int(11) UNSIGNED NOT NULL,
@@ -11745,6 +11667,7 @@ CREATE TABLE `ps_specific_price_rule_condition` (
 -- Table structure for table `ps_specific_price_rule_condition_group`
 --
 
+DROP TABLE IF EXISTS `ps_specific_price_rule_condition_group`;
 CREATE TABLE `ps_specific_price_rule_condition_group` (
   `id_specific_price_rule_condition_group` int(11) UNSIGNED NOT NULL,
   `id_specific_price_rule` int(11) UNSIGNED NOT NULL
@@ -11756,6 +11679,7 @@ CREATE TABLE `ps_specific_price_rule_condition_group` (
 -- Table structure for table `ps_state`
 --
 
+DROP TABLE IF EXISTS `ps_state`;
 CREATE TABLE `ps_state` (
   `id_state` int(10) UNSIGNED NOT NULL,
   `id_country` int(11) UNSIGNED NOT NULL,
@@ -12090,6 +12014,7 @@ INSERT INTO `ps_state` (`id_state`, `id_country`, `id_zone`, `name`, `iso_code`,
 -- Table structure for table `ps_statssearch`
 --
 
+DROP TABLE IF EXISTS `ps_statssearch`;
 CREATE TABLE `ps_statssearch` (
   `id_statssearch` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL DEFAULT '1',
@@ -12118,6 +12043,7 @@ INSERT INTO `ps_statssearch` (`id_statssearch`, `id_shop`, `id_shop_group`, `key
 -- Table structure for table `ps_stock`
 --
 
+DROP TABLE IF EXISTS `ps_stock`;
 CREATE TABLE `ps_stock` (
   `id_stock` int(11) UNSIGNED NOT NULL,
   `id_warehouse` int(11) UNSIGNED NOT NULL,
@@ -12137,6 +12063,7 @@ CREATE TABLE `ps_stock` (
 -- Table structure for table `ps_stock_available`
 --
 
+DROP TABLE IF EXISTS `ps_stock_available`;
 CREATE TABLE `ps_stock_available` (
   `id_stock_available` int(11) UNSIGNED NOT NULL,
   `id_product` int(11) UNSIGNED NOT NULL,
@@ -12226,6 +12153,7 @@ INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_produc
 -- Table structure for table `ps_stock_mvt`
 --
 
+DROP TABLE IF EXISTS `ps_stock_mvt`;
 CREATE TABLE `ps_stock_mvt` (
   `id_stock_mvt` bigint(20) UNSIGNED NOT NULL,
   `id_stock` int(11) UNSIGNED NOT NULL,
@@ -12250,6 +12178,7 @@ CREATE TABLE `ps_stock_mvt` (
 -- Table structure for table `ps_stock_mvt_reason`
 --
 
+DROP TABLE IF EXISTS `ps_stock_mvt_reason`;
 CREATE TABLE `ps_stock_mvt_reason` (
   `id_stock_mvt_reason` int(11) UNSIGNED NOT NULL,
   `sign` tinyint(1) NOT NULL DEFAULT '1',
@@ -12278,6 +12207,7 @@ INSERT INTO `ps_stock_mvt_reason` (`id_stock_mvt_reason`, `sign`, `date_add`, `d
 -- Table structure for table `ps_stock_mvt_reason_lang`
 --
 
+DROP TABLE IF EXISTS `ps_stock_mvt_reason_lang`;
 CREATE TABLE `ps_stock_mvt_reason_lang` (
   `id_stock_mvt_reason` int(11) UNSIGNED NOT NULL,
   `id_lang` int(11) UNSIGNED NOT NULL,
@@ -12304,6 +12234,7 @@ INSERT INTO `ps_stock_mvt_reason_lang` (`id_stock_mvt_reason`, `id_lang`, `name`
 -- Table structure for table `ps_store`
 --
 
+DROP TABLE IF EXISTS `ps_store`;
 CREATE TABLE `ps_store` (
   `id_store` int(10) UNSIGNED NOT NULL,
   `id_country` int(10) UNSIGNED NOT NULL,
@@ -12342,6 +12273,7 @@ INSERT INTO `ps_store` (`id_store`, `id_country`, `id_state`, `name`, `address1`
 -- Table structure for table `ps_store_shop`
 --
 
+DROP TABLE IF EXISTS `ps_store_shop`;
 CREATE TABLE `ps_store_shop` (
   `id_store` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -12364,6 +12296,7 @@ INSERT INTO `ps_store_shop` (`id_store`, `id_shop`) VALUES
 -- Table structure for table `ps_supplier`
 --
 
+DROP TABLE IF EXISTS `ps_supplier`;
 CREATE TABLE `ps_supplier` (
   `id_supplier` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -12385,6 +12318,7 @@ INSERT INTO `ps_supplier` (`id_supplier`, `name`, `date_add`, `date_upd`, `activ
 -- Table structure for table `ps_supplier_lang`
 --
 
+DROP TABLE IF EXISTS `ps_supplier_lang`;
 CREATE TABLE `ps_supplier_lang` (
   `id_supplier` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -12407,6 +12341,7 @@ INSERT INTO `ps_supplier_lang` (`id_supplier`, `id_lang`, `description`, `meta_t
 -- Table structure for table `ps_supplier_shop`
 --
 
+DROP TABLE IF EXISTS `ps_supplier_shop`;
 CREATE TABLE `ps_supplier_shop` (
   `id_supplier` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -12425,6 +12360,7 @@ INSERT INTO `ps_supplier_shop` (`id_supplier`, `id_shop`) VALUES
 -- Table structure for table `ps_supply_order`
 --
 
+DROP TABLE IF EXISTS `ps_supply_order`;
 CREATE TABLE `ps_supply_order` (
   `id_supply_order` int(11) UNSIGNED NOT NULL,
   `id_supplier` int(11) UNSIGNED NOT NULL,
@@ -12453,6 +12389,7 @@ CREATE TABLE `ps_supply_order` (
 -- Table structure for table `ps_supply_order_detail`
 --
 
+DROP TABLE IF EXISTS `ps_supply_order_detail`;
 CREATE TABLE `ps_supply_order_detail` (
   `id_supply_order_detail` int(11) UNSIGNED NOT NULL,
   `id_supply_order` int(11) UNSIGNED NOT NULL,
@@ -12485,6 +12422,7 @@ CREATE TABLE `ps_supply_order_detail` (
 -- Table structure for table `ps_supply_order_history`
 --
 
+DROP TABLE IF EXISTS `ps_supply_order_history`;
 CREATE TABLE `ps_supply_order_history` (
   `id_supply_order_history` int(11) UNSIGNED NOT NULL,
   `id_supply_order` int(11) UNSIGNED NOT NULL,
@@ -12501,6 +12439,7 @@ CREATE TABLE `ps_supply_order_history` (
 -- Table structure for table `ps_supply_order_receipt_history`
 --
 
+DROP TABLE IF EXISTS `ps_supply_order_receipt_history`;
 CREATE TABLE `ps_supply_order_receipt_history` (
   `id_supply_order_receipt_history` int(11) UNSIGNED NOT NULL,
   `id_supply_order_detail` int(11) UNSIGNED NOT NULL,
@@ -12518,6 +12457,7 @@ CREATE TABLE `ps_supply_order_receipt_history` (
 -- Table structure for table `ps_supply_order_state`
 --
 
+DROP TABLE IF EXISTS `ps_supply_order_state`;
 CREATE TABLE `ps_supply_order_state` (
   `id_supply_order_state` int(11) UNSIGNED NOT NULL,
   `delivery_note` tinyint(1) NOT NULL DEFAULT '0',
@@ -12546,6 +12486,7 @@ INSERT INTO `ps_supply_order_state` (`id_supply_order_state`, `delivery_note`, `
 -- Table structure for table `ps_supply_order_state_lang`
 --
 
+DROP TABLE IF EXISTS `ps_supply_order_state_lang`;
 CREATE TABLE `ps_supply_order_state_lang` (
   `id_supply_order_state` int(11) UNSIGNED NOT NULL,
   `id_lang` int(11) UNSIGNED NOT NULL,
@@ -12570,6 +12511,7 @@ INSERT INTO `ps_supply_order_state_lang` (`id_supply_order_state`, `id_lang`, `n
 -- Table structure for table `ps_tab`
 --
 
+DROP TABLE IF EXISTS `ps_tab`;
 CREATE TABLE `ps_tab` (
   `id_tab` int(10) UNSIGNED NOT NULL,
   `id_parent` int(11) NOT NULL,
@@ -12699,6 +12641,7 @@ INSERT INTO `ps_tab` (`id_tab`, `id_parent`, `class_name`, `module`, `position`,
 -- Table structure for table `ps_tab_advice`
 --
 
+DROP TABLE IF EXISTS `ps_tab_advice`;
 CREATE TABLE `ps_tab_advice` (
   `id_tab` int(11) NOT NULL,
   `id_advice` int(11) NOT NULL
@@ -12776,6 +12719,7 @@ INSERT INTO `ps_tab_advice` (`id_tab`, `id_advice`) VALUES
 -- Table structure for table `ps_tab_lang`
 --
 
+DROP TABLE IF EXISTS `ps_tab_lang`;
 CREATE TABLE `ps_tab_lang` (
   `id_tab` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -12901,6 +12845,7 @@ INSERT INTO `ps_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
 -- Table structure for table `ps_tab_module_preference`
 --
 
+DROP TABLE IF EXISTS `ps_tab_module_preference`;
 CREATE TABLE `ps_tab_module_preference` (
   `id_tab_module_preference` int(11) NOT NULL,
   `id_employee` int(11) NOT NULL,
@@ -12914,6 +12859,7 @@ CREATE TABLE `ps_tab_module_preference` (
 -- Table structure for table `ps_tag`
 --
 
+DROP TABLE IF EXISTS `ps_tag`;
 CREATE TABLE `ps_tag` (
   `id_tag` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -12926,6 +12872,7 @@ CREATE TABLE `ps_tag` (
 -- Table structure for table `ps_tag_count`
 --
 
+DROP TABLE IF EXISTS `ps_tag_count`;
 CREATE TABLE `ps_tag_count` (
   `id_group` int(10) UNSIGNED NOT NULL DEFAULT '0',
   `id_tag` int(10) UNSIGNED NOT NULL DEFAULT '0',
@@ -12940,6 +12887,7 @@ CREATE TABLE `ps_tag_count` (
 -- Table structure for table `ps_tax`
 --
 
+DROP TABLE IF EXISTS `ps_tax`;
 CREATE TABLE `ps_tax` (
   `id_tax` int(10) UNSIGNED NOT NULL,
   `rate` decimal(10,3) NOT NULL,
@@ -12953,6 +12901,7 @@ CREATE TABLE `ps_tax` (
 -- Table structure for table `ps_tax_lang`
 --
 
+DROP TABLE IF EXISTS `ps_tax_lang`;
 CREATE TABLE `ps_tax_lang` (
   `id_tax` int(10) UNSIGNED NOT NULL,
   `id_lang` int(10) UNSIGNED NOT NULL,
@@ -12965,6 +12914,7 @@ CREATE TABLE `ps_tax_lang` (
 -- Table structure for table `ps_tax_rule`
 --
 
+DROP TABLE IF EXISTS `ps_tax_rule`;
 CREATE TABLE `ps_tax_rule` (
   `id_tax_rule` int(11) NOT NULL,
   `id_tax_rules_group` int(11) NOT NULL,
@@ -12983,6 +12933,7 @@ CREATE TABLE `ps_tax_rule` (
 -- Table structure for table `ps_tax_rules_group`
 --
 
+DROP TABLE IF EXISTS `ps_tax_rules_group`;
 CREATE TABLE `ps_tax_rules_group` (
   `id_tax_rules_group` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
@@ -12998,6 +12949,7 @@ CREATE TABLE `ps_tax_rules_group` (
 -- Table structure for table `ps_tax_rules_group_shop`
 --
 
+DROP TABLE IF EXISTS `ps_tax_rules_group_shop`;
 CREATE TABLE `ps_tax_rules_group_shop` (
   `id_tax_rules_group` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -13009,6 +12961,7 @@ CREATE TABLE `ps_tax_rules_group_shop` (
 -- Table structure for table `ps_theme`
 --
 
+DROP TABLE IF EXISTS `ps_theme`;
 CREATE TABLE `ps_theme` (
   `id_theme` int(11) NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -13032,6 +12985,7 @@ INSERT INTO `ps_theme` (`id_theme`, `name`, `directory`, `responsive`, `default_
 -- Table structure for table `ps_themeconfigurator`
 --
 
+DROP TABLE IF EXISTS `ps_themeconfigurator`;
 CREATE TABLE `ps_themeconfigurator` (
   `id_item` int(10) UNSIGNED NOT NULL,
   `id_shop` int(10) UNSIGNED NOT NULL,
@@ -13068,6 +13022,7 @@ INSERT INTO `ps_themeconfigurator` (`id_item`, `id_shop`, `id_lang`, `item_order
 -- Table structure for table `ps_theme_meta`
 --
 
+DROP TABLE IF EXISTS `ps_theme_meta`;
 CREATE TABLE `ps_theme_meta` (
   `id_theme_meta` int(11) NOT NULL,
   `id_theme` int(11) NOT NULL,
@@ -13123,6 +13078,7 @@ INSERT INTO `ps_theme_meta` (`id_theme_meta`, `id_theme`, `id_meta`, `left_colum
 -- Table structure for table `ps_theme_specific`
 --
 
+DROP TABLE IF EXISTS `ps_theme_specific`;
 CREATE TABLE `ps_theme_specific` (
   `id_theme` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL,
@@ -13136,6 +13092,7 @@ CREATE TABLE `ps_theme_specific` (
 -- Table structure for table `ps_timezone`
 --
 
+DROP TABLE IF EXISTS `ps_timezone`;
 CREATE TABLE `ps_timezone` (
   `id_timezone` int(10) UNSIGNED NOT NULL,
   `name` varchar(32) NOT NULL
@@ -13713,6 +13670,7 @@ INSERT INTO `ps_timezone` (`id_timezone`, `name`) VALUES
 -- Table structure for table `ps_warehouse`
 --
 
+DROP TABLE IF EXISTS `ps_warehouse`;
 CREATE TABLE `ps_warehouse` (
   `id_warehouse` int(11) UNSIGNED NOT NULL,
   `id_currency` int(11) UNSIGNED NOT NULL,
@@ -13730,6 +13688,7 @@ CREATE TABLE `ps_warehouse` (
 -- Table structure for table `ps_warehouse_carrier`
 --
 
+DROP TABLE IF EXISTS `ps_warehouse_carrier`;
 CREATE TABLE `ps_warehouse_carrier` (
   `id_carrier` int(11) UNSIGNED NOT NULL,
   `id_warehouse` int(11) UNSIGNED NOT NULL
@@ -13741,6 +13700,7 @@ CREATE TABLE `ps_warehouse_carrier` (
 -- Table structure for table `ps_warehouse_product_location`
 --
 
+DROP TABLE IF EXISTS `ps_warehouse_product_location`;
 CREATE TABLE `ps_warehouse_product_location` (
   `id_warehouse_product_location` int(11) UNSIGNED NOT NULL,
   `id_product` int(11) UNSIGNED NOT NULL,
@@ -13755,6 +13715,7 @@ CREATE TABLE `ps_warehouse_product_location` (
 -- Table structure for table `ps_warehouse_shop`
 --
 
+DROP TABLE IF EXISTS `ps_warehouse_shop`;
 CREATE TABLE `ps_warehouse_shop` (
   `id_shop` int(11) UNSIGNED NOT NULL,
   `id_warehouse` int(11) UNSIGNED NOT NULL
@@ -13766,6 +13727,7 @@ CREATE TABLE `ps_warehouse_shop` (
 -- Table structure for table `ps_webservice_account`
 --
 
+DROP TABLE IF EXISTS `ps_webservice_account`;
 CREATE TABLE `ps_webservice_account` (
   `id_webservice_account` int(11) NOT NULL,
   `key` varchar(32) NOT NULL,
@@ -13782,6 +13744,7 @@ CREATE TABLE `ps_webservice_account` (
 -- Table structure for table `ps_webservice_account_shop`
 --
 
+DROP TABLE IF EXISTS `ps_webservice_account_shop`;
 CREATE TABLE `ps_webservice_account_shop` (
   `id_webservice_account` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -13793,6 +13756,7 @@ CREATE TABLE `ps_webservice_account_shop` (
 -- Table structure for table `ps_webservice_permission`
 --
 
+DROP TABLE IF EXISTS `ps_webservice_permission`;
 CREATE TABLE `ps_webservice_permission` (
   `id_webservice_permission` int(11) NOT NULL,
   `resource` varchar(50) NOT NULL,
@@ -13806,6 +13770,7 @@ CREATE TABLE `ps_webservice_permission` (
 -- Table structure for table `ps_web_browser`
 --
 
+DROP TABLE IF EXISTS `ps_web_browser`;
 CREATE TABLE `ps_web_browser` (
   `id_web_browser` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) DEFAULT NULL
@@ -13834,6 +13799,7 @@ INSERT INTO `ps_web_browser` (`id_web_browser`, `name`) VALUES
 -- Table structure for table `ps_zone`
 --
 
+DROP TABLE IF EXISTS `ps_zone`;
 CREATE TABLE `ps_zone` (
   `id_zone` int(10) UNSIGNED NOT NULL,
   `name` varchar(64) NOT NULL,
@@ -13860,6 +13826,7 @@ INSERT INTO `ps_zone` (`id_zone`, `name`, `active`) VALUES
 -- Table structure for table `ps_zone_shop`
 --
 
+DROP TABLE IF EXISTS `ps_zone_shop`;
 CREATE TABLE `ps_zone_shop` (
   `id_zone` int(11) UNSIGNED NOT NULL,
   `id_shop` int(11) UNSIGNED NOT NULL
@@ -14334,16 +14301,6 @@ ALTER TABLE `ps_connections_page`
   ADD PRIMARY KEY (`id_connections`,`id_page`,`time_start`);
 
 --
--- Indexes for table `ps_connections_source`
---
-ALTER TABLE `ps_connections_source`
-  ADD PRIMARY KEY (`id_connections_source`),
-  ADD KEY `connections` (`id_connections`),
-  ADD KEY `orderby` (`date_add`),
-  ADD KEY `http_referer` (`http_referer`),
-  ADD KEY `request_uri` (`request_uri`);
-
---
 -- Indexes for table `ps_contact`
 --
 ALTER TABLE `ps_contact`
@@ -14484,22 +14441,6 @@ ALTER TABLE `ps_delivery`
   ADD KEY `id_carrier` (`id_carrier`,`id_zone`),
   ADD KEY `id_range_price` (`id_range_price`),
   ADD KEY `id_range_weight` (`id_range_weight`);
-
---
--- Indexes for table `ps_employee`
---
-ALTER TABLE `ps_employee`
-  ADD PRIMARY KEY (`id_employee`),
-  ADD KEY `employee_login` (`email`,`passwd`),
-  ADD KEY `id_employee_passwd` (`id_employee`,`passwd`),
-  ADD KEY `id_profile` (`id_profile`);
-
---
--- Indexes for table `ps_employee_shop`
---
-ALTER TABLE `ps_employee_shop`
-  ADD PRIMARY KEY (`id_employee`,`id_shop`),
-  ADD KEY `id_shop` (`id_shop`);
 
 --
 -- Indexes for table `ps_feature`
@@ -15958,12 +15899,6 @@ ALTER TABLE `ps_connections`
   MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `ps_connections_source`
---
-ALTER TABLE `ps_connections_source`
-  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
-
---
 -- AUTO_INCREMENT for table `ps_contact`
 --
 ALTER TABLE `ps_contact`
@@ -16023,11 +15958,6 @@ ALTER TABLE `ps_date_range`
 ALTER TABLE `ps_delivery`
   MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=365;
 
---
--- AUTO_INCREMENT for table `ps_employee`
---
-ALTER TABLE `ps_employee`
-  MODIFY `id_employee` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
