@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Oct 01, 2020 at 04:31 PM
+-- Generation Time: Oct 06, 2020 at 11:37 AM
 -- Server version: 5.7.31
 -- PHP Version: 7.4.9
 
@@ -125,6 +125,10 @@ INSERT INTO `ps_access` (`id_profile`, `id_tab`, `view`, `add`, `edit`, `delete`
 (1, 106, 1, 1, 1, 1),
 (1, 107, 1, 1, 1, 1),
 (1, 108, 1, 1, 1, 1),
+(1, 109, 1, 1, 1, 1),
+(1, 110, 1, 1, 1, 1),
+(1, 111, 1, 1, 1, 1),
+(1, 112, 1, 1, 1, 1),
 (2, 0, 1, 1, 1, 1),
 (2, 1, 0, 0, 0, 0),
 (2, 2, 0, 0, 0, 0),
@@ -233,6 +237,10 @@ INSERT INTO `ps_access` (`id_profile`, `id_tab`, `view`, `add`, `edit`, `delete`
 (2, 106, 0, 0, 0, 0),
 (2, 107, 0, 0, 0, 0),
 (2, 108, 0, 0, 0, 0),
+(2, 109, 0, 0, 0, 0),
+(2, 110, 0, 0, 0, 0),
+(2, 111, 0, 0, 0, 0),
+(2, 112, 0, 0, 0, 0),
 (3, 0, 1, 1, 1, 1),
 (3, 1, 0, 0, 0, 0),
 (3, 2, 0, 0, 0, 0),
@@ -341,6 +349,10 @@ INSERT INTO `ps_access` (`id_profile`, `id_tab`, `view`, `add`, `edit`, `delete`
 (3, 106, 0, 0, 0, 0),
 (3, 107, 0, 0, 0, 0),
 (3, 108, 0, 0, 0, 0),
+(3, 109, 0, 0, 0, 0),
+(3, 110, 0, 0, 0, 0),
+(3, 111, 0, 0, 0, 0),
+(3, 112, 0, 0, 0, 0),
 (4, 0, 1, 1, 1, 1),
 (4, 1, 0, 0, 0, 0),
 (4, 2, 0, 0, 0, 0),
@@ -448,7 +460,11 @@ INSERT INTO `ps_access` (`id_profile`, `id_tab`, `view`, `add`, `edit`, `delete`
 (4, 104, 0, 0, 0, 0),
 (4, 106, 0, 0, 0, 0),
 (4, 107, 0, 0, 0, 0),
-(4, 108, 0, 0, 0, 0);
+(4, 108, 0, 0, 0, 0),
+(4, 109, 0, 0, 0, 0),
+(4, 110, 0, 0, 0, 0),
+(4, 111, 0, 0, 0, 0),
+(4, 112, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -833,16 +849,27 @@ INSERT INTO `ps_advice` (`id_advice`, `id_ps_advice`, `id_tab`, `ids_tab`, `vali
 (48, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
 (49, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
 (50, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(51, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(52, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
-(53, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
 (54, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
 (55, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
 (56, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
 (57, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
 (58, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
 (59, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
-(60, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
+(61, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(62, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(63, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(64, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(65, 2147483647, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(66, 853, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(67, 674, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(68, 765, 1, NULL, 1, 0, 'after', '#dashtrends', 0, 0, 1),
+(69, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(70, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(71, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(72, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(73, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(74, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1),
+(75, 2147483647, 1, NULL, 1, 0, 'after', '.dash_news', 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -901,16 +928,28 @@ INSERT INTO `ps_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
 (48, 1, '<div id=\"wrap_id_advice_1586956513459\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1586956513459\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"Criteo EN\" href=\"{link}AdminModules{/link}&install=Criteo EN&module_name=Criteo EN&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/Criteo EN.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1586956513459.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Criteo Product Ads attracts new traffic and reengages previous website visitors </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1586956513459 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1586956513459&url=\'+link;\n                $(\'#wrap_id_advice_1586956513459 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
 (49, 1, '<div id=\"wrap_id_advice_1573810188422\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1573810188422\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"Livechat\" href=\"{link}AdminModules{/link}&install=Livechat&module_name=Livechat&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/Livechat.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1573810188422.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Increase sales through real-time conversations with your website visitors.</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1573810188422 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1573810188422&url=\'+link;\n                $(\'#wrap_id_advice_1573810188422 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
 (50, 1, '<div id=\"wrap_id_advice_1544549541068\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1544549541068\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"emarketing\" href=\"{link}AdminModules{/link}&install=emarketing&module_name=emarketing&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/emarketing.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1544549541068.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Boost your sales on Google Shopping with PrestaShop\'s marketing solution!</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1544549541068 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1544549541068&url=\'+link;\n                $(\'#wrap_id_advice_1544549541068 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(51, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(52, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
-(53, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill.png?1580726177957\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Sign up to Skrill for simple, fast and secure cross – border payments</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
 (54, 1, ' <div id=\"wrap_id_advice_1583851106055\"> <section id=\"0_Adscale\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Adscales.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1583851106055.png\"/> <p> <b>AdScale - Win the Ecommerce Race with AI Advertising</b> </p> <p> AdScale weaves the power of AI technology into your advertising by automatically creating and optimizing ads across Google, Facebook & Instagram, with an average ROI of 10X! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1583851106055&url=https://addons.prestashop.com/en/sea-paid-advertising-affiliation-platforms/46947-adscale-ai-advertising-on-google-facebook.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DAdscale\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_Adscale\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
 (55, 1, ' <div id=\"wrap_id_advice_1587565713924\"> <section id=\"0_CM Commerce\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/CM Commerce.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1587565713924.png\"/> <p> <b>Did you know that brands who use product reviews in their abandoned cart emails, experience 5% to 15% increases in their recovery rate?</b> </p> <p> Did you know that brands who use product reviews in their abandoned cart emails, experience 5% to 15% increases in their recovery rate?\n </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1587565713924&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/48652-cm-commerce.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DCM Commerce\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_CM Commerce\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
 (56, 1, ' <div id=\"wrap_id_advice_1565951072010\"> <section id=\"0_Clearbanc\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Clearbanc.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1565951072010.png\"/> <p> <b>Did you know Clearbanc can provide fast, affordable capital to D2C brands? </b> </p> <p> The holiday season is coming up faster than you think! Now\'s the time to start lining up extra funding to fuel your marketing budget and inventory, so you\'re set up for success. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1565951072010&url=https://addons.prestashop.com/en/services/46198-clearbanc-growth-capital.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DClearbanc\"> Learn More! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_Clearbanc\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
 (57, 1, ' <div id=\"wrap_id_advice_1600160505890\"> <section id=\"0_ColiBack\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ColiBack.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1600160505890.png\"/> <p> <b>Offer your customers a simple and efficient Europe return solution.</b> </p> <p> ColiBack, your winning partner for returns management. Offer return label generation in France and Europe. Offer quality service to retain your customers. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1600160505890&url=https://addons.prestashop.com/en/customer-service/48369-coliback-the-e-commerce-return-expert.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DColiBack\"> Download for free </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ColiBack\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
 (58, 1, ' <div id=\"wrap_id_advice_1533286918885\"> <section id=\"0_Mailchimp\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Mailchimp.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1533286918885.png\"/> <p> <b>Boost engagement and revenue by learning more about your audience</b> </p> <p> Create personalized, relevant emails that target your audience based on demographic data like gender and age. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1533286918885&url=https://addons.prestashop.com/en/newsletter-sms/26957-mailchimp.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DMailchimp\"> See How MailChimp Can Help </a> </span> </div> </section><section id=\"1_Mailchimp\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Mailchimp.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1533286918885.png\"/> <p> <b>Sell more stuff by rewarding loyal customers</b> </p> <p> Reward your best customers with an automated email series containing special coupons or other exclusive offers, and get almost 5x more orders per recipient than regular bulk email.  </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1533286918885&url=https://addons.prestashop.com/en/newsletter-sms/26957-mailchimp.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DMailchimp\"> Start Thanking Your Customers </a> </span> </div> </section><section id=\"2_Mailchimp\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Mailchimp.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1533286918885.png\"/> <p> <b>Boost sales by reminding customers about items they’ve left behind</b> </p> <p> 67% of online shopping carts are abandoned before checkout. Abandoned cart emails help you follow up with people who navigate away from their cart and convince them to finish their purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1533286918885&url=https://addons.prestashop.com/en/newsletter-sms/26957-mailchimp.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DMailchimp\"> Start Recapturing Lost Sales </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(2)+\'_Mailchimp\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
 (59, 1, ' <div id=\"wrap_id_advice_1544548911778\"> <section id=\"0_PrestaShop Ads\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/PrestaShop Ads.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1544548911778.png\"/> <p> <b>Boost your sales on Google Shopping with PrestaShop\'s marketing solution!</b> </p> <p> The PrestaShop Ads module is your one-click-solution for advertising on Google Shopping. Easy campaign creation, price-comparison and competitor-check included. Free of charge. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1544548911778&url=https://addons.prestashop.com/en/sea-paid-advertising-affiliation-platforms/18716-prestashop-ads.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DPrestaShop Ads\"> Start here </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_PrestaShop Ads\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
-(60, 1, ' <div id=\"wrap_id_advice_1568989368802\"> <section id=\"0_Shipstation\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Shipstation.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1568989368802.png\"/> <p> <b>93% of consumers will add products to their cart to receive free shipping.</b> </p> <p> Shipping should be part of your marketing strategy, especially since 58% of people abandon carts with shipping charges. Use free shipping to increase sales and stand out from competition.  </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1568989368802&url=https://addons.prestashop.com/en/delivery-tracking/46218-shipstation.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DShipstation\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_Shipstation\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
+(61, 1, '<div id=\"wrap_id_advice_1587561359950\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1587561359950\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"CM Commerce\" href=\"{link}AdminModules{/link}&install=CM Commerce&module_name=CM Commerce&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/CM Commerce.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1587561359950.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Let us help you turn email into the #1 driver of growth for your eCommerce shop.</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1587561359950 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1587561359950&url=\'+link;\n                $(\'#wrap_id_advice_1587561359950 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(62, 1, '<div id=\"wrap_id_advice_1600159903573\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1600159903573\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"ColiBack\" href=\"{link}AdminModules{/link}&install=ColiBack&module_name=ColiBack&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/ColiBack.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1600159903573.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Offer your customers a simple and efficient Europe return solution.</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1600159903573 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1600159903573&url=\'+link;\n                $(\'#wrap_id_advice_1600159903573 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(63, 1, '<div id=\"wrap_id_advice_1586956513459\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1586956513459\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"Criteo EN\" href=\"{link}AdminModules{/link}&install=Criteo EN&module_name=Criteo EN&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/Criteo EN.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1586956513459.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Criteo Product Ads attracts new traffic and reengages previous website visitors </p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1586956513459 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1586956513459&url=\'+link;\n                $(\'#wrap_id_advice_1586956513459 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(64, 1, '<div id=\"wrap_id_advice_1573810188422\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1573810188422\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"Livechat\" href=\"{link}AdminModules{/link}&install=Livechat&module_name=Livechat&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/Livechat.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1573810188422.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Increase sales through real-time conversations with your website visitors.</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1573810188422 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1573810188422&url=\'+link;\n                $(\'#wrap_id_advice_1573810188422 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(65, 1, '<div id=\"wrap_id_advice_1544549541068\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"1544549541068\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"emarketing\" href=\"{link}AdminModules{/link}&install=emarketing&module_name=emarketing&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/emarketing.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1544549541068.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Boost your sales on Google Shopping with PrestaShop\'s marketing solution!</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_1544549541068 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=1544549541068&url=\'+link;\n                $(\'#wrap_id_advice_1544549541068 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(66, 1, '<div id=\"wrap_id_advice_853\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"853\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"mailchimp\" href=\"{link}AdminModules{/link}&install=mailchimp&module_name=mailchimp&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/mailchimp.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/853.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Bolster sales and connect with your customers using MailChimp’s powerful tools. Configura ahora<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_853 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=853&url=\'+link;\n                $(\'#wrap_id_advice_853 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>');
+INSERT INTO `ps_advice_lang` (`id_advice`, `id_lang`, `html`) VALUES
+(67, 1, '<div id=\"wrap_id_advice_674\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"674\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"sendinblue\" href=\"{link}AdminModules{/link}&install=sendinblue&module_name=sendinblue&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/sendinblue.png\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/674.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Easily manage your email, newsletter and SMS campaigns with one single interface<br/></p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_674 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=674&url=\'+link;\n                $(\'#wrap_id_advice_674 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(68, 1, '<div id=\"wrap_id_advice_765\">\n            <div class=\"col-lg-6\">\n              <section id=\"\" class=\"panel panel-advice\" style=\"position: relative; padding: 10px; min-height: 75px;\">\n                <a href=\"#\" id=\"765\" class=\"close_link gamification_premium_close\" style=\"display: none; position: absolute; top: 10px; right: 10px;\">\n                  <i class=\"icon-remove\"></i>\n                </a>\n                <span class=\"gamification-close-confirmation hide\">\n                  Are you sure?\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"delete\">\n                    <i class=\"icon-trash\"></i>Delete\n                  </button>\n                  <button class=\"btn btn-default btn-sm\" data-advice=\"cancel\">Cancel</button>\n                </span>\n                <a class=\"preactivationLink row\" rel=\"skrill\" href=\"{link}AdminModules{/link}&install=skrill&module_name=skrill&redirectconfig\" style=\"display: table; margin: 0; text-decoration: none;\">\n                  <img src=\"https://storage.googleapis.com/production-gamification-assets/premium/skrill.png?1580726177957\" class=\"advice-img img-thumbnail\">\n                  <img src=\"https://gamification.prestashop.com/api/getAdviceImg/765.png\" class=\"hide\">\n                  <p class=\"advice-description\" style=\"padding: 0 20px; display: table-cell; vertical-align: middle;\">Sign up to Skrill for simple, fast and secure cross – border payments</p>\n                </a>\n              </section>\n            </div>\n            <script>\n              $(document).ready( function () {\n                var link = $(\'#wrap_id_advice_765 .preactivationLink\')[0].href;\n                link = encodeURIComponent(link);\n                var newUrl = \'https://gamification.prestashop.com/get_advice_link.php?id_advice=765&url=\'+link;\n                $(\'#wrap_id_advice_765 .preactivationLink\')[0].href = newUrl;\n              });\n            </script>\n          </div>'),
+(69, 1, ' <div id=\"wrap_id_advice_1583851106055\"> <section id=\"0_Adscale\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Adscales.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1583851106055.png\"/> <p> <b>AdScale - Win the Ecommerce Race with AI Advertising</b> </p> <p> AdScale weaves the power of AI technology into your advertising by automatically creating and optimizing ads across Google, Facebook & Instagram, with an average ROI of 10X! </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1583851106055&url=https://addons.prestashop.com/en/sea-paid-advertising-affiliation-platforms/46947-adscale-ai-advertising-on-google-facebook.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DAdscale\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_Adscale\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(70, 1, ' <div id=\"wrap_id_advice_1587565713924\"> <section id=\"0_CM Commerce\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/CM Commerce.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1587565713924.png\"/> <p> <b>Did you know that brands who use product reviews in their abandoned cart emails, experience 5% to 15% increases in their recovery rate?</b> </p> <p> Did you know that brands who use product reviews in their abandoned cart emails, experience 5% to 15% increases in their recovery rate?\n </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1587565713924&url=https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/48652-cm-commerce.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DCM Commerce\"> More information? </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_CM Commerce\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(71, 1, ' <div id=\"wrap_id_advice_1565951072010\"> <section id=\"0_Clearbanc\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Clearbanc.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1565951072010.png\"/> <p> <b>Did you know Clearbanc can provide fast, affordable capital to D2C brands? </b> </p> <p> The holiday season is coming up faster than you think! Now\'s the time to start lining up extra funding to fuel your marketing budget and inventory, so you\'re set up for success. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1565951072010&url=https://addons.prestashop.com/en/services/46198-clearbanc-growth-capital.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DClearbanc\"> Learn More! </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_Clearbanc\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(72, 1, ' <div id=\"wrap_id_advice_1600160505890\"> <section id=\"0_ColiBack\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/ColiBack.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1600160505890.png\"/> <p> <b>Offer your customers a simple and efficient Europe return solution.</b> </p> <p> ColiBack, your winning partner for returns management. Offer return label generation in France and Europe. Offer quality service to retain your customers. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1600160505890&url=https://addons.prestashop.com/en/customer-service/48369-coliback-the-e-commerce-return-expert.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DColiBack\"> Download for free </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_ColiBack\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(73, 1, ' <div id=\"wrap_id_advice_1533286918885\"> <section id=\"0_Mailchimp\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Mailchimp.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1533286918885.png\"/> <p> <b>Boost engagement and revenue by learning more about your audience</b> </p> <p> Create personalized, relevant emails that target your audience based on demographic data like gender and age. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1533286918885&url=https://addons.prestashop.com/en/newsletter-sms/26957-mailchimp.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DMailchimp\"> See How MailChimp Can Help </a> </span> </div> </section><section id=\"1_Mailchimp\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Mailchimp.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1533286918885.png\"/> <p> <b>Sell more stuff by rewarding loyal customers</b> </p> <p> Reward your best customers with an automated email series containing special coupons or other exclusive offers, and get almost 5x more orders per recipient than regular bulk email.  </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1533286918885&url=https://addons.prestashop.com/en/newsletter-sms/26957-mailchimp.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DMailchimp\"> Start Thanking Your Customers </a> </span> </div> </section><section id=\"2_Mailchimp\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Mailchimp.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1533286918885.png\"/> <p> <b>Boost sales by reminding customers about items they’ve left behind</b> </p> <p> 67% of online shopping carts are abandoned before checkout. Abandoned cart emails help you follow up with people who navigate away from their cart and convince them to finish their purchase. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1533286918885&url=https://addons.prestashop.com/en/newsletter-sms/26957-mailchimp.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DMailchimp\"> Start Recapturing Lost Sales </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(2)+\'_Mailchimp\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(74, 1, ' <div id=\"wrap_id_advice_1544548911778\"> <section id=\"0_PrestaShop Ads\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/PrestaShop Ads.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1544548911778.png\"/> <p> <b>Boost your sales on Google Shopping with PrestaShop\'s marketing solution!</b> </p> <p> The PrestaShop Ads module is your one-click-solution for advertising on Google Shopping. Easy campaign creation, price-comparison and competitor-check included. Free of charge. </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1544548911778&url=https://addons.prestashop.com/en/sea-paid-advertising-affiliation-platforms/18716-prestashop-ads.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DPrestaShop Ads\"> Start here </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_PrestaShop Ads\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>'),
+(75, 1, ' <div id=\"wrap_id_advice_1568989368802\"> <section id=\"0_Shipstation\" class=\"panel\" style=\"display:none\"> <header class=\"panel-heading\"> <span class=\"icon-lightbulb\"></span> Tips of the day </header> <div class=\"panel-body\" style=\"padding:0\"> <img class=\"img-responsive\" src=\"https://storage.googleapis.com/production-gamification-assets/tips/Shipstation.png\" style=\"float:right; margin-left: 5px;\"> <img src=\"https://gamification.prestashop.com/api/getAdviceImg/1568989368802.png\"/> <p> <b>93% of consumers will add products to their cart to receive free shipping.</b> </p> <p> Shipping should be part of your marketing strategy, especially since 58% of people abandon carts with shipping charges. Use free shipping to increase sales and stand out from competition.  </p> <span class=\"text-right\" style=\"float:right\"> <a class=\"btn btn-default\" target=\"_blank\" href=\"https://gamification.prestashop.com/get_advice_link.php?id_advice=1568989368802&url=https://addons.prestashop.com/en/delivery-tracking/46218-shipstation.html%3Futm_source%3Dback-office%26utm_medium%3Dtipoftheday%26utm_campaign%3Dpartenariats%26utm_content%3DShipstation\"> Learn more </a> </span> </div> </section><script> $(document).ready( function () { $(\'#\'+rand(0)+\'_Shipstation\').show(); }); function rand(nbr){ return Math.floor(Math.random()*(nbr+1)); } </script> </div>');
 
 -- --------------------------------------------------------
 
@@ -2106,7 +2145,7 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 (4, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2020-09-28 12:09:25', '2020-09-28 12:09:25'),
 (5, 1, 1, 2, '{\"3\":\"2,\"}', 1, 4, 4, 1, 1, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2020-09-28 12:09:25', '2020-09-28 12:09:25'),
 (6, 1, 1, 13, '{\"5\":\"13,\"}', 1, 5, 5, 1, 2, 2, 'da44926f3143b9d09ce6b3be4d0699fe', 0, 0, '', 0, 0, '2020-09-28 14:18:17', '2020-10-01 11:31:51'),
-(7, 1, 1, 0, '', 1, 5, 5, 1, 2, 2, 'da44926f3143b9d09ce6b3be4d0699fe', 0, 0, '', 0, 0, '2020-10-01 11:32:57', '2020-10-01 11:33:04'),
+(7, 1, 1, 15, '{\"5\":\"15,\"}', 1, 5, 5, 1, 2, 2, 'da44926f3143b9d09ce6b3be4d0699fe', 0, 0, '', 0, 0, '2020-10-01 11:32:57', '2020-10-06 13:34:51'),
 (8, 1, 1, 17, '{\"5\":\"17,\"}', 1, 5, 5, 1, 2, 3, 'da44926f3143b9d09ce6b3be4d0699fe', 0, 0, '', 0, 0, '2020-10-01 16:59:07', '2020-10-01 17:07:56');
 
 -- --------------------------------------------------------
@@ -2160,6 +2199,7 @@ INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `
 (5, 3, 3, 1, 13, 1, '2020-09-06 14:34:14'),
 (6, 2, 5, 1, 7, 1, '2020-09-29 15:17:05'),
 (7, 7, 5, 1, 34, 3, '2020-10-01 09:33:04'),
+(7, 20, 5, 1, 0, 1, '2020-10-06 13:33:10'),
 (8, 7, 5, 1, 34, 1, '2020-10-01 16:59:07'),
 (8, 22, 5, 1, 0, 1, '2020-10-01 17:07:41');
 
@@ -2344,7 +2384,7 @@ CREATE TABLE `ps_category` (
 INSERT INTO `ps_category` (`id_category`, `id_parent`, `id_shop_default`, `level_depth`, `nleft`, `nright`, `active`, `date_add`, `date_upd`, `position`, `is_root_category`) VALUES
 (1, 0, 1, 0, 1, 46, 1, '2020-09-28 12:09:21', '2020-09-28 12:09:21', 0, 0),
 (2, 1, 1, 1, 2, 45, 1, '2020-09-28 12:09:21', '2020-09-28 12:09:21', 0, 1),
-(3, 2, 1, 2, 3, 44, 1, '2020-09-28 12:09:25', '2020-10-01 17:06:40', 0, 0),
+(3, 2, 1, 2, 3, 44, 1, '2020-09-28 12:09:25', '2020-10-06 13:31:05', 0, 0),
 (12, 3, 1, 3, 4, 13, 1, '2020-10-01 15:37:54', '2020-10-01 17:07:18', 0, 0),
 (13, 3, 1, 3, 14, 23, 1, '2020-10-01 15:39:13', '2020-10-01 17:07:18', 1, 0),
 (14, 3, 1, 3, 24, 33, 1, '2020-10-01 15:39:26', '2020-10-01 17:07:18', 2, 0),
@@ -2941,251 +2981,251 @@ CREATE TABLE `ps_condition` (
 --
 
 INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2020-10-01 14:55:25', '2020-10-01 15:40:33'),
-(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2020-10-01 14:55:25', '2020-10-01 15:40:33'),
-(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '1', 'hook', 'actionModuleInstallAfter', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '1', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:25', '2020-10-01 16:58:39'),
-(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '5', 'hook', 'actionObjectCarrierAddAfter', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '5', 'hook', 'actionObjectCarrierAddAfter', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '1', 'hook', 'actionObjectProductAddAfter', 1, '2020-10-01 14:55:25', '2020-10-01 16:11:56'),
-(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '10', 'hook', 'actionObjectProductAddAfter', 1, '2020-10-01 14:55:25', '2020-10-01 16:26:37'),
-(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 16:44:34'),
-(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 16:44:34'),
-(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 16:44:34'),
-(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 16:44:34'),
-(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '2', 'hook', 'actionObjectContactAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '2', 'hook', 'actionObjectContactAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(20, 20, 'install', '', '>=', '7', '', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '1', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:25', '2020-10-01 16:58:39'),
-(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '5', 'hook', 'actionObjectCarrierAddAfter', 1, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:25', '2020-10-01 17:08:00'),
-(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:25', '2020-10-01 17:08:00'),
-(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '0', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '2', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '2', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '2', 'time', '1', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '2', 'time', '2', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '2', 'time', '3', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '2', 'time', '4', 0, '2020-10-01 14:55:25', '2020-10-01 14:55:25'),
-(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '2', 'hook', 'actionObjectCartAddAfter', 1, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '3', 'hook', 'actionObjectCartAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:59:07'),
-(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '3', 'hook', 'actionObjectCartAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:59:07'),
-(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '2', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '2', 'time', '4', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '2', 'time', '8', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(53, 53, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '1', 'hook', 'actionObjectOrderAddAfter', 1, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(54, 54, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '2', 'hook', 'actionObjectOrderAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(55, 55, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '2', 'hook', 'actionObjectOrderAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(56, 56, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '1', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(57, 57, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '1', 'time', '4', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(58, 58, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '1', 'time', '8', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '1', 'hook', 'actionObjectCustomerAddAfter', 1, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '1', 'time', '4', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '0', 'hook', 'actionObjectImageAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '23', 'hook', 'actionObjectImageAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '23', 'hook', 'actionObjectImageAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '23', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '23', 'time', '4', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '23', 'time', '8', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '0', 'hook', 'newOrder', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-01 14:55:26', '2020-10-01 17:08:00'),
-(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:26', '2020-10-01 16:58:39'),
-(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:26', '2020-10-01 14:55:26'),
-(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27');
+(1, 1, 'configuration', 'PS_REWRITING_SETTINGS', '==', '1', '', 'hook', 'actionAdminMetaControllerUpdate_optionsAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(2, 2, 'configuration', 'PS_SMARTY_FORCE_COMPILE', '!=', '2', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(3, 3, 'configuration', 'PS_CSS_THEME_CACHE', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(4, 4, 'configuration', 'PS_CIPHER_ALGORITHM', '==', '1', '1', 'hook', 'actionAdminPerformanceControllerSaveAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(5, 5, 'configuration', 'PS_MEDIA_SERVERS', '==', '1', '', 'hook', 'actionAdminPerformanceControllerSaveAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(6, 6, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '0', '1', 'hook', 'actionModuleInstallAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(7, 7, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '1', '1', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:46', '2020-10-06 13:23:03'),
+(8, 8, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '0', '5', 'hook', 'actionObjectCarrierAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(9, 9, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '1', '5', 'hook', 'actionObjectCarrierAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(10, 10, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '0', '1', 'hook', 'actionObjectProductAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(11, 11, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9', '10', 'hook', 'actionObjectProductAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(12, 12, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(13, 13, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '999', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(14, 14, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '9999', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(15, 15, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '99999', '14', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(16, 16, 'configuration', 'PS_SHOP_PHONE', '!=', '0', '', 'hook', 'actionAdminStoresControllerUpdate_optionsAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(17, 17, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '2', '2', 'hook', 'actionObjectContactAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(18, 18, 'sql', 'SELECT COUNT(*) FROM PREFIX_contact', '>', '4', '2', 'hook', 'actionObjectContactAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(19, 19, 'install', '', '>', '0', '1', 'time', '1', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(20, 20, 'install', '', '>=', '7', '', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(21, 21, 'configuration', 'PS_LOGO', '!=', 'logo.jpg', '', 'hook', 'actionAdminThemesControllerUpdate_optionsAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(22, 22, 'sql', 'SELECT COUNT(*) FROM PREFIX_theme WHERE directory != \"default\" AND directory != \"prestashop\" AND directory ! \"default-bootstrap\"', '>', '0', '', 'hook', 'actionObjectShopUpdateAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(23, 23, 'configuration', 'PS_LOGGED_ON_ADDONS', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(24, 24, 'configuration', 'PS_MULTISHOP_FEATURE_ACTIVE', '==', '1', '', 'hook', 'actionAdminPreferencesControllerUpdate_optionsAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(25, 25, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '1', '1', 'hook', 'actionObjectShopAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(26, 26, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop', '>', '4', '1', 'hook', 'actionObjectShopAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(27, 27, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '5', '1', 'hook', 'actionObjectShopGroupAddAfter 	', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(28, 28, 'sql', 'SELECT COUNT(*) FROM PREFIX_shop_group', '>', '1', '1', 'hook', 'actionObjectShopGroupAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(29, 29, 'sql', 'SELECT COUNT(distinct m.id_module) FROM PREFIX_hook h LEFT JOIN PREFIX_hook_module hm ON h.id_hook = hm.id_hook LEFT JOIN PREFIX_module m ON hm.id_module = m.id_module\r\nWHERE (h.name = \"displayPayment\" OR h.name = \"payment\") AND m.name NOT IN (\"bankwire\", \"cheque\", \"cashondelivery\")', '>', '2', '1', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:46', '2020-10-06 13:23:03'),
+(30, 30, 'sql', 'SELECT COUNT(*) FROM PREFIX_carrier WHERE name NOT IN (\"0\", \"My carrier\")', '>', '2', '5', 'hook', 'actionObjectCarrierAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(31, 31, 'sql', 'SELECT SUM(total_paid_tax_excl / c.conversion_rate)\r\nFROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '200', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(32, 32, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '2000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(33, 33, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1 AND reference != \"XKBKNABJK\"', '>=', '20000', '145', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(34, 34, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '200000', '0', 'time', '7', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(35, 35, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '2000000', '0', 'time', '7', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(36, 36, 'sql', ' 	SELECT SUM(total_paid_tax_excl / c.conversion_rate) FROM PREFIX_orders o INNER JOIN PREFIX_currency c ON c.id_currency = o.id_currency WHERE valid = 1', '>=', '20000000', '0', 'time', '7', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(37, 37, 'install', '', '>=', '30', '', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(38, 38, 'install', '', '>=', '182', '', 'time', '2', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(39, 39, 'install', '', '>=', '365', '', 'time', '2', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(40, 40, 'install', '', '>=', '730', '', 'time', '2', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(41, 41, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10', '2', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(42, 42, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100', '2', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(43, 43, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000', '2', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(44, 44, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '10000', '2', 'time', '2', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(45, 45, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '100000', '2', 'time', '3', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(46, 46, 'sql', 'SELECT COUNT(*) FROM PREFIX_guest', '>=', '1000000', '2', 'time', '4', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(47, 47, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '2', '2', 'hook', 'actionObjectCartAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(48, 48, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10', '3', 'hook', 'actionObjectCartAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(49, 49, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100', '3', 'hook', 'actionObjectCartAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(50, 50, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '1000', '3', 'time', '1', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(51, 51, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '10000', '3', 'time', '4', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(52, 52, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart WHERE secure_key != \"b44a6d9efd7a0076a0fbce6b15eaf3b1\"', '>=', '100000', '2', 'time', '8', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(53, 53, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1', '1', 'hook', 'actionObjectOrderAddAfter', 1, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(54, 54, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10', '2', 'hook', 'actionObjectOrderAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(55, 55, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100', '2', 'hook', 'actionObjectOrderAddAfter', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(56, 56, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '1000', '2', 'time', '2', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(57, 57, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '10000', '2', 'time', '4', 0, '2020-10-06 11:18:46', '2020-10-06 11:18:46'),
+(58, 58, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders WHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\")', '>=', '100000', '1', 'time', '8', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(59, 59, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1', '1', 'hook', 'actionObjectCustomerAddAfter', 1, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(60, 60, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(61, 61, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100', '1', 'hook', 'actionObjectCustomerAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(62, 62, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '1000', '1', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(63, 63, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '10000', '1', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(64, 64, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer WHERE email != \"pub@prestashop.com\"', '>=', '100000', '1', 'time', '4', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(65, 65, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(66, 66, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(67, 67, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100', '0', 'hook', 'actionObjectCustomerThreadAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(68, 68, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '1000', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(69, 69, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '10000', '0', 'time', '4', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(70, 70, 'sql', 'SELECT COUNT(*) FROM PREFIX_customer_thread', '>=', '100000', '0', 'time', '8', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(71, 76, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"CA\",\r\n\"GL\",\r\n\"PM\",\r\n\"US\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(72, 79, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"UM\",\r\n\"AS\",\r\n\"AU\",\r\n\"CK\",\r\n\"FJ\",\r\n\"FM\",\r\n\"GU\",\r\n\"KI\",\r\n\"MH,\"\r\n\"MP\",\r\n\"NC\",\r\n\"NF\",\r\n\"NR\",\r\n\"NU\",\r\n\"NZ\",\r\n\"PF\",\r\n\"PG\",\r\n\"PN\",\r\n\"PW\",\r\n\"SB\",\r\n\"TK\",\r\n\"TO\",\r\n\"TV\",\r\n\"VU\",\r\n\"WF\",\r\n\"WS\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(73, 85, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"KG\",\r\n\"KZ\",\r\n\"TJ\",\r\n\"TM\",\r\n\"UZ\",\r\n\"AE\",\r\n\"AM\",\r\n\"AZ\",\r\n\"BH\",\r\n\"CY\",\r\n\"GE\",\r\n\"IL\",\r\n\"IQ\",\r\n\"IR\",\r\n\"JO\",\r\n\"KW\",\r\n\"LB\",\r\n\"OM\",\r\n\"QA\",\r\n\"SA\",\r\n\"SY\",\r\n\"TR\",\r\n\"YE\",\r\n\"AF\",\r\n\"BD\",\r\n\"BT\",\r\n\"IN\",\r\n\"IO\",\r\n\"LK\",\r\n\"MV\",\r\n\"NP\",\r\n\"PK\",\r\n\"CN\",\r\n\"HK\",\r\n\"JP\",\r\n\"KP\",\r\n\"KR\",\r\n\"MO\",\r\n\"TW\",\r\n\"MN\",\r\n\"BN\",\r\n\"CC\",\r\n\"CX\",\r\n\"ID\",\r\n\"KH\",\r\n\"LA\",\r\n\"MM\",\r\n\"MY\",\r\n\"PH\",\r\n\"SG\",\r\n\"TH\",\r\n\"TP\",\r\n\"VN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(74, 86, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BZ\",\r\n\"CR\",\r\n\"GT\",\r\n\"HN\",\r\n\"MX\",\r\n\"NI\",\r\n\"PA\",\r\n\"SV\",\r\n\"AG\",\r\n\"AI\",\r\n\"AN\",\r\n\"AW\",\r\n\"BB\",\r\n\"BM\",\r\n\"BS\",\r\n\"CU\",\r\n\"DM\",\r\n\"DO\",\r\n\"GD\",\r\n\"GP\",\r\n\"HT\",\r\n\"JM\",\r\n\"KN\",\r\n\"KY\",\r\n\"LC\",\r\n\"MQ\",\r\n\"MS\",\r\n\"PR\",\r\n\"TC\",\r\n\"TT\",\r\n\"VC\",\r\n\"VG\",\r\n\"VI\",\r\n\"AR\",\r\n\"BO\",\r\n\"BR\",\r\n\"CL\",\r\n\"CO\",\r\n\"EC\",\r\n\"FK\",\r\n\"GF\",\r\n\"GY\",\r\n\"PE\",\r\n\"PY\",\r\n\"SR\",\r\n\"UY\",\r\n\"VE\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(75, 87, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BE\",\r\n\"DE\",\r\n\"FR\",\r\n\"FX\",\r\n\"GB\",\r\n\"IE\",\r\n\"LU\",\r\n\"MC\",\r\n\"NL\",\r\n\"IT\",\r\n\"MT\",\r\n\"SM\",\r\n\"VA\",\r\n\"AD\",\r\n\"ES\",\r\n\"GI\",\r\n\"PT\",\r\n\"BY\",\r\n\"EE\",\r\n\"LT\",\r\n\"LV\",\r\n\"MD\",\r\n\"PL\",\r\n\"UA\",\r\n\"AL\",\r\n\"BA\",\r\n\"BG\",\r\n\"GR\",\r\n\"HR\",\r\n\"MK\",\r\n\"RO\",\r\n\"SI\",\r\n\"YU\",\r\n\"RU\",\r\n\"AT\",\r\n\"CH\",\r\n\"CZ\",\r\n\"HU\",\r\n\"LI\",\r\n\"SK\",\r\n\"DK\",\r\n\"FI\",\r\n\"FO\",\r\n\"IS\",\r\n\"NO\",\r\n\"SE\",\r\n\"SJ\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(76, 88, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"BI\",\r\n\"CF\",\r\n\"CG\",\r\n\"RW\",\r\n\"TD\",\r\n\"ZR\",\r\n\"DJ\",\r\n\"ER\",\r\n\"ET\",\r\n\"KE\",\r\n\"SO\",\r\n\"TZ\",\r\n\"UG\",\r\n\"KM\",\r\n\"MG\",\r\n\"MU\",\r\n\"RE\",\r\n\"SC\",\r\n\"YT\",\r\n\"AO\",\r\n\"BW\",\r\n\"LS\",\r\n\"MW\",\r\n\"MZ\",\r\n\"NA\",\r\n\"SZ\",\r\n\"ZA\",\r\n\"ZM\",\r\n\"ZW\",\r\n\"BF\",\r\n\"BJ\",\r\n\"CI\",\r\n\"CM\",\r\n\"CV\",\r\n\"GA\",\r\n\"GH\",\r\n\"GM\",\r\n\"GN\",\r\n\"GQ\",\r\n\"GW\",\r\n\"LR\",\r\n\"ML\",\r\n\"MR\",\r\n\"NE\",\r\n\"NG\",\r\n\"SL\",\r\n\"SN\",\r\n\"ST\",\r\n\"TG\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(77, 89, 'sql', 'SELECT IFNULL(id_order, 0) FROM PREFIX_orders o LEFT JOIN PREFIX_address a ON o.id_address_delivery = a.id_address LEFT JOIN PREFIX_country c ON c.id_country = a.id_country WHERE o.valid = 1 AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\" AND c.iso_code IN (\r\n\"DZ\",\r\n\"EG\",\r\n\"EH\",\r\n\"LY\",\r\n\"MA\",\r\n\"SD\",\r\n\"TN\"\r\n)', '!=', '0', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(78, 90, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '2', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(79, 91, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '3', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(80, 92, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '5', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(81, 93, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '10', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(82, 94, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '20', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(83, 95, 'sql', 'SELECT COUNT(*) FROM PREFIX_employee', '>=', '40', '1', 'hook', 'actionObjectEmployeeAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(84, 96, 'sql', 'SELECT id_image FROM PREFIX_image WHERE id_image > 26', '>', '0', '0', 'hook', 'actionObjectImageAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(85, 97, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50', '23', 'hook', 'actionObjectImageAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(86, 98, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '100', '23', 'hook', 'actionObjectImageAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(87, 99, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '1000', '23', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(88, 100, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '10000', '23', 'time', '4', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(89, 101, 'sql', 'SELECT COUNT(*) FROM PREFIX_image', '>=', '50000', '23', 'time', '8', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(90, 102, 'sql', 'SELECT id_cms FROM PREFIX_cms WHERE id_cms > 5', '>', '0', '0', 'hook', 'actionObjectCMSAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(91, 103, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(92, 104, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '10', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(93, 105, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '100', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(94, 106, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '1000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(95, 107, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '500', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(96, 108, 'sql', 'SELECT COUNT(*) FROM PREFIX_cart_rule', '>=', '5000', '0', 'hook', 'actionObjectCartRuleAddAfter 	', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(97, 109, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1', '0', 'hook', 'newOrder', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(98, 110, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(99, 111, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '100', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(100, 112, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '10000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(101, 113, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '1000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(102, 114, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o INNER JOIN PREFIX_address a ON a.id_address = o.id_address_delivery\r\nWHERE reference NOT IN (\"XKBKNABJK\", \"OHSATSERP\", \"FFATNOMMJ\", \"UOYEVOLI\", \"KHWLILZLL\") AND a.id_country != \"{config}PS_COUNTRY_DEFAULT{/config}\"', '>=', '5000', '0', 'hook', 'actionOrderStatusUpdate', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(103, 132, 'sql', 'SELECT count(id_configuration) FROM PREFIX_configuration WHERE `name` = \'PS_SHOP_DOMAIN\' AND value IN (\'127.0.0.1\', \'localhost\' )', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(104, 136, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ebay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(105, 140, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%moneybookers%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(106, 142, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypal%\"', '>=', '1', '', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(107, 158, 'install', '', '>=', '90', '', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(108, 159, 'install', '', '<=', '90', '', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(109, 165, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '0', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(110, 166, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '1', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(111, 167, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '4', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(112, 168, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '9', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(113, 169, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '19', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(114, 170, 'sql', 'SELECT COUNT(s.`id_store`) FROM PREFIX_store s WHERE `latitude` NOT IN (\'25.76500500\', \'26.13793600\', \'26.00998700\', \'25.73629600\', \'25.88674000\') AND `longitude` NOT IN (\'-80.24379700\', \'-80.13943500\', \'-80.29447200\', \'-80.24479700\', \'-80.16329200\')', '>', '49', '0', 'hook', 'actionAdminStoresControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(115, 171, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '1', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(116, 172, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '2', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(117, 173, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '3', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(118, 174, 'sql', 'SELECT COUNT(*) FROM PREFIX_webservice_account', '>=', '4', '0', 'hook', 'actionAdminWebserviceControllerSaveAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(119, 175, 'sql', 'SELECT count(*) FROM	 PREFIX_configuration WHERE name = \'PS_HOSTED_MODE\'', '==', '0', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(120, 209, 'configuration', 'EBAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(121, 320, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shopgate%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(122, 322, 'configuration', 'SHOPGATE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(123, 323, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(124, 324, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%shoppingfluxexport%\" ', '==', '0', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(125, 325, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURATION_OK\' OR name LIKE \'SHOPPINGFLUXEXPORT_CONFIGURED\'', '>=', '1', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(126, 326, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'MONEYBOOKERS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'MB_PAY_TO_EMAIL \') AND ( value != \'testaccount2@moneybookers.com \'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(127, 358, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1', '>=', '1', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(128, 359, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%ebay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(129, 375, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(130, 376, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%shopgate%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(131, 377, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%moneybookers%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '1', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(132, 394, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%sofortbanking%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(133, 399, 'sql', 'SELECT COUNT(*) FROM PREFIX_product WHERE reference NOT LIKE \"demo_%\"', '>', '499', '', 'hook', 'actionObjectProductAddAfter', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(134, 424, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%alliance3%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(135, 425, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ALLIANCE3_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ALLIANCE_DEMO\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(136, 426, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(137, 427, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%alliance3%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(138, 428, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%authorizeaim%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(139, 429, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'AUTHORIZEAIM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AUTHORIZE_AIM_SANDBOX\') AND ( value = \'0\'))', '==', '2', '', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(140, 430, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(141, 431, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%authorizeaim%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(142, 434, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluepay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(143, 435, 'configuration', 'BLUEPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(144, 436, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(145, 437, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluepay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(146, 438, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payplug%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(147, 439, 'configuration', 'PAYPLUG_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(148, 440, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(149, 441, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payplug%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '10000', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(150, 442, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%affinityitems%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(151, 443, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE name LIKE \'AFFINITYITEMS_CONFIGURATION_OK\' AND value = \'1\'', '==', '1', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(152, 446, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%dpdpoland%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(153, 447, 'configuration', 'DPDPOLAND_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(154, 448, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(155, 449, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%dpdpoland%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(156, 450, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%envoimoinscher%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(157, 451, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ENVOIMOINSCHER_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'EMC_ENV \') AND ( value != \'TEST\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(158, 452, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(159, 453, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%envoimoinscher%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(160, 454, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%klikandpay%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(161, 455, 'configuration', 'KLIKANDPAY_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(162, 456, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(163, 457, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%klikandpay%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(164, 458, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%clickline%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(165, 459, 'configuration', 'CLICKLINE_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(166, 460, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(167, 461, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state LEFT JOIN PREFIX_carrier c ON c.id_carrier = o.id_carrier WHERE c.name like \"%clickline%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '100', '0', 'time', '7', 0, '2020-10-06 11:18:47', '2020-10-06 11:18:47'),
+(168, 462, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%cdiscount%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:47', '2020-10-06 13:23:03'),
+(169, 463, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(170, 464, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(171, 465, 'sql', 'SELECT SUM(o.total_paid) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%cdiscount%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 365 DAY)', '>=', '500', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(172, 467, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%erpillicopresta%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(173, 468, 'configuration', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'ERPILLICOPRESTA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'ERP_LICENCE_VALIDITY \') AND ( value == \'1\')) OR (( name LIKE \'ERP_MONTH_FREE_ACTIVE \') AND ( value == \'0\'))', '==', '3', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(174, 469, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(175, 470, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(176, 471, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%netreviews%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(177, 472, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'NETREVIEWS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'AVISVERIFIES_URLCERTIFICAT \') AND ( value IS NOT LIKE \'%preprod%\'))', '==', '2', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(178, 473, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(179, 474, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '100', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(180, 475, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%bluesnap%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(181, 476, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'BLUESNAP_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'BLUESNAP_SANDBOX \') AND ( value NOT LIKE \'%sandbox%\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(182, 477, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(183, 478, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%bluesnap%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(184, 479, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%desjardins%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(185, 480, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'DESJARDINS_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'DESJARDINS_MODE \') AND ( value NOT LIKE \'%test%\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(186, 481, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(187, 482, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%desjardins%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(188, 483, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%firstdata%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(189, 484, 'configuration', 'FIRSTDATA_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(190, 485, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(191, 486, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%firstdata%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(192, 487, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%giveit%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(193, 488, 'sql', 'GIVEIT_CONFIGURATION_OK', '>=', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(194, 489, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(195, 490, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(196, 491, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%ganalytics%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(197, 492, 'configuration', 'GANALYTICS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(198, 493, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(199, 494, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(200, 496, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%pagseguro%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(201, 497, 'configuration', 'PAGSEGURO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(202, 498, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(203, 499, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%pagseguro%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(204, 500, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalmx%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(205, 501, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALMX_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_MX_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(206, 502, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(207, 503, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(208, 505, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%paypalusa%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(209, 506, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYPALUSA_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYPAL_USA_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(210, 507, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalusa%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48');
 INSERT INTO `ps_condition` (`id_condition`, `id_ps_condition`, `type`, `request`, `operator`, `value`, `result`, `calculation_type`, `calculation_detail`, `validated`, `date_add`, `date_upd`) VALUES
-(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-01 14:55:27', '2020-10-01 16:58:39'),
-(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27'),
-(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2020-10-01 14:55:27', '2020-10-01 14:55:27');
+(211, 508, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%paypalmx%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(212, 509, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%payulatam%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(213, 510, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'PAYULATAM_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'PAYU_LATAM_TEST\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(214, 511, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(215, 512, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%payulatam%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(216, 513, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%prestastats%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(217, 514, 'configuration', 'PRESTASTATS_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(218, 515, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(219, 516, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(220, 517, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%riskified%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(221, 518, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'RISKIFIED_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'RISKIFIED_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(222, 519, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(223, 520, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%riskified%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(224, 521, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%simplifycommerce%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(225, 522, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'SIMPLIFY_CONFIGURATION_OK\') AND ( value = \'1\')) OR (( name LIKE \'SIMPLIFY_MODE\') AND ( value = \'1\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(226, 523, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(227, 524, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%simplifycommerce%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(228, 525, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%vtpayment%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(229, 526, 'configuration', 'VTPAYMENT_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(230, 527, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1', '>=', '1', '0', 'time', '2', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(231, 528, 'sql', 'SELECT COUNT(*) FROM PREFIX_orders o LEFT JOIN PREFIX_order_state os ON os.id_order_state = o.current_state WHERE o.module like \"%vtpayment%\" AND os.logable = 1 AND o.date_add > DATE_SUB(NOW(), INTERVAL 90 DAY)', '>=', '30', '0', 'time', '7', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(232, 529, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(233, 530, 'configuration', 'YOTPO_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(234, 531, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(235, 532, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(236, 533, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%yotpo%\"', '==', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(237, 534, 'sql', 'SELECT COUNT(*) FROM PREFIX_configuration WHERE (( name LIKE \'YOUSTICERESOLUTIONSYSTEM_CONF_OK\') AND ( value = \'1\')) OR (( name LIKE \'YRS_SANDBOX\') AND ( value = \'0\'))', '==', '2', '0', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(238, 535, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(239, 536, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(240, 537, 'sql', 'SELECT COUNT( id_module ) FROM PREFIX_module WHERE `name` like \"%loyaltylion%\"', '>=', '1', '0', 'hook', 'actionModuleInstallAfter', 0, '2020-10-06 11:18:48', '2020-10-06 13:23:03'),
+(241, 538, 'configuration', 'LOYALTYLION_CONFIGURATION_OK', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(242, 539, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(243, 540, 'sql', 'SELECT 1', '!=', '1', '1', 'time', '365', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48'),
+(244, 542, 'sql', 'SELECT \'{config} PS_VERSION_DB{/config}\' >= \'1.7.0.0\' AND < \'1.8.0.0\'', '==', '1', '', 'time', '1', 0, '2020-10-06 11:18:48', '2020-10-06 11:18:48');
 
 -- --------------------------------------------------------
 
@@ -3264,7 +3304,22 @@ INSERT INTO `ps_condition_advice` (`id_condition`, `id_advice`, `display`) VALUE
 (19, 57, 1),
 (19, 58, 1),
 (19, 59, 1),
-(19, 60, 1);
+(19, 60, 1),
+(19, 61, 1),
+(19, 62, 1),
+(19, 63, 1),
+(19, 64, 1),
+(19, 65, 1),
+(19, 66, 1),
+(19, 67, 1),
+(19, 68, 1),
+(19, 69, 1),
+(19, 70, 1),
+(19, 71, 1),
+(19, 72, 1),
+(19, 73, 1),
+(19, 74, 1),
+(19, 75, 1);
 
 -- --------------------------------------------------------
 
@@ -3561,7 +3616,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (17, NULL, NULL, 'PS_GIFT_WRAPPING_PRICE', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (18, NULL, NULL, 'PS_STOCK_MANAGEMENT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (19, NULL, NULL, 'PS_NAVIGATION_PIPE', '>', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(20, NULL, NULL, 'PS_PRODUCTS_PER_PAGE', '12', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(20, NULL, NULL, 'PS_PRODUCTS_PER_PAGE', '6', '0000-00-00 00:00:00', '2020-10-06 13:23:04'),
 (21, NULL, NULL, 'PS_PURCHASE_MINIMUM', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (22, NULL, NULL, 'PS_PRODUCTS_ORDER_WAY', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (23, NULL, NULL, 'PS_PRODUCTS_ORDER_BY', '4', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3661,7 +3716,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (117, NULL, NULL, 'PS_STORES_CENTER_LONG', '-80.226439', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (118, NULL, NULL, 'PS_USE_ECOTAX', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (119, NULL, NULL, 'PS_CANONICAL_REDIRECT', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(120, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1324977642', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(120, NULL, NULL, 'PS_IMG_UPDATE_TIME', '1601983570', '0000-00-00 00:00:00', '2020-10-06 13:26:10'),
 (121, NULL, NULL, 'PS_BACKUP_DROP_TABLE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (122, NULL, NULL, 'PS_OS_CHEQUE', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (123, NULL, NULL, 'PS_OS_PAYMENT', '2', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
@@ -3933,7 +3988,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (387, NULL, NULL, 'PS_CHECKOUT_STATE_PARTIAL_REFUND', '19', '2020-09-28 12:10:00', '2020-09-28 12:10:00'),
 (388, NULL, NULL, 'PS_CHECKOUT_STATE_WAITING_CAPTURE', '20', '2020-09-28 12:10:00', '2020-09-28 12:10:00'),
 (389, NULL, NULL, 'GF_NOT_VIEWED_BADGE', '133', '2020-09-28 14:01:57', '2020-10-01 16:26:38'),
-(390, NULL, NULL, 'PS_SHOW_CAT_MODULES_1', NULL, '2020-09-28 14:17:56', '2020-09-29 13:33:48'),
+(390, NULL, NULL, 'PS_SHOW_CAT_MODULES_1', 'payments_gateways', '2020-09-28 14:17:56', '2020-10-06 13:33:55'),
 (391, NULL, NULL, 'PS_CCCJS_VERSION', '11', '2020-09-29 11:32:53', '2020-10-01 14:47:16'),
 (392, NULL, NULL, 'PS_CCCCSS_VERSION', '11', '2020-09-29 11:32:53', '2020-10-01 14:47:16'),
 (393, NULL, NULL, 'PS_CSS_THEME_CACHE', '0', '2020-09-29 11:36:09', '2020-09-29 11:36:09'),
@@ -3949,7 +4004,18 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (403, NULL, NULL, 'CONF_CASHONDELIVERY_FIXED', '0.2', '2020-10-01 16:58:40', '2020-10-01 16:58:40'),
 (404, NULL, NULL, 'CONF_CASHONDELIVERY_VAR', '2', '2020-10-01 16:58:40', '2020-10-01 16:58:40'),
 (405, NULL, NULL, 'CONF_CASHONDELIVERY_FIXED_FOREIGN', '0.2', '2020-10-01 16:58:40', '2020-10-01 16:58:40'),
-(406, NULL, NULL, 'CONF_CASHONDELIVERY_VAR_FOREIGN', '2', '2020-10-01 16:58:40', '2020-10-01 16:58:40');
+(406, NULL, NULL, 'CONF_CASHONDELIVERY_VAR_FOREIGN', '2', '2020-10-01 16:58:40', '2020-10-01 16:58:40'),
+(407, NULL, NULL, 'CRONJOBS_ADMIN_DIR', '8558cf9d94a8c93ec62b32696371ca77', '2020-10-06 11:18:24', '2020-10-06 11:18:24'),
+(408, NULL, NULL, 'CRONJOBS_MODE', 'webservice', '2020-10-06 11:18:24', '2020-10-06 11:18:24'),
+(409, NULL, NULL, 'CRONJOBS_MODULE_VERSION', '1.3.2', '2020-10-06 11:18:24', '2020-10-06 11:18:24'),
+(410, NULL, NULL, 'CRONJOBS_WEBSERVICE_ID', '0', '2020-10-06 11:18:24', '2020-10-06 11:18:24'),
+(411, NULL, NULL, 'CRONJOBS_EXECUTION_TOKEN', 'fd793feb1d921a4d1e3eaf993ab31ba8', '2020-10-06 11:18:24', '2020-10-06 11:18:24'),
+(412, NULL, NULL, 'CROSSSELLING_DISPLAY_PRICE', '0', '2020-10-06 11:18:31', '2020-10-06 11:18:31'),
+(413, NULL, NULL, 'CROSSSELLING_NBR', '10', '2020-10-06 11:18:31', '2020-10-06 11:18:31'),
+(414, NULL, NULL, 'PRODUCTSCATEGORY_DISPLAY_PRICE', '0', '2020-10-06 11:18:31', '2020-10-06 11:18:31'),
+(415, NULL, NULL, 'PS_SHOW_TYPE_MODULES_1', 'allModules', '2020-10-06 13:22:17', '2020-10-06 13:22:17'),
+(416, NULL, NULL, 'PS_SHOW_INSTALLED_MODULES_1', 'installedUninstalled', '2020-10-06 13:22:17', '2020-10-06 13:33:48'),
+(417, NULL, NULL, 'PS_SHOW_ENABLED_MODULES_1', 'enabledDisabled', '2020-10-06 13:22:17', '2020-10-06 13:22:17');
 
 -- --------------------------------------------------------
 
@@ -4009,7 +4075,7 @@ INSERT INTO `ps_configuration_kpi` (`id_configuration_kpi`, `id_shop_group`, `id
 (34, NULL, NULL, 'DASHGOALS_TRAFFIC_12_2020', '600', '2020-09-28 12:09:37', '2020-09-28 12:09:37'),
 (35, NULL, NULL, 'DASHGOALS_CONVERSION_12_2020', '2', '2020-09-28 12:09:37', '2020-09-28 12:09:37'),
 (36, NULL, NULL, 'DASHGOALS_AVG_CART_VALUE_12_2020', '80', '2020-09-28 12:09:37', '2020-09-28 12:09:37'),
-(37, NULL, NULL, 'UPDATE_MODULES', '0', '2020-09-28 14:08:24', '2020-09-28 14:08:24');
+(37, NULL, NULL, 'UPDATE_MODULES', '1', '2020-09-28 14:08:24', '2020-10-06 13:23:27');
 
 -- --------------------------------------------------------
 
@@ -4085,7 +4151,10 @@ INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_
 (6, 1, 1, 2, 1, 2887319553, '2020-09-30 09:49:41', ''),
 (7, 1, 1, 2, 3, 2887319553, '2020-09-30 17:12:10', ''),
 (8, 1, 1, 2, 1, 2887319553, '2020-10-01 10:43:06', ''),
-(9, 1, 1, 2, 1, 2887319553, '2020-10-01 15:58:10', 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1');
+(9, 1, 1, 2, 1, 2887319553, '2020-10-01 15:58:10', 'http://localhost:8001/index.php?live_configurator_token=5a83880da47945a700eb6e1d593d6f76&id_employee=1&id_shop=1'),
+(10, 1, 1, 2, 1, 2887057409, '2020-10-06 11:16:51', ''),
+(11, 1, 1, 2, 1, 2887057409, '2020-10-06 11:55:01', ''),
+(12, 1, 1, 2, 1, 2887057409, '2020-10-06 13:16:41', '');
 
 -- --------------------------------------------------------
 
@@ -4100,8 +4169,6 @@ CREATE TABLE `ps_connections_page` (
   `time_start` datetime NOT NULL,
   `time_end` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
 
 -- --------------------------------------------------------
 
@@ -4962,6 +5029,29 @@ INSERT INTO `ps_country_shop` (`id_country`, `id_shop`) VALUES
 (242, 1),
 (243, 1),
 (244, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ps_cronjobs`
+--
+
+DROP TABLE IF EXISTS `ps_cronjobs`;
+CREATE TABLE `ps_cronjobs` (
+  `id_cronjob` int(10) NOT NULL,
+  `id_module` int(10) DEFAULT NULL,
+  `description` text,
+  `task` text,
+  `hour` int(11) DEFAULT '-1',
+  `day` int(11) DEFAULT '-1',
+  `month` int(11) DEFAULT '-1',
+  `day_of_week` int(11) DEFAULT '-1',
+  `updated_at` datetime DEFAULT NULL,
+  `one_shot` tinyint(1) NOT NULL DEFAULT '0',
+  `active` tinyint(1) DEFAULT '0',
+  `id_shop` int(11) DEFAULT '0',
+  `id_shop_group` int(11) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -6254,12 +6344,11 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (1, 1, 108, 1),
 (1, 1, 109, 1),
 (1, 1, 110, 1),
-(1, 1, 111, 1),
 (2, 1, 112, 1),
 (2, 1, 113, 1),
 (3, 1, 5, 1),
 (3, 1, 114, 1),
-(4, 1, 8, 1),
+(4, 1, 7, 1),
 (4, 1, 13, 1),
 (4, 1, 14, 1),
 (4, 1, 17, 1),
@@ -6271,6 +6360,8 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (7, 1, 99, 1),
 (7, 1, 116, 1),
 (7, 1, 117, 1),
+(11, 1, 8, 1),
+(11, 1, 26, 1),
 (11, 1, 74, 1),
 (11, 1, 75, 1),
 (11, 1, 76, 1),
@@ -6298,26 +6389,25 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (16, 1, 123, 1),
 (16, 1, 124, 1),
 (17, 1, 126, 1),
-(17, 1, 127, 1),
+(18, 1, 127, 1),
 (19, 1, 96, 1),
 (19, 1, 97, 1),
 (20, 1, 26, 1),
 (20, 1, 31, 1),
-(20, 1, 129, 1),
-(20, 1, 130, 1),
-(20, 1, 131, 1),
-(22, 1, 15, 1),
 (22, 1, 132, 1),
-(22, 1, 133, 1),
 (25, 1, 134, 1),
 (25, 1, 135, 1),
 (25, 1, 136, 1),
+(27, 1, 15, 1),
+(27, 1, 134, 1),
+(27, 1, 135, 1),
+(27, 1, 136, 1),
 (27, 1, 137, 1),
 (27, 1, 138, 1),
 (27, 1, 139, 1),
 (27, 1, 140, 1),
 (27, 1, 141, 1),
-(28, 1, 101, 1),
+(31, 1, 142, 1),
 (31, 1, 143, 1),
 (31, 1, 144, 1),
 (31, 1, 145, 1),
@@ -6326,13 +6416,13 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (31, 1, 148, 1),
 (31, 1, 149, 1),
 (32, 1, 150, 1),
-(34, 1, 52, 1),
 (35, 1, 40, 1),
 (36, 1, 44, 1),
-(37, 1, 98, 1),
 (40, 1, 39, 1),
 (50, 1, 12, 1),
+(50, 1, 31, 1),
 (63, 1, 57, 1),
+(63, 1, 98, 1),
 (64, 1, 2, 1),
 (64, 1, 20, 1),
 (64, 1, 95, 1),
@@ -6361,19 +6451,19 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (74, 1, 61, 1),
 (74, 1, 168, 1),
 (74, 1, 169, 1),
+(78, 1, 47, 1),
+(80, 1, 101, 1),
+(81, 1, 18, 1),
 (2, 1, 10, 2),
 (3, 1, 1, 2),
 (4, 1, 96, 2),
 (4, 1, 97, 2),
-(5, 1, 15, 2),
-(6, 1, 26, 2),
 (7, 1, 8, 2),
-(8, 1, 101, 2),
 (11, 1, 67, 2),
 (11, 1, 68, 2),
 (11, 1, 69, 2),
+(12, 1, 26, 2),
 (18, 1, 126, 2),
-(18, 1, 127, 2),
 (19, 1, 13, 2),
 (19, 1, 14, 2),
 (19, 1, 17, 2),
@@ -6385,23 +6475,15 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (27, 1, 122, 2),
 (27, 1, 123, 2),
 (27, 1, 124, 2),
-(27, 1, 134, 2),
-(27, 1, 135, 2),
-(27, 1, 136, 2),
+(28, 1, 101, 2),
 (30, 1, 5, 2),
 (30, 1, 114, 2),
-(31, 1, 142, 2),
-(32, 1, 55, 2),
 (32, 1, 143, 2),
 (32, 1, 149, 2),
 (33, 1, 150, 2),
-(34, 1, 144, 2),
 (39, 1, 42, 2),
 (41, 1, 39, 2),
-(50, 1, 31, 2),
 (60, 1, 52, 2),
-(63, 1, 98, 2),
-(63, 1, 113, 2),
 (64, 1, 57, 2),
 (64, 1, 121, 2),
 (64, 1, 140, 2),
@@ -6410,16 +6492,16 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (64, 1, 147, 2),
 (64, 1, 153, 2),
 (74, 1, 20, 2),
+(81, 1, 55, 2),
+(82, 1, 18, 2),
 (4, 1, 10, 3),
-(7, 1, 26, 3),
-(10, 1, 101, 3),
-(11, 1, 8, 3),
+(16, 1, 8, 3),
+(18, 1, 26, 3),
 (23, 1, 13, 3),
 (23, 1, 14, 3),
 (23, 1, 17, 3),
 (23, 1, 96, 3),
 (23, 1, 97, 3),
-(27, 1, 15, 3),
 (27, 1, 68, 3),
 (30, 1, 1, 3),
 (33, 1, 143, 3),
@@ -6431,60 +6513,66 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (66, 1, 57, 3),
 (75, 1, 5, 3),
 (75, 1, 114, 3),
+(76, 1, 57, 3),
+(76, 1, 126, 3),
+(76, 1, 127, 3),
+(81, 1, 37, 3),
+(4, 1, 8, 4),
 (5, 1, 10, 4),
-(12, 1, 8, 4),
-(12, 1, 26, 4),
+(6, 1, 26, 4),
 (14, 1, 101, 4),
-(26, 1, 13, 4),
-(26, 1, 14, 4),
-(26, 1, 17, 4),
-(28, 1, 15, 4),
+(22, 1, 101, 4),
 (34, 1, 143, 4),
 (35, 1, 149, 4),
-(38, 1, 68, 4),
+(38, 1, 13, 4),
+(38, 1, 14, 4),
+(38, 1, 17, 4),
 (43, 1, 39, 4),
 (75, 1, 1, 4),
+(77, 1, 57, 4),
 (6, 1, 10, 5),
-(16, 1, 8, 5),
-(18, 1, 26, 5),
-(38, 1, 13, 5),
-(38, 1, 14, 5),
-(38, 1, 17, 5),
+(8, 1, 101, 5),
+(12, 1, 8, 5),
 (40, 1, 15, 5),
 (44, 1, 39, 5),
 (64, 1, 149, 5),
+(82, 1, 13, 5),
+(82, 1, 14, 5),
+(82, 1, 17, 5),
 (7, 1, 10, 6),
+(10, 1, 101, 6),
 (15, 1, 26, 6),
 (17, 1, 8, 6),
+(37, 1, 15, 6),
 (41, 1, 15, 6),
 (45, 1, 39, 6),
+(50, 1, 26, 6),
 (68, 1, 149, 6),
+(5, 1, 101, 7),
 (8, 1, 10, 7),
-(19, 1, 8, 7),
+(21, 1, 8, 7),
 (46, 1, 39, 7),
-(50, 1, 26, 7),
+(63, 1, 26, 7),
 (9, 1, 10, 8),
-(21, 1, 8, 8),
+(23, 1, 8, 8),
 (47, 1, 39, 8),
-(63, 1, 26, 8),
 (10, 1, 10, 9),
-(23, 1, 8, 9),
+(24, 1, 8, 9),
 (48, 1, 39, 9),
 (11, 1, 10, 10),
-(24, 1, 8, 10),
+(26, 1, 8, 10),
 (49, 1, 39, 10),
 (12, 1, 10, 11),
 (25, 1, 8, 11),
+(29, 1, 8, 11),
 (51, 1, 39, 11),
 (14, 1, 10, 12),
-(26, 1, 8, 12),
 (52, 1, 39, 12),
+(63, 1, 8, 12),
 (15, 1, 10, 13),
-(29, 1, 8, 13),
 (53, 1, 39, 13),
 (16, 1, 10, 14),
 (54, 1, 39, 14),
-(63, 1, 8, 14),
 (17, 1, 10, 15),
 (55, 1, 39, 15),
 (18, 1, 10, 16),
@@ -6492,25 +6580,29 @@ INSERT INTO `ps_hook_module` (`id_module`, `id_shop`, `id_hook`, `position`) VAL
 (19, 1, 10, 17),
 (57, 1, 39, 17),
 (20, 1, 10, 18),
+(21, 1, 10, 18),
 (58, 1, 39, 18),
-(21, 1, 10, 19),
+(22, 1, 10, 19),
 (59, 1, 39, 19),
-(22, 1, 10, 20),
+(23, 1, 10, 20),
 (60, 1, 39, 20),
-(23, 1, 10, 21),
+(24, 1, 10, 21),
 (61, 1, 39, 21),
-(24, 1, 10, 22),
+(26, 1, 10, 22),
 (62, 1, 39, 22),
 (25, 1, 10, 23),
-(26, 1, 10, 24),
-(27, 1, 10, 25),
-(28, 1, 10, 26),
-(29, 1, 10, 27),
-(37, 1, 10, 28),
-(38, 1, 10, 29),
-(39, 1, 10, 30),
-(63, 1, 10, 31),
-(66, 1, 10, 32);
+(28, 1, 10, 23),
+(29, 1, 10, 24),
+(37, 1, 10, 25),
+(38, 1, 10, 26),
+(39, 1, 10, 27),
+(63, 1, 10, 28),
+(78, 1, 10, 31),
+(66, 1, 10, 32),
+(80, 1, 10, 32),
+(81, 1, 10, 34),
+(82, 1, 10, 35),
+(27, 1, 10, 36);
 
 -- --------------------------------------------------------
 
@@ -6536,7 +6628,142 @@ INSERT INTO `ps_hook_module_exceptions` (`id_hook_module_exceptions`, `id_shop`,
 (2, 1, 16, 8, 'category'),
 (3, 1, 17, 8, 'category'),
 (4, 1, 21, 8, 'category'),
-(5, 1, 25, 8, 'category');
+(5, 1, 25, 8, 'category'),
+(6, 1, 4, 8, 'index'),
+(7, 1, 4, 8, 'category'),
+(8, 1, 7, 8, 'myaccount'),
+(9, 1, 7, 8, 'product'),
+(10, 1, 7, 8, 'identity'),
+(11, 1, 7, 8, 'orderopc'),
+(12, 1, 7, 8, 'addresses'),
+(13, 1, 7, 8, 'pagenotfound'),
+(14, 1, 7, 8, 'stores'),
+(15, 1, 7, 8, 'orderfollow'),
+(16, 1, 7, 8, 'auth'),
+(17, 1, 7, 8, 'contact'),
+(18, 1, 7, 8, 'discount'),
+(19, 1, 7, 8, 'cart'),
+(20, 1, 7, 8, 'order'),
+(21, 1, 7, 8, 'address'),
+(22, 1, 7, 8, 'sitemap'),
+(23, 1, 7, 8, 'password'),
+(24, 1, 7, 8, 'index'),
+(25, 1, 7, 8, 'cms'),
+(26, 1, 7, 8, 'orderslip'),
+(27, 1, 11, 8, 'index'),
+(28, 1, 11, 8, 'myaccount'),
+(29, 1, 11, 8, 'product'),
+(30, 1, 11, 8, 'order'),
+(31, 1, 11, 8, 'address'),
+(32, 1, 11, 8, 'sitemap'),
+(33, 1, 11, 8, 'pagenotfound'),
+(34, 1, 11, 8, 'cms'),
+(35, 1, 11, 8, 'orderfollow'),
+(36, 1, 11, 8, 'discount'),
+(37, 1, 11, 8, 'auth'),
+(38, 1, 11, 8, 'cart'),
+(39, 1, 11, 8, 'identity'),
+(40, 1, 11, 8, 'orderopc'),
+(41, 1, 11, 8, 'addresses'),
+(42, 1, 11, 8, 'stores'),
+(43, 1, 11, 8, 'password'),
+(44, 1, 11, 8, 'contact'),
+(45, 1, 11, 8, 'orderslip'),
+(46, 1, 12, 8, 'index'),
+(47, 1, 16, 8, 'category'),
+(48, 1, 17, 8, 'category'),
+(49, 1, 21, 8, 'category'),
+(50, 1, 23, 8, 'index'),
+(51, 1, 24, 8, 'cms'),
+(52, 1, 24, 8, 'auth'),
+(53, 1, 24, 8, 'orderslip'),
+(54, 1, 24, 8, 'myaccount'),
+(55, 1, 24, 8, 'cart'),
+(56, 1, 24, 8, 'product'),
+(57, 1, 24, 8, 'address'),
+(58, 1, 24, 8, 'orderopc'),
+(59, 1, 24, 8, 'password'),
+(60, 1, 24, 8, 'stores'),
+(61, 1, 24, 8, 'index'),
+(62, 1, 24, 8, 'contact'),
+(63, 1, 24, 8, 'discount'),
+(64, 1, 24, 8, 'identity'),
+(65, 1, 24, 8, 'order'),
+(66, 1, 24, 8, 'addresses'),
+(67, 1, 24, 8, 'pagenotfound'),
+(68, 1, 24, 8, 'sitemap'),
+(69, 1, 24, 8, 'orderfollow'),
+(70, 1, 29, 8, 'index'),
+(71, 1, 4, 8, 'category'),
+(72, 1, 16, 8, 'category'),
+(73, 1, 17, 8, 'category'),
+(74, 1, 21, 8, 'category'),
+(75, 1, 25, 8, 'category'),
+(76, 1, 4, 8, 'index'),
+(77, 1, 4, 8, 'category'),
+(78, 1, 7, 8, 'myaccount'),
+(79, 1, 7, 8, 'product'),
+(80, 1, 7, 8, 'identity'),
+(81, 1, 7, 8, 'orderopc'),
+(82, 1, 7, 8, 'addresses'),
+(83, 1, 7, 8, 'pagenotfound'),
+(84, 1, 7, 8, 'stores'),
+(85, 1, 7, 8, 'orderfollow'),
+(86, 1, 7, 8, 'auth'),
+(87, 1, 7, 8, 'contact'),
+(88, 1, 7, 8, 'discount'),
+(89, 1, 7, 8, 'cart'),
+(90, 1, 7, 8, 'order'),
+(91, 1, 7, 8, 'address'),
+(92, 1, 7, 8, 'sitemap'),
+(93, 1, 7, 8, 'password'),
+(94, 1, 7, 8, 'index'),
+(95, 1, 7, 8, 'cms'),
+(96, 1, 7, 8, 'orderslip'),
+(97, 1, 11, 8, 'index'),
+(98, 1, 11, 8, 'myaccount'),
+(99, 1, 11, 8, 'product'),
+(100, 1, 11, 8, 'order'),
+(101, 1, 11, 8, 'address'),
+(102, 1, 11, 8, 'sitemap'),
+(103, 1, 11, 8, 'pagenotfound'),
+(104, 1, 11, 8, 'cms'),
+(105, 1, 11, 8, 'orderfollow'),
+(106, 1, 11, 8, 'discount'),
+(107, 1, 11, 8, 'auth'),
+(108, 1, 11, 8, 'cart'),
+(109, 1, 11, 8, 'identity'),
+(110, 1, 11, 8, 'orderopc'),
+(111, 1, 11, 8, 'addresses'),
+(112, 1, 11, 8, 'stores'),
+(113, 1, 11, 8, 'password'),
+(114, 1, 11, 8, 'contact'),
+(115, 1, 11, 8, 'orderslip'),
+(116, 1, 12, 8, 'index'),
+(117, 1, 16, 8, 'category'),
+(118, 1, 17, 8, 'category'),
+(119, 1, 21, 8, 'category'),
+(120, 1, 23, 8, 'index'),
+(121, 1, 24, 8, 'cms'),
+(122, 1, 24, 8, 'auth'),
+(123, 1, 24, 8, 'orderslip'),
+(124, 1, 24, 8, 'myaccount'),
+(125, 1, 24, 8, 'cart'),
+(126, 1, 24, 8, 'product'),
+(127, 1, 24, 8, 'address'),
+(128, 1, 24, 8, 'orderopc'),
+(129, 1, 24, 8, 'password'),
+(130, 1, 24, 8, 'stores'),
+(131, 1, 24, 8, 'index'),
+(132, 1, 24, 8, 'contact'),
+(133, 1, 24, 8, 'discount'),
+(134, 1, 24, 8, 'identity'),
+(135, 1, 24, 8, 'order'),
+(136, 1, 24, 8, 'addresses'),
+(137, 1, 24, 8, 'pagenotfound'),
+(138, 1, 24, 8, 'sitemap'),
+(139, 1, 24, 8, 'orderfollow'),
+(140, 1, 29, 8, 'index');
 
 -- --------------------------------------------------------
 
@@ -6691,15 +6918,22 @@ CREATE TABLE `ps_image_type` (
 --
 
 INSERT INTO `ps_image_type` (`id_image_type`, `name`, `width`, `height`, `products`, `categories`, `manufacturers`, `suppliers`, `scenes`, `stores`) VALUES
-(1, 'cart_default', 80, 80, 1, 0, 0, 0, 0, 0),
-(2, 'small_default', 98, 98, 1, 0, 1, 1, 0, 0),
-(3, 'medium_default', 125, 125, 1, 1, 1, 1, 0, 1),
-(4, 'home_default', 250, 250, 1, 0, 0, 0, 0, 0),
-(5, 'large_default', 458, 458, 1, 0, 1, 1, 0, 0),
-(6, 'thickbox_default', 800, 800, 1, 0, 0, 0, 0, 0),
-(7, 'category_default', 870, 217, 0, 1, 0, 0, 0, 0),
-(8, 'scene_default', 870, 270, 0, 0, 0, 0, 1, 0),
-(9, 'm_scene_default', 161, 58, 0, 0, 0, 0, 1, 0);
+(35, 'small_default', 98, 98, 1, 0, 1, 1, 0, 1),
+(36, 'medium_default', 125, 125, 1, 1, 1, 1, 0, 1),
+(37, 'home_default', 270, 270, 1, 0, 0, 0, 0, 1),
+(38, 'large_default', 458, 458, 1, 0, 1, 1, 0, 1),
+(39, 'thickbox_default', 800, 800, 1, 0, 0, 0, 0, 1),
+(40, 'category_default', 870, 217, 0, 1, 0, 0, 0, 1),
+(41, 'scene_default', 520, 189, 0, 0, 0, 0, 1, 1),
+(42, 'm_scene_default', 161, 58, 0, 0, 0, 0, 1, 1),
+(43, 'tm_home_default', 270, 270, 1, 1, 0, 0, 0, 1),
+(44, 'tm_large_default', 458, 458, 1, 0, 0, 0, 0, 1),
+(45, 'tm_small_default', 98, 98, 1, 0, 0, 0, 0, 1),
+(46, 'tm_cart_default', 80, 80, 1, 0, 0, 0, 0, 1),
+(47, 'tm_medium_default', 125, 125, 1, 1, 1, 1, 0, 1),
+(48, 'tm_thickbox_default', 800, 800, 1, 0, 0, 0, 0, 1),
+(49, 'tm_category_default', 870, 217, 0, 1, 0, 0, 0, 1),
+(50, 'cart_default', 80, 80, 1, 0, 0, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -7424,7 +7658,12 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (132, 1, 0, 'Category modification', 'Category', 3, 1, '2020-10-01 17:06:40', '2020-10-01 17:06:40'),
 (133, 1, 0, 'Category deletion', 'Category', 8, 1, '2020-10-01 17:07:09', '2020-10-01 17:07:09'),
 (134, 1, 0, 'Category deletion', 'Category', 4, 1, '2020-10-01 17:07:18', '2020-10-01 17:07:18'),
-(135, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 8, 0, '2020-10-01 17:08:03', '2020-10-01 17:08:03');
+(135, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 8, 0, '2020-10-01 17:08:03', '2020-10-01 17:08:03'),
+(136, 1, 0, 'Back Office connection from 172.21.0.1', '', 0, 1, '2020-10-06 11:17:04', '2020-10-06 11:17:04'),
+(137, 1, 0, 'Back Office connection from 172.21.0.1', '', 0, 1, '2020-10-06 11:52:45', '2020-10-06 11:52:45'),
+(138, 1, 0, 'Back Office connection from 172.21.0.1', '', 0, 1, '2020-10-06 13:16:54', '2020-10-06 13:16:54'),
+(139, 1, 0, 'Category addition', 'Category', 32, 1, '2020-10-06 13:30:07', '2020-10-06 13:30:07'),
+(140, 1, 0, 'Category deletion', 'Category', 32, 1, '2020-10-06 13:31:05', '2020-10-06 13:31:05');
 
 -- --------------------------------------------------------
 
@@ -7605,7 +7844,8 @@ INSERT INTO `ps_meta` (`id_meta`, `page`, `configurable`) VALUES
 (33, 'module-bankwire-payment', 0),
 (34, 'module-cashondelivery-validation', 0),
 (35, 'products-comparison', 1),
-(36, 'module-blocknewsletter-verification', 1);
+(36, 'module-blocknewsletter-verification', 1),
+(37, 'module-cronjobs-callback', 1);
 
 -- --------------------------------------------------------
 
@@ -7656,7 +7896,8 @@ INSERT INTO `ps_meta_lang` (`id_meta`, `id_shop`, `id_lang`, `title`, `descripti
 (25, 1, 1, 'Guest tracking', '', '', 'guest-tracking'),
 (26, 1, 1, 'Order confirmation', '', '', 'order-confirmation'),
 (35, 1, 1, 'Products Comparison', '', '', 'products-comparison'),
-(36, 1, 1, '', '', '', '');
+(36, 1, 1, '', '', '', ''),
+(37, 1, 1, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -7745,7 +7986,13 @@ INSERT INTO `ps_module` (`id_module`, `name`, `active`, `version`) VALUES
 (67, 'psaddonsconnect', 1, '1.0.1'),
 (68, 'ps_checkout', 1, '1.5.2'),
 (74, 'axeciblesbackoffice', 1, '1.0.0'),
-(75, 'cashondelivery', 1, '1.0.0');
+(75, 'cashondelivery', 1, '1.0.0'),
+(76, 'cronjobs', 1, '1.3.2'),
+(77, 'sampledatainstall', 1, '2.2.0'),
+(78, 'sendtoafriend', 1, '1.9.0'),
+(80, 'blockpermanentlinks', 1, '0.3.1'),
+(81, 'crossselling', 1, '1.1.2'),
+(82, 'productscategory', 1, '1.8.1');
 
 -- --------------------------------------------------------
 
@@ -7854,6 +8101,12 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_module`, `view`, `configure`, 
 (2, 68, 1, 1, 1),
 (2, 74, 1, 1, 1),
 (2, 75, 1, 1, 1),
+(2, 76, 1, 1, 1),
+(2, 77, 1, 1, 1),
+(2, 78, 1, 1, 1),
+(2, 80, 1, 1, 1),
+(2, 81, 1, 1, 1),
+(2, 82, 1, 1, 1),
 (3, 1, 1, 0, 0),
 (3, 2, 1, 0, 0),
 (3, 3, 1, 0, 0),
@@ -7923,6 +8176,12 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_module`, `view`, `configure`, 
 (3, 68, 1, 0, 0),
 (3, 74, 1, 0, 0),
 (3, 75, 1, 0, 0),
+(3, 76, 1, 0, 0),
+(3, 77, 1, 0, 0),
+(3, 78, 1, 0, 0),
+(3, 80, 1, 0, 0),
+(3, 81, 1, 0, 0),
+(3, 82, 1, 0, 0),
 (4, 1, 1, 1, 1),
 (4, 2, 1, 1, 1),
 (4, 3, 1, 1, 1),
@@ -7991,7 +8250,13 @@ INSERT INTO `ps_module_access` (`id_profile`, `id_module`, `view`, `configure`, 
 (4, 67, 1, 1, 1),
 (4, 68, 1, 1, 1),
 (4, 74, 1, 1, 1),
-(4, 75, 1, 1, 1);
+(4, 75, 1, 1, 1),
+(4, 76, 1, 1, 1),
+(4, 77, 1, 1, 1),
+(4, 78, 1, 1, 1),
+(4, 80, 1, 1, 1),
+(4, 81, 1, 1, 1),
+(4, 82, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -8579,7 +8844,31 @@ INSERT INTO `ps_module_group` (`id_module`, `id_shop`, `id_group`) VALUES
 (75, 1, 1),
 (75, 1, 2),
 (75, 1, 3),
-(75, 1, 4);
+(75, 1, 4),
+(76, 1, 1),
+(76, 1, 2),
+(76, 1, 3),
+(76, 1, 4),
+(77, 1, 1),
+(77, 1, 2),
+(77, 1, 3),
+(77, 1, 4),
+(78, 1, 1),
+(78, 1, 2),
+(78, 1, 3),
+(78, 1, 4),
+(80, 1, 1),
+(80, 1, 2),
+(80, 1, 3),
+(80, 1, 4),
+(81, 1, 1),
+(81, 1, 2),
+(81, 1, 3),
+(81, 1, 4),
+(82, 1, 1),
+(82, 1, 2),
+(82, 1, 3),
+(82, 1, 4);
 
 -- --------------------------------------------------------
 
@@ -8615,7 +8904,6 @@ CREATE TABLE `ps_module_shop` (
 
 INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (1, 1, 7),
-(2, 1, 3),
 (4, 1, 7),
 (5, 1, 7),
 (6, 1, 7),
@@ -8626,18 +8914,14 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (11, 1, 7),
 (12, 1, 7),
 (13, 1, 1),
-(14, 1, 7),
-(15, 1, 7),
 (16, 1, 7),
 (17, 1, 7),
 (18, 1, 7),
 (19, 1, 7),
-(20, 1, 7),
 (21, 1, 7),
 (22, 1, 7),
 (23, 1, 7),
 (24, 1, 7),
-(25, 1, 7),
 (26, 1, 7),
 (27, 1, 7),
 (28, 1, 7),
@@ -8681,7 +8965,13 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (67, 1, 7),
 (68, 1, 7),
 (74, 1, 7),
-(75, 1, 7);
+(75, 1, 7),
+(76, 1, 7),
+(77, 1, 7),
+(78, 1, 7),
+(80, 1, 7),
+(81, 1, 7),
+(82, 1, 7);
 
 -- --------------------------------------------------------
 
@@ -11417,7 +11707,7 @@ CREATE TABLE `ps_shop` (
 --
 
 INSERT INTO `ps_shop` (`id_shop`, `id_shop_group`, `name`, `id_category`, `id_theme`, `active`, `deleted`) VALUES
-(1, 1, 'PrestaShop', 2, 1, 1, 0);
+(1, 1, 'PrestaShop', 2, 2, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -11501,7 +11791,7 @@ CREATE TABLE `ps_smarty_last_flush` (
 
 INSERT INTO `ps_smarty_last_flush` (`type`, `last_flush`) VALUES
 ('compile', '2020-10-01 15:06:19'),
-('template', '2020-10-01 15:06:19');
+('template', '2020-10-06 11:26:10');
 
 -- --------------------------------------------------------
 
@@ -11523,35 +11813,57 @@ CREATE TABLE `ps_smarty_lazy_cache` (
 --
 
 INSERT INTO `ps_smarty_lazy_cache` (`template_hash`, `cache_id`, `compile_id`, `filepath`, `last_update`) VALUES
-('073db4b24be9294adb8875f6c6bcc9a5', 'blocknewproducts|20201001|3|3|1|17', '', 'blocknewproducts/20201001/3/3/1/17/5b/3f/a5/5b3fa53881f85e796313ba8b6a28dc2b1239402d.blocknewproducts.tpl.php', '2020-10-01 15:07:29'),
-('17e36eec92e685dbd4e4df1b9011309f', 'blockstore|3|3|1|17', '', 'blockstore/3/3/1/17/96/47/f2/9647f2bfb40be35a425efa9b5cdf4eea88f1e945.blockstore.tpl.php', '2020-10-01 15:07:29'),
-('1c2cb083a2501296262fc9eacdebdcbd', 'homeslider|3|3|1|17', '', 'homeslider/3/3/1/17/b7/99/17/b79917e19c39a5c2f6896b068d19cda5bdc51987.homeslider.tpl.php', '2020-10-01 15:06:47'),
-('2132324ad7612ed7cb91de8444f03dae', 'blocksearch-top|3|3|1|17', '', 'blocksearch_top/3/3/1/17/4e/c5/f0/4ec5f09962f5f0725e3faf31c01e69428a9d500b.blocksearch-top.tpl.php', '2020-10-01 15:07:21'),
-('2b2a79d6bd38f7bf5531d6b8fa3a98c0', 'productpaymentlogos|3|3|1|17', '', 'productpaymentlogos/3/3/1/17/75/d4/f9/75d4f91ce2330a2faca072687d07c774bc9e6d01.productpaymentlogos.tpl.php', '2020-10-01 15:07:36'),
-('35cd305a7376d26fe34a5dbc3549c31d', 'blockcontact|3|3|1|17', '', 'blockcontact/3/3/1/17/3d/5b/15/3d5b1584ffcf7c8b56d0c79b9f00a62f9454dc0f.nav.tpl.php', '2020-10-01 15:06:47'),
-('399f3a8c743ef048e012f3c13f1bc314', 'blockcategories|3|3|1|17|20|20|3', '', 'blockcategories/3/3/1/17/20/20/3/1b/1c/21/1b1c215ce32173764aa2a2d1f148af37261154be.blockcategories.tpl.php', '2020-10-01 15:07:29'),
-('4f294e125e754c54d07798d2ae66c229', 'blockbanner|3|3|1|17', '', 'blockbanner/3/3/1/17/fa/20/76/fa207644db1eb26d98a795ad71b4eee2ee5ecf5a.blockbanner.tpl.php', '2020-10-01 15:06:47'),
-('4f296089919889fb5b29e0c5220afb8a', 'blockcontactinfos|3|3|1|17', '', 'blockcontactinfos/3/3/1/17/44/a3/ca/44a3ca6f70fb7cf18ad9ccaabb7c9b7695475dd2.blockcontactinfos.tpl.php', '2020-10-01 15:06:46'),
-('614548d004ca83d561fc28811f573952', 'blockspecials-tab|20201001|3|3|1|17', '', 'blockspecials_tab/20201001/3/3/1/17/ff/a2/f3/ffa2f3cf0f343957a57c8a99d56c5295164533de.tab.tpl.php', '2020-10-01 15:06:45'),
-('614e4802f9dfd7bc3afb863d07cd8835', 'productlist_colors|10|1|1', '', '', '2020-10-01 15:07:30'),
-('729e08a789498e11db4ee7ed1dafd3af', 'blockspecials-home|20201001|3|3|1|17', '', 'blockspecials_home/20201001/3/3/1/17/b7/13/c1/b713c100fedffddfa260c35747bbce951f5ad6f6.blockspecials-home.tpl.php', '2020-10-01 15:06:45'),
-('7e7845b55bd933b1bfa73cc34a919ef5', 'socialsharing_header|22|3|3|1|17', '', 'socialsharing_header/22/3/3/1/17/9a/ab/a2/9aaba2547f3f54ee2f10eceacb387ea5f22c956a.socialsharing_header.tpl.php', '2020-10-01 15:07:36'),
-('9b076b330c3b383e100e4c23e6c16d43', 'blocktopmenu|3|3|1|17|category|20', '', 'blocktopmenu/3/3/1/17/category/20/20/22/61/202261737f7471ff70a95274dd663f2dc7c8ef47.blocktopmenu.tpl.php', '2020-10-01 15:07:29'),
-('9b076b330c3b383e100e4c23e6c16d43', 'blocktopmenu|3|3|1|17|index', '', 'blocktopmenu/3/3/1/17/index/20/22/61/202261737f7471ff70a95274dd663f2dc7c8ef47.blocktopmenu.tpl.php', '2020-10-01 15:07:21'),
-('9b076b330c3b383e100e4c23e6c16d43', 'blocktopmenu|3|3|1|17|product|22', '', 'blocktopmenu/3/3/1/17/product/22/20/22/61/202261737f7471ff70a95274dd663f2dc7c8ef47.blocktopmenu.tpl.php', '2020-10-01 15:07:36'),
-('a818646d437d1d648322d07d6c385caa', 'blockspecials|20201001|26|20201001|3|3|1|17', '', 'blockspecials/20201001/26/20201001/3/3/1/17/c7/cb/5a/c7cb5a1b8f4aaa78439a29b3cc549b5c1e053c83.blockspecials.tpl.php', '2020-10-01 15:07:29'),
-('b96e09f72175b88e25c97cde76542dd6', 'blockmyaccountfooter|3|3|1|17', '', 'blockmyaccountfooter/3/3/1/17/05/44/40/054440a5b928799e8ca909a0b328db11279aee9a.blockmyaccountfooter.tpl.php', '2020-10-01 15:06:46'),
-('bfe7a83fb1ce61839575db203c6a12a1', 'blockcategories|3|3|1|17|20|3', '', 'blockcategories/3/3/1/17/20/3/a5/88/0b/a5880b37cb81397979bd6724b1e436aac6fc922c.blockcategories_footer.tpl.php', '2020-10-01 15:07:30'),
-('bfe7a83fb1ce61839575db203c6a12a1', 'blockcategories|3|3|1|17|2|3', '', 'blockcategories/3/3/1/17/2/3/a5/88/0b/a5880b37cb81397979bd6724b1e436aac6fc922c.blockcategories_footer.tpl.php', '2020-10-01 15:07:36'),
-('bfe7a83fb1ce61839575db203c6a12a1', 'blockcategories|3|3|1|17|3', '', 'blockcategories/3/3/1/17/3/a5/88/0b/a5880b37cb81397979bd6724b1e436aac6fc922c.blockcategories_footer.tpl.php', '2020-10-01 15:07:21'),
-('c0f69a7a01e460742fded10f6ab3bcab', 'blocktags|3|3|1|17', '', '', '2020-10-01 15:07:30'),
-('d22b953fa4736374feaaf4b2ee38dd9a', 'blockcms|0|3|3|1|17', '', 'blockcms/0/3/3/1/17/1d/89/e8/1d89e8014f347982d948469f9543b359301e5949.blockcms.tpl.php', '2020-10-01 15:07:29'),
-('d22b953fa4736374feaaf4b2ee38dd9a', 'blockcms|2|3|3|1|17', '', 'blockcms/2/3/3/1/17/1d/89/e8/1d89e8014f347982d948469f9543b359301e5949.blockcms.tpl.php', '2020-10-01 15:06:46'),
-('d233cdf4166f53d791a695a6bfafa3cc', 'blocknewproducts-home|20201001|3|3|1|17', '', 'blocknewproducts_home/20201001/3/3/1/17/d4/f9/31/d4f9319358b5a40d86ff79038511f880f81b70fd.blocknewproducts_home.tpl.php', '2020-10-01 15:06:45'),
-('dfd47bacacbb45d7173526c60076e7e3', 'blocksocial|3|3|1|17', '', 'blocksocial/3/3/1/17/1c/f6/15/1cf6151950192708b2e4c671fbc321fd1d6133d1.blocksocial.tpl.php', '2020-10-01 15:06:45'),
-('e35861707fde4c57b77640613bc6a595', 'socialsharing|22|3|3|1|17', '', 'socialsharing/22/3/3/1/17/33/39/83/333983b039554e2501797294517281b9fe3e8e07.socialsharing.tpl.php', '2020-10-01 15:07:36'),
-('eb92149692f7b06a705be8a062f03a16', 'blocknewproducts-tab|20201001|3|3|1|17', '', 'blocknewproducts_tab/20201001/3/3/1/17/72/4f/6d/724f6d692f525ebf1cf9abc827e367ef14b60def.tab.tpl.php', '2020-10-01 15:06:44'),
-('efc359ef82cf3c2f7740e9fba91ea1d9', 'blockcmsinfo|3|3|1|17', '', 'blockcmsinfo/3/3/1/17/2d/79/4a/2d794ad7481b74d454bafcbae8772db1320ae2ba.blockcmsinfo.tpl.php', '2020-10-01 15:06:44');
+('315067d4dc4ad53289a28baebcbeaa92', 'crossselling|shoppingcart|7|20|3|3|1|17', '', 'crossselling/shoppingcart/7/20/3/3/1/17/25/bd/28/25bd28cdd67989cb4506f23cb8bbee12987f5457.crossselling.tpl.php', '2020-10-06 11:33:11'),
+('35711e31be746ff04e22a869ea5236d3', 'homeslider|3|3|1|17', '', 'homeslider/3/3/1/17/06/f2/73/06f2735b2e60f58095cd63dcf07421109a46fe5e.homeslider.tpl.php', '2020-10-06 11:27:25'),
+('35711e31be746ff04e22a869ea5236d3', 'homeslider|3|3|2|17', '', 'homeslider/3/3/2/17/06/f2/73/06f2735b2e60f58095cd63dcf07421109a46fe5e.homeslider.tpl.php', '2020-10-06 11:31:53'),
+('3d0a27bf630522a0b0f13f0f8bdf88bb', 'blocknewproducts-tab|20201006|3|3|1|17', '', 'blocknewproducts_tab/20201006/3/3/1/17/c2/e5/0d/c2e50db3c968e12dadf03c3b9dcc7c76f142db17.tab.tpl.php', '2020-10-06 11:27:25'),
+('3d0a27bf630522a0b0f13f0f8bdf88bb', 'blocknewproducts-tab|20201006|3|3|2|17', '', 'blocknewproducts_tab/20201006/3/3/2/17/c2/e5/0d/c2e50db3c968e12dadf03c3b9dcc7c76f142db17.tab.tpl.php', '2020-10-06 11:31:53'),
+('56a30b23a26e0832c5ed116aaa4dabc4', 'homefeatured|3|3|1|17', '', 'homefeatured/3/3/1/17/9e/6f/74/9e6f74718786cc154736dd9eb88b67debf16716d.homefeatured.tpl.php', '2020-10-06 11:27:26'),
+('59159858bd438d545b8d07a090238ccc', 'blockpermanentlinks-header|3|3|1|17', '', 'blockpermanentlinks_header/3/3/1/17/23/0e/ce/230ececf803b6be20ea14d1c3a2719b1f3579d4c.blockpermanentlinks-header.tpl.php', '2020-10-06 11:27:26'),
+('59159858bd438d545b8d07a090238ccc', 'blockpermanentlinks-header|3|3|2|17', '', 'blockpermanentlinks_header/3/3/2/17/23/0e/ce/230ececf803b6be20ea14d1c3a2719b1f3579d4c.blockpermanentlinks-header.tpl.php', '2020-10-06 11:31:54'),
+('5954cdb4a68b8482bed14be2dadc65c0', 'blocktopmenu|3|3|1|17|index', '', 'blocktopmenu/3/3/1/17/index/c4/8e/20/c48e205c4a8497dd8f9c255670678a5bd5c7c847.blocktopmenu.tpl.php', '2020-10-06 11:31:26'),
+('5954cdb4a68b8482bed14be2dadc65c0', 'blocktopmenu|3|3|2|17|index', '', 'blocktopmenu/3/3/2/17/index/c4/8e/20/c48e205c4a8497dd8f9c255670678a5bd5c7c847.blocktopmenu.tpl.php', '2020-10-06 11:31:53'),
+('614548d004ca83d561fc28811f573952', 'blockspecials-tab|20201006|3|3|1|17', '', 'blockspecials_tab/20201006/3/3/1/17/ff/a2/f3/ffa2f3cf0f343957a57c8a99d56c5295164533de.tab.tpl.php', '2020-10-06 11:29:17'),
+('614548d004ca83d561fc28811f573952', 'blockspecials-tab|20201006|3|3|2|17', '', 'blockspecials_tab/20201006/3/3/2/17/ff/a2/f3/ffa2f3cf0f343957a57c8a99d56c5295164533de.tab.tpl.php', '2020-10-06 11:31:53'),
+('627376db41b9deca5f3c6aee6d91a4c7', 'blocksocial|3|3|1|17', '', 'blocksocial/3/3/1/17/46/2d/d2/462dd2db19a00777cb6337bc77757f0245cedc7f.blocksocial.tpl.php', '2020-10-06 11:27:26'),
+('627376db41b9deca5f3c6aee6d91a4c7', 'blocksocial|3|3|2|17', '', 'blocksocial/3/3/2/17/46/2d/d2/462dd2db19a00777cb6337bc77757f0245cedc7f.blocksocial.tpl.php', '2020-10-06 11:31:54'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|1|1|1', '', 'productlist_colors/1/1/1/07/82/98/078298af363b11134cf699e84c30197ef9d271ed.product-list-colors.tpl.php', '2020-10-06 11:27:40'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|22|1|1', '', '', '2020-10-06 11:27:40'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|2|1|1', '', 'productlist_colors/2/1/1/07/82/98/078298af363b11134cf699e84c30197ef9d271ed.product-list-colors.tpl.php', '2020-10-06 11:27:40'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|5|1|1', '', 'productlist_colors/5/1/1/07/82/98/078298af363b11134cf699e84c30197ef9d271ed.product-list-colors.tpl.php', '2020-10-06 11:27:40'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|6|1|1', '', 'productlist_colors/6/1/1/07/82/98/078298af363b11134cf699e84c30197ef9d271ed.product-list-colors.tpl.php', '2020-10-06 11:27:40'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|7|1|1', '', 'productlist_colors/7/1/1/07/82/98/078298af363b11134cf699e84c30197ef9d271ed.product-list-colors.tpl.php', '2020-10-06 11:27:40'),
+('7182a0a1a2267051a839b30d18d91525', 'productlist_colors|8|1|1', '', '', '2020-10-06 11:29:54'),
+('729e08a789498e11db4ee7ed1dafd3af', 'blockspecials-home|20201006|3|3|1|17', '', 'blockspecials_home/20201006/3/3/1/17/b7/13/c1/b713c100fedffddfa260c35747bbce951f5ad6f6.blockspecials-home.tpl.php', '2020-10-06 11:29:17'),
+('729e08a789498e11db4ee7ed1dafd3af', 'blockspecials-home|20201006|3|3|2|17', '', 'blockspecials_home/20201006/3/3/2/17/b7/13/c1/b713c100fedffddfa260c35747bbce951f5ad6f6.blockspecials-home.tpl.php', '2020-10-06 11:31:53'),
+('74033887a1971b57971fa171220f5d28', 'blockspecials|20201006|1|20201006|3|3|1|17', '', 'blockspecials/20201006/1/20201006/3/3/1/17/e7/2e/7b/e72e7bdd60aa149a2fadcdbb34fe6913ed8e76dc.blockspecials.tpl.php', '2020-10-06 11:27:31'),
+('74033887a1971b57971fa171220f5d28', 'blockspecials|20201006|30|20201006|3|3|1|17', '', 'blockspecials/20201006/30/20201006/3/3/1/17/e7/2e/7b/e72e7bdd60aa149a2fadcdbb34fe6913ed8e76dc.blockspecials.tpl.php', '2020-10-06 11:30:51'),
+('74033887a1971b57971fa171220f5d28', 'blockspecials|20201006|5|20201006|3|3|1|17', '', 'blockspecials/20201006/5/20201006/3/3/1/17/e7/2e/7b/e72e7bdd60aa149a2fadcdbb34fe6913ed8e76dc.blockspecials.tpl.php', '2020-10-06 11:27:40'),
+('74033887a1971b57971fa171220f5d28', 'blockspecials|20201006|6|20201006|3|3|1|17', '', 'blockspecials/20201006/6/20201006/3/3/1/17/e7/2e/7b/e72e7bdd60aa149a2fadcdbb34fe6913ed8e76dc.blockspecials.tpl.php', '2020-10-06 11:29:54'),
+('76fdb98e6b1827f188eea8225e27f279', 'blockfacebook|3|3|1|17', '', 'blockfacebook/3/3/1/17/5a/ab/e1/5aabe1fe6ae1a90bffaa97451a0980b182fecd10.blockfacebook.tpl.php', '2020-10-06 11:27:25'),
+('838b3e73add84a134bad5de5e9650036', 'blockmyaccountfooter|3|3|1|17', '', 'blockmyaccountfooter/3/3/1/17/f9/b5/db/f9b5dbfdc18ff1f4617a46036c540cd19487a69b.blockmyaccountfooter.tpl.php', '2020-10-06 11:27:26'),
+('838b3e73add84a134bad5de5e9650036', 'blockmyaccountfooter|3|3|2|17', '', 'blockmyaccountfooter/3/3/2/17/f9/b5/db/f9b5dbfdc18ff1f4617a46036c540cd19487a69b.blockmyaccountfooter.tpl.php', '2020-10-06 11:31:54'),
+('8693ffb84fd5828cc4524a8f977ef3f3', 'blockbestsellers-tab|3|3|1|17', '', 'blockbestsellers_tab/3/3/1/17/51/77/c6/5177c6013f6d22e84588a71d59a6284e8f8871c3.tab.tpl.php', '2020-10-06 11:27:25'),
+('8693ffb84fd5828cc4524a8f977ef3f3', 'blockbestsellers-tab|3|3|2|17', '', 'blockbestsellers_tab/3/3/2/17/51/77/c6/5177c6013f6d22e84588a71d59a6284e8f8871c3.tab.tpl.php', '2020-10-06 11:31:53'),
+('8b5fd7668074e6050d4c1fb0d04ac2d8', 'blockcms|0|3|3|1|17', '', 'blockcms/0/3/3/1/17/5e/02/97/5e02977e2cc87b8151490f99b980429272ed8db0.blockcms.tpl.php', '2020-10-06 11:27:31'),
+('8b5fd7668074e6050d4c1fb0d04ac2d8', 'blockcms|2|3|3|1|17', '', 'blockcms/2/3/3/1/17/5e/02/97/5e02977e2cc87b8151490f99b980429272ed8db0.blockcms.tpl.php', '2020-10-06 11:27:26'),
+('8b5fd7668074e6050d4c1fb0d04ac2d8', 'blockcms|2|3|3|2|17', '', 'blockcms/2/3/3/2/17/5e/02/97/5e02977e2cc87b8151490f99b980429272ed8db0.blockcms.tpl.php', '2020-10-06 11:31:54'),
+('99c8a0f6b51875be8d6f12539d702d04', 'blockmanufacturer|3|3|1|17', '', 'blockmanufacturer/3/3/1/17/19/58/b0/1958b0b6e5387c59fed5bba26a63520f8c55f3e8.blockmanufacturer.tpl.php', '2020-10-06 11:27:25'),
+('99c8a0f6b51875be8d6f12539d702d04', 'blockmanufacturer|3|3|2|17', '', 'blockmanufacturer/3/3/2/17/19/58/b0/1958b0b6e5387c59fed5bba26a63520f8c55f3e8.blockmanufacturer.tpl.php', '2020-10-06 11:31:53'),
+('a0b90ef5b10f770423de4a962816a986', 'blocksearch-top|3|3|1|17', '', 'blocksearch_top/3/3/1/17/4e/a4/02/4ea402ff173cad6e03ce9bdd76192e171d44ecfb.blocksearch-top.tpl.php', '2020-10-06 11:27:26'),
+('a0b90ef5b10f770423de4a962816a986', 'blocksearch-top|3|3|2|17', '', 'blocksearch_top/3/3/2/17/4e/a4/02/4ea402ff173cad6e03ce9bdd76192e171d44ecfb.blocksearch-top.tpl.php', '2020-10-06 11:31:54'),
+('a4edb6e4925cf4f684fdf466d509564a', 'blockpaymentlogo|3|3|1|17', '', '', '2020-10-06 11:35:49'),
+('a4edb6e4925cf4f684fdf466d509564a', 'blockpaymentlogo|3|3|2|17', '', '', '2020-10-06 11:31:53'),
+('a7fb61e4a1c3b8fba4348dedd1cc50de', 'blocknewproducts-home|20201006|3|3|1|17', '', 'blocknewproducts_home/20201006/3/3/1/17/fa/b6/37/fab6378aad22f1e8a5dd8d1a732841d88da97588.blocknewproducts_home.tpl.php', '2020-10-06 11:27:26'),
+('a7fb61e4a1c3b8fba4348dedd1cc50de', 'blocknewproducts-home|20201006|3|3|2|17', '', 'blocknewproducts_home/20201006/3/3/2/17/fa/b6/37/fab6378aad22f1e8a5dd8d1a732841d88da97588.blocknewproducts_home.tpl.php', '2020-10-06 11:31:53'),
+('b768b782323e624a40004633c2d0a334', 'blockstore|3|3|1|17', '', 'blockstore/3/3/1/17/3f/81/74/3f81740c2b1fa94343f594d49557eb0b2af7d2db.blockstore.tpl.php', '2020-10-06 11:27:40'),
+('d36b7d13faa669c3fef76f055b382d30', 'blockbestsellers-col|3|3|1|17', '', 'blockbestsellers_col/3/3/1/17/10/c9/01/10c9016916d4ec444cea2b4ae40a95e407815882.blockbestsellers.tpl.php', '2020-10-06 11:27:31'),
+('d567285a079af7aab995480b30b3a2ce', 'homefeatured-tab|3|3|1|17', '', 'homefeatured_tab/3/3/1/17/cc/0b/ca/cc0bca43bc1d7ed890fd9f7aaf4b55934b8f627c.tab.tpl.php', '2020-10-06 11:27:25'),
+('e54da5f60515a4b86a1e96c65f374ad8', 'blockbestsellers-home|3|3|1|17', '', 'blockbestsellers_home/3/3/1/17/23/53/31/235331f2e4fa1ec33b2d8f0eab909329a214b047.blockbestsellers-home.tpl.php', '2020-10-06 11:27:26'),
+('e54da5f60515a4b86a1e96c65f374ad8', 'blockbestsellers-home|3|3|2|17', '', 'blockbestsellers_home/3/3/2/17/23/53/31/235331f2e4fa1ec33b2d8f0eab909329a214b047.blockbestsellers-home.tpl.php', '2020-10-06 11:31:53'),
+('efc359ef82cf3c2f7740e9fba91ea1d9', 'blockcmsinfo|3|3|1|17', '', 'blockcmsinfo/3/3/1/17/2d/79/4a/2d794ad7481b74d454bafcbae8772db1320ae2ba.blockcmsinfo.tpl.php', '2020-10-06 11:27:25'),
+('efc359ef82cf3c2f7740e9fba91ea1d9', 'blockcmsinfo|3|3|2|17', '', 'blockcmsinfo/3/3/2/17/2d/79/4a/2d794ad7481b74d454bafcbae8772db1320ae2ba.blockcmsinfo.tpl.php', '2020-10-06 11:31:53'),
+('f03472fac2c085be9f0930fd8d9989fe', 'blocktags|3|3|2|17', '', '', '2020-10-06 11:31:53');
 
 -- --------------------------------------------------------
 
@@ -12633,7 +12945,11 @@ INSERT INTO `ps_tab` (`id_tab`, `id_parent`, `class_name`, `module`, `position`,
 (104, 18, 'AdminGamification', 'gamification', 6, 1, 0),
 (106, 0, 'AdminEmarketing', 'emarketing', 13, 1, 0),
 (107, -1, 'AdminAjaxPrestashopCheckout', 'ps_checkout', 10, 1, 0),
-(108, -1, 'AdminPaypalOnboardingPrestashopCheckout', 'ps_checkout', 11, 1, 0);
+(108, -1, 'AdminPaypalOnboardingPrestashopCheckout', 'ps_checkout', 11, 1, 0),
+(109, -1, 'AdminCronJobs', 'cronjobs', 12, 1, 0),
+(110, 0, 'AdminSampleDataInstall', 'sampledatainstall', 14, 1, 0),
+(111, 110, 'AdminSampleDataInstallImport', 'sampledatainstall', 1, 1, 0),
+(112, 110, 'AdminSampleDataInstallExport', 'sampledatainstall', 2, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -12711,7 +13027,22 @@ INSERT INTO `ps_tab_advice` (`id_tab`, `id_advice`) VALUES
 (1, 57),
 (1, 58),
 (1, 59),
-(1, 60);
+(1, 60),
+(1, 61),
+(1, 62),
+(1, 63),
+(1, 64),
+(1, 65),
+(1, 66),
+(1, 67),
+(1, 68),
+(1, 69),
+(1, 70),
+(1, 71),
+(1, 72),
+(1, 73),
+(1, 74),
+(1, 75);
 
 -- --------------------------------------------------------
 
@@ -12837,7 +13168,11 @@ INSERT INTO `ps_tab_lang` (`id_tab`, `id_lang`, `name`) VALUES
 (104, 1, 'Merchant Expertise'),
 (106, 1, 'Advertising'),
 (107, 1, 'PrestaShop Checkout'),
-(108, 1, 'PrestaShop Checkout');
+(108, 1, 'PrestaShop Checkout'),
+(109, 1, 'Cron Jobs'),
+(110, 1, 'Sample Data Install'),
+(111, 1, 'Import Data'),
+(112, 1, 'Export Data');
 
 -- --------------------------------------------------------
 
@@ -12977,7 +13312,8 @@ CREATE TABLE `ps_theme` (
 --
 
 INSERT INTO `ps_theme` (`id_theme`, `name`, `directory`, `responsive`, `default_left_column`, `default_right_column`, `product_per_page`) VALUES
-(1, 'default-bootstrap', 'default-bootstrap', 1, 1, 0, 12);
+(1, 'default-bootstrap', 'default-bootstrap', 1, 1, 0, 12),
+(2, 'theme962', 'theme962', 1, 1, 0, 6);
 
 -- --------------------------------------------------------
 
@@ -13070,7 +13406,45 @@ INSERT INTO `ps_theme_meta` (`id_theme_meta`, `id_theme`, `id_meta`, `left_colum
 (32, 1, 32, 0, 0),
 (33, 1, 33, 0, 0),
 (34, 1, 34, 0, 0),
-(35, 1, 36, 1, 0);
+(35, 1, 36, 1, 0),
+(36, 2, 2, 1, 0),
+(37, 2, 3, 1, 0),
+(38, 2, 4, 1, 0),
+(39, 2, 5, 1, 0),
+(40, 2, 6, 1, 0),
+(41, 2, 7, 1, 0),
+(42, 2, 8, 1, 0),
+(43, 2, 9, 1, 0),
+(44, 2, 10, 1, 0),
+(45, 2, 11, 1, 0),
+(46, 2, 12, 1, 0),
+(47, 2, 13, 1, 0),
+(48, 2, 14, 0, 0),
+(49, 2, 15, 1, 0),
+(50, 2, 16, 1, 0),
+(51, 2, 17, 1, 0),
+(52, 2, 18, 1, 0),
+(53, 2, 19, 1, 0),
+(54, 2, 20, 1, 0),
+(55, 2, 21, 0, 0),
+(56, 2, 22, 1, 0),
+(57, 2, 23, 0, 0),
+(58, 2, 24, 1, 0),
+(59, 2, 25, 1, 0),
+(60, 2, 26, 1, 0),
+(61, 2, 28, 1, 0),
+(62, 2, 29, 1, 0),
+(63, 2, 27, 0, 0),
+(64, 2, 30, 1, 0),
+(65, 2, 31, 1, 0),
+(66, 2, 32, 1, 0),
+(67, 2, 33, 1, 0),
+(68, 2, 35, 1, 0),
+(69, 2, 36, 1, 0),
+(70, 2, 34, 1, 0),
+(71, 2, 1, 1, 0),
+(72, 1, 37, 1, 0),
+(73, 2, 37, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -14339,6 +14713,13 @@ ALTER TABLE `ps_country_lang`
 ALTER TABLE `ps_country_shop`
   ADD PRIMARY KEY (`id_country`,`id_shop`),
   ADD KEY `id_shop` (`id_shop`);
+
+--
+-- Indexes for table `ps_cronjobs`
+--
+ALTER TABLE `ps_cronjobs`
+  ADD PRIMARY KEY (`id_cronjob`),
+  ADD KEY `id_module` (`id_module`);
 
 --
 -- Indexes for table `ps_currency`
@@ -15746,7 +16127,7 @@ ALTER TABLE `ps_address`
 -- AUTO_INCREMENT for table `ps_advice`
 --
 ALTER TABLE `ps_advice`
-  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id_advice` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `ps_alias`
@@ -15824,7 +16205,7 @@ ALTER TABLE `ps_cart_rule_product_rule_group`
 -- AUTO_INCREMENT for table `ps_category`
 --
 ALTER TABLE `ps_category`
-  MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id_category` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `ps_cms`
@@ -15884,7 +16265,7 @@ ALTER TABLE `ps_condition`
 -- AUTO_INCREMENT for table `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=407;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=418;
 
 --
 -- AUTO_INCREMENT for table `ps_configuration_kpi`
@@ -15896,7 +16277,7 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `ps_contact`
@@ -15909,6 +16290,12 @@ ALTER TABLE `ps_contact`
 --
 ALTER TABLE `ps_country`
   MODIFY `id_country` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=245;
+
+--
+-- AUTO_INCREMENT for table `ps_cronjobs`
+--
+ALTER TABLE `ps_cronjobs`
+  MODIFY `id_cronjob` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `ps_currency`
@@ -15957,7 +16344,6 @@ ALTER TABLE `ps_date_range`
 --
 ALTER TABLE `ps_delivery`
   MODIFY `id_delivery` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=365;
-
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
@@ -16023,7 +16409,7 @@ ALTER TABLE `ps_hook_alias`
 -- AUTO_INCREMENT for table `ps_hook_module_exceptions`
 --
 ALTER TABLE `ps_hook_module_exceptions`
-  MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_hook_module_exceptions` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
 -- AUTO_INCREMENT for table `ps_image`
@@ -16035,7 +16421,7 @@ ALTER TABLE `ps_image`
 -- AUTO_INCREMENT for table `ps_image_type`
 --
 ALTER TABLE `ps_image_type`
-  MODIFY `id_image_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_image_type` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `ps_import_match`
@@ -16083,7 +16469,7 @@ ALTER TABLE `ps_linksmenutop`
 -- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=141;
 
 --
 -- AUTO_INCREMENT for table `ps_mail`
@@ -16113,13 +16499,13 @@ ALTER TABLE `ps_message`
 -- AUTO_INCREMENT for table `ps_meta`
 --
 ALTER TABLE `ps_meta`
-  MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id_meta` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `ps_module`
 --
 ALTER TABLE `ps_module`
-  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `id_module` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT for table `ps_modules_perfs`
@@ -16473,7 +16859,7 @@ ALTER TABLE `ps_supply_order_state`
 -- AUTO_INCREMENT for table `ps_tab`
 --
 ALTER TABLE `ps_tab`
-  MODIFY `id_tab` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+  MODIFY `id_tab` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 
 --
 -- AUTO_INCREMENT for table `ps_tab_module_preference`
@@ -16509,7 +16895,7 @@ ALTER TABLE `ps_tax_rules_group`
 -- AUTO_INCREMENT for table `ps_theme`
 --
 ALTER TABLE `ps_theme`
-  MODIFY `id_theme` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_theme` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `ps_themeconfigurator`
@@ -16521,7 +16907,7 @@ ALTER TABLE `ps_themeconfigurator`
 -- AUTO_INCREMENT for table `ps_theme_meta`
 --
 ALTER TABLE `ps_theme_meta`
-  MODIFY `id_theme_meta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_theme_meta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 
 --
 -- AUTO_INCREMENT for table `ps_timezone`
