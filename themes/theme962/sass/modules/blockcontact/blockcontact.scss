@@ -1,0 +1,68 @@
+@import "compass";
+@import "theme_variables";
+
+.shop-phone {
+	float: left;
+	padding: 21px 0 0px 20px;
+	color: $link-top-color;
+	font: 400 11px / 14px $font-custom;
+	text-transform: uppercase;
+	@media (max-width: $screen-xs-max) {
+		display: none;
+	}
+	i {
+		font-size: 15px;
+		line-height: 15px;
+		color: $link-top-color;
+		padding-right: 7px;
+	}
+	strong {
+		color: $link-top-color;
+		text-transform: uppercase;
+		font: 400 11px / 14px $font-custom;
+	}
+}
+
+#contact-link {
+	float: left;
+	background:url(../../../img/border-menu.png) no-repeat left 24px;
+	margin-right: 0px;
+	padding: 0 0px 0 12px;												
+	a {
+		display: block;
+		color: $link-top-color;
+		font: 400 11px / 14px $font-custom;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 19px 0px 0 0;
+		border-top: 3px solid #558691;
+		&:hover, &.active {
+			border-top: 3px solid #ffffff;
+		}
+	}
+}
+
+#contact_block {
+	@media (max-width: $screen-xs-max) { // max 767px
+		margin-bottom: 20px;
+	}
+	.label {
+		display: none
+	}
+	.block_content {
+		color: #888888;
+	}
+	p {
+		margin-bottom: 4px;
+	}
+	p.tel {
+		font: 400 17px/21px $font-family;
+		color: $base-text-color;
+		margin-bottom: 6px;
+		i {
+			font-size: 25px;
+			vertical-align: -2px; 
+			padding-right: 10px;
+		}
+	}
+}

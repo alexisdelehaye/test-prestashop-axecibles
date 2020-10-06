@@ -1,0 +1,105 @@
+@import "compass";
+@import "theme_variables";
+
+/* Home hook CSS */
+#htmlcontent_home {
+	ul {
+		margin: 0 -5px;
+		li {
+			padding: 0 5px 10px;
+			@media (max-width: $screen-xs - 1) { // max 479px
+				width: 100%;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+				@media (max-width: $screen-xs - 1) { // max 479px
+					min-width: 100%;
+				}
+			}
+			&.htmlcontent-item-5 {
+				width: 66.6667%;
+				@media (max-width: $screen-xs - 1) { // max 479px
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* Top hook CSS */
+#htmlcontent_top {
+	padding: 0 0 3px 0;
+	@media (max-width: $screen-xs-max) { // max 767px
+		width: 100%;
+		max-width: 100%;
+		padding-left: 0;
+		padding-top: 0px;
+	}
+	ul {
+		@media (max-width: $screen-xs-max) { // max 767px
+			margin: 0 -5px;
+		}
+		li {
+			margin-bottom: 20px;
+			@media (max-width: $screen-xs-max) { // max 767px
+				float: left;
+				padding-left: 5px;
+				padding-right: 5px;
+				width: 50%;
+			}
+			&:last-child{
+					margin-bottom: 0;
+			}
+			a{
+				display: block;
+				@media (max-width: $screen-md){
+					font-size: 0.8em;
+				}
+				@media (max-width: $screen-xs){
+					font-size: 0.5em;
+				}
+				img {
+					max-width: 100%;
+					height: auto;	
+				}
+				.item-html{
+					border-bottom: 3px solid #3f4a4d;
+					h2{
+						margin: 0 0 0 0;
+						padding: 0 0 5px 0;
+						color: #3f4a4d;
+						font: 300 2.154em / 1.1em $font-custom;
+									&:after{
+											display: inline-block;
+											font-size: 0.643em;
+											font-family: $font-icon;
+											vertical-align: 0px;
+											content: "\f0a9";
+											margin-left: 8px;
+											color: #ff5857;
+								    }
+					}
+				}
+				&:hover .item-html{
+					border-bottom: 3px solid #ff5857;
+				}
+				&:hover h2{
+					color: #ff5857;
+				}
+			}
+		}
+	}
+}
+
+/* Left hook CSS */
+#htmlcontent_left {
+}
+
+/* Right hook CSS */
+#htmlcontent_right {
+}
+
+/* Footer hook CSS */
+#htmlcontent_footer {
+}

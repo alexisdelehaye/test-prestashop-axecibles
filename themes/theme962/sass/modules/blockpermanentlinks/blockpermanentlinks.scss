@@ -1,0 +1,59 @@
+@import "compass";
+@import "theme_variables";
+/* block top links */
+ul#header_links {
+	list-style-type: none;
+	margin: 0px 0 0 0px;
+	float: left;
+	overflow: hidden;
+	@media (max-width: $screen-xs){
+		float: none;
+		margin: 0px 0 5px 0px;	
+	}
+	li {
+		text-transform: capitalize;
+		float: left;
+		padding: 0 12px 0 0;
+		margin: 0 10px 0 0;
+		background:url(../../../img/border-menu.png) no-repeat right 24px;
+		&:first-child {border:none;}
+		&:last-child{
+			@media (max-width: $screen-xs){
+				background: none;		
+			}
+		}
+		a {
+			text-decoration: none;
+			color: $link-top-color;
+			font: 400 11px / 14px $font-custom;
+			text-transform: uppercase;
+			padding: 19px 0px 0 0;
+			display: inline-block;
+			border-top: 3px solid  transparent; 
+			&:hover, &.active {
+				border-top: 3px solid #ffffff;
+				
+			}
+		}
+	}
+}
+
+/*block permanent links right and left columns*/
+#permanent_links div {border-bottom: 1px dotted #eee}
+#permanent_links div a {
+	display: block;
+	padding: 7px 11px 5px 22px;
+	color: #333;
+	background:url(img/arrow_right_2.png) no-repeat 10px 10px;
+}
+
+/* block footer links */
+ul#footer_links{
+	clear:both;
+	text-align: center;
+	padding-bottom:6px
+}
+ul#footer_links li{
+	display: inline;
+	padding:0 10px
+}
