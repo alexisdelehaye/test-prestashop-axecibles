@@ -11,7 +11,7 @@ class Cart extends CartCore
     {
         if (!is_null($products)) {
             $total_weight = 0;
-            if ($this->id_carrier != 16) {
+            if ($this->id_carrier != 15) {
                 foreach ($products as $product) {
                     if (!isset($product['weight_attribute']) || is_null($product['weight_attribute'])) {
                         $total_weight += $product['weight'] * $product['cart_quantity'];
@@ -32,7 +32,7 @@ class Cart extends CartCore
         }
 
         if (!isset(self::$_totalWeight[$this->id])) {
-            if ($this->id_carrier != 16) {
+            if ($this->id_carrier != 15) {
                 if (Combination::isFeatureActive()) {
                     $weight_product_with_attribute = Db::getInstance()->getValue('
 				SELECT SUM((p.`weight` + pa.`weight`) * cp.`quantity`) as nb
