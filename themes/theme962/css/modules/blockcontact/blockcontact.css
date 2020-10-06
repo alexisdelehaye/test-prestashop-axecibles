@@ -1,0 +1,85 @@
+/* ------- FONTS ------- */
+/* ------- BORDERS ------- */
+/* ------- BACKGROUNDS ------- */
+/* ------- COLORS ------- */
+/* ------- Indents ------- */
+/* ------- Product Elements ------- */
+/* ------- Buttons ------- */
+/* ------- Buttons +/- ------ */
+/* ------- Button Small ------- */
+/* ------- Button exclusive-medium ------- */
+/* ------- My Account List bg ------- */
+/* ------- Product Listing ------- */
+/* ------- Grid/List vars ------- */
+/* ------- Pagination vars ------- */
+/* ------- Product Info ------- */
+/* ------- Cart Steps ------- */
+/* ------- sub heading (h2,h3) define ------- */
+/* ------- Image vars ------- */
+.shop-phone {
+  float: left;
+  padding: 21px 0 0px 20px;
+  color: #b3c9ce;
+  font: 400 11px/14px "Ubuntu", "sans-serif";
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .shop-phone {
+    display: none;
+  }
+}
+.shop-phone i {
+  font-size: 15px;
+  line-height: 15px;
+  color: #b3c9ce;
+  padding-right: 7px;
+}
+.shop-phone strong {
+  color: #b3c9ce;
+  text-transform: uppercase;
+  font: 400 11px/14px "Ubuntu", "sans-serif";
+}
+
+#contact-link {
+  float: left;
+  background: url(../../../img/border-menu.png) no-repeat left 24px;
+  margin-right: 0px;
+  padding: 0 0px 0 12px;
+}
+#contact-link a {
+  display: block;
+  color: #b3c9ce;
+  font: 400 11px/14px "Ubuntu", "sans-serif";
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 19px 0px 0 0;
+  border-top: 3px solid #558691;
+}
+#contact-link a:hover, #contact-link a.active {
+  border-top: 3px solid #ffffff;
+}
+
+@media (max-width: 767px) {
+  #contact_block {
+    margin-bottom: 20px;
+  }
+}
+#contact_block .label {
+  display: none;
+}
+#contact_block .block_content {
+  color: #888888;
+}
+#contact_block p {
+  margin-bottom: 4px;
+}
+#contact_block p.tel {
+  font: 400 17px/21px Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin-bottom: 6px;
+}
+#contact_block p.tel i {
+  font-size: 25px;
+  vertical-align: -2px;
+  padding-right: 10px;
+}
