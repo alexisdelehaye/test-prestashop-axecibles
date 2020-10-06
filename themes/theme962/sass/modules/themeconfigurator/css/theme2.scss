@@ -1,0 +1,308 @@
+@import "compass";
+@import "theme_variables";
+
+$color-style-1:             #fad687;
+$color-style-2:             #fdebc3;
+$color-style-3:             #fff0d7;
+$color-style-4:             #bdbcbd;
+$color-style-5:             #624f65;
+$color-style-1-hover:       #e8c578;
+$color-style-5-hover:       #504053;
+$color-style-6:             #525252;
+$color-style-7:             #afafaf;
+
+ul.step li.step_current,
+ul.step li.step_current span:after {
+	background: $color-style-1;
+	border-color: $color-style-1;
+}
+
+ul.step li.step_done a:after,
+ul.step li.step_done.step_done_last a:after,
+ul.step li.step_done {
+	background: $color-style-5;
+	border-color: $color-style-5-hover;
+}
+
+ul.step a:hover,
+ul.step a:hover:after {
+	background: $color-style-5-hover !important;
+	border-color: $color-style-5-hover !important;
+}
+
+#index .top-container,
+.top-container{
+	background: $color-style-1;
+}
+#homepage-slider{
+	border-top: 1px solid $color-style-2;
+}
+.top-container-header{
+	border-bottom: 1px solid $color-style-2;
+}
+#page {
+    background: url("../img/bg-main-theme-2.gif") repeat-x scroll 0 0 #FFFFFF;
+}
+.slider-part{
+	background: url("../img/bg-main-theme-2.gif") repeat-x scroll 0 0;
+			 b{
+			  	border: 12px solid $color-style-3;  
+			 }
+}
+#header ul#header_links li a,
+.header_user_info a,
+.shopping_cart > a:first-child,
+#languages-block-top div.current:after,
+#currencies-block-top div.current:after,
+.shopping_cart > a:first-child b,
+#languages-block-top div.current,
+#currencies-block-top div.current strong{
+	color: $color-style-4;
+}
+#search_block_top .btn.button-search{
+	color: $color-style-5;
+}
+#header ul#header_links li,
+#header .header_user_info {
+    background: url("../img/border-menu-theme-2.png") no-repeat  right 24px;
+}
+#header .header_user_info + .header_user_info{
+	background: none;
+}
+#currencies-block-top div.current,
+#languages-block-top div.current{
+	 background: url("../img/border-menu-theme-2.png") no-repeat  left 20px;
+}
+
+#currencies-block-top {											
+	ul {
+		li {
+			a,
+			> span {
+			}
+			&.selected, &:hover a {
+				background: $color-style-4;
+			}
+		}
+	}
+}
+#languages-block-top {											
+	ul {
+		li {
+			a,
+			> span {
+			}
+			&.selected, &:hover a {
+				background: $color-style-4;
+			}
+		}
+	}
+}
+#homepage-slider .homeslider-description button{
+	color: $color-style-1;
+	&:hover{
+		background: $color-style-3;
+	}
+}
+#homepage-slider .bx-wrapper .bx-controls-direction {
+    border-bottom: 1px solid $color-style-3;
+}
+#homepage-slider .bx-wrapper .bx-prev {
+    border-right: 1px solid $color-style-3;
+}
+#homepage-slider .bx-wrapper .bx-controls-direction a:hover{
+			&:after{
+				color: $color-style-3;
+			}
+}
+#header .sf-menu > li > ul > li#category-thumbnail > div img{
+	background: $color-style-1;
+}
+#htmlcontent_top ul li a .item-html h2:after{
+	color: $color-style-1;
+}
+#htmlcontent_top ul li a:hover{
+	.item-html {
+    	border-bottom: 3px solid $color-style-1;
+		h2{
+			color: $color-style-1;
+		}
+	}
+}
+#home-page-tabs > li.active a, #home-page-tabs > li a:hover{
+	color: $color-style-1;
+}
+.blockmanufacturer.block{
+	background: $color-style-1;
+	.list-block{
+		li{
+			a{
+				&:hover{
+					background: $color-style-5;
+				}
+			}
+		}
+	}
+}
+.block .title_block, .block h4 {
+    background: $color-style-1;
+}
+.blockmanufacturer.block .title_block {
+    border-bottom: 1px solid $color-style-2;
+}
+.box-part{
+		 b{
+			  border: 12px solid $color-style-3;  
+		 }  
+}
+.button.ajax_add_to_cart_button.btn,
+.button.ajax_add_to_cart_button{
+	background: $color-style-1;
+	&:hover{
+		background: $color-style-1-hover;
+	}
+}
+.button.lnk_view,
+.btn.button{
+	background: $color-style-5;
+	&:hover{
+		background: $color-style-5-hover;
+	}
+}
+#cmsinfo_block em{
+	background: $color-style-1;
+}
+#toTop{
+	color: $color-style-1;
+	&:hover{
+		color: $color-style-1-hover;
+	}
+}
+.footer-container{
+	background: $color-style-6;
+}
+.footer-container #footer a{
+	color: $color-style-7;
+}
+.footer-container #footer .bottom-footer div a{
+	&:hover{
+		color: $color-style-7;
+	}
+}
+#header .sf-menu li li li a,
+#header .sf-menu > li > ul > li > a{
+	color: $color-style-7;
+}
+
+/* -------------- labels styles*/
+$new-bg: #fad687;
+$sale-bg: #624f65;
+.new-label {
+	background:$new-bg;
+	&:before {
+		border-top-color:darken($new-bg, 10%);
+	}
+	&:after {
+		border-top-color:darken($new-bg, 10%);
+	}
+}
+.sale-label {
+	background:$sale-bg;
+	&:before {
+		border-top-color:darken($sale-bg, 10%);
+	}
+	&:after {
+		border-top-color:darken($sale-bg, 10%);
+	}
+}
+
+.price-percent-reduction{
+	background: $sale-bg;
+	border: 1px solid $sale-bg;
+}
+#header .cat-title{
+	@media (max-width: $screen-xs-max) { 
+		background: $color-style-2;
+		color: $color-style-5;
+	}
+}
+#header .sf-menu > li > a{
+	@media (max-width: $screen-xs-max) { 
+		background: $color-style-2;
+		color: $color-style-5;
+	}
+}
+
+
+
+/*
+//----- Buttons variables*/
+//-------- Cart variables
+$step-current-bg:           #624f65;
+$step-current-border:       darken($step-current-bg, 25%);
+$step-current-shadow:		darken($step-current-bg, 15%);
+
+$step-todo-bg:              #fad687;
+$step-todo-border:          darken($step-todo-bg, 25%);
+$step-todo-shadow:		    darken($step-todo-bg, 15%);
+
+$step-done-bg:              #fad687;
+$step-done-border:          darken($step-done-bg, 5%);
+$step-done-shadow:		    darken($step-done-bg, 15%);
+
+$step-hover-bg:             #57465a;
+$step-hover-border:         darken($step-hover-bg, 5%);
+$step-hover-shadow:		    darken($step-hover-bg, 15%);
+
+
+
+
+
+/*
+//-------- Cart styles*/
+ul.step {
+	li {
+		&.step_current {
+			background:$step-current-bg;
+			border-color:$step-current-border;
+			span {
+				text-shadow:1px 1px $step-current-shadow;
+				&:after {
+					background:$step-current-bg;
+					border-color:$step-current-border;
+				}
+			}
+		}
+		&.step_todo {
+			background:$step-todo-bg;
+			border-color:$step-todo-border;
+			span {
+				text-shadow:1px 1px $step-todo-shadow;
+				color: #ffffff;
+				&:after {
+					background:$step-todo-bg;
+					border-color:$step-todo-border;	
+				}
+			}
+		}
+		&.step_done, &.step_done.step_done_last {
+			background:$step-done-bg;
+			border-color:$step-done-border;
+			a {
+				text-shadow:1px 1px $step-done-shadow;
+				&:after {
+					background:$step-done-bg;
+					border-color:$step-done-border;	
+				}
+			}
+		}
+	}
+	li a:hover {
+		background:$step-hover-bg;
+		border-color:$step-hover-border;
+		&:after {
+			background:$step-hover-bg !important;
+			border-color:$step-hover-border !important;	
+		}
+	}
+}

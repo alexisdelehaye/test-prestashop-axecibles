@@ -1,0 +1,82 @@
+/* ------- FONTS ------- */
+/* ------- BORDERS ------- */
+/* ------- BACKGROUNDS ------- */
+/* ------- COLORS ------- */
+/* ------- Indents ------- */
+/* ------- Product Elements ------- */
+/* ------- Buttons ------- */
+/* ------- Buttons +/- ------ */
+/* ------- Button Small ------- */
+/* ------- Button exclusive-medium ------- */
+/* ------- My Account List bg ------- */
+/* ------- Product Listing ------- */
+/* ------- Grid/List vars ------- */
+/* ------- Pagination vars ------- */
+/* ------- Product Info ------- */
+/* ------- Cart Steps ------- */
+/* ------- sub heading (h2,h3) define ------- */
+/* ------- Image vars ------- */
+/* block top links */
+ul#header_links {
+  list-style-type: none;
+  margin: 0px 0 0 0px;
+  float: left;
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  ul#header_links {
+    float: none;
+    margin: 0px 0 5px 0px;
+  }
+}
+ul#header_links li {
+  text-transform: capitalize;
+  float: left;
+  padding: 0 12px 0 0;
+  margin: 0 10px 0 0;
+  background: url(../../../img/border-menu.png) no-repeat right 24px;
+}
+ul#header_links li:first-child {
+  border: none;
+}
+@media (max-width: 480px) {
+  ul#header_links li:last-child {
+    background: none;
+  }
+}
+ul#header_links li a {
+  text-decoration: none;
+  color: #b3c9ce;
+  font: 400 11px/14px "Ubuntu", "sans-serif";
+  text-transform: uppercase;
+  padding: 19px 0px 0 0;
+  display: inline-block;
+  border-top: 3px solid  transparent;
+}
+ul#header_links li a:hover, ul#header_links li a.active {
+  border-top: 3px solid #ffffff;
+}
+
+/*block permanent links right and left columns*/
+#permanent_links div {
+  border-bottom: 1px dotted #eee;
+}
+
+#permanent_links div a {
+  display: block;
+  padding: 7px 11px 5px 22px;
+  color: #333;
+  background: url(img/arrow_right_2.png) no-repeat 10px 10px;
+}
+
+/* block footer links */
+ul#footer_links {
+  clear: both;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+ul#footer_links li {
+  display: inline;
+  padding: 0 10px;
+}

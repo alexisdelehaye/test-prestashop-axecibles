@@ -1,0 +1,47 @@
+@import "compass";
+@import "theme_variables";
+.header_user_info {
+	float: left;
+	background:url(../../../img/border-menu.png) no-repeat right 24px;
+	margin-right: 10px;
+	padding: 0 10px 0 0;
+	a {
+		display:  inline-block;
+		color: $link-top-color;
+		font: 400 11px / 14px $font-custom;
+		text-transform: uppercase;
+		padding: 19px 0px 0 0;
+		cursor: pointer;
+		border-top: 3px solid transparent;
+		&:hover, &.active {
+			border-top: 3px solid #ffffff;
+		}
+	}
+	&+ .header_user_info {
+		background: none;
+		margin-right: 0;
+		padding-right: 76px;
+	}
+}
+
+.user_info {
+	text-align:right;
+	margin:20px 0 0 0;
+	li {
+		display:inline-block;
+		padding-right:15px;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration:underline;	
+			}
+		}
+	}
+}
+.lang_es{
+	.header_user_info {
+			&+ .header_user_info {
+				padding-right: 46px;
+			}
+	}
+}

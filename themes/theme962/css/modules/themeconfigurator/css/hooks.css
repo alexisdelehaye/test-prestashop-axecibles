@@ -1,0 +1,124 @@
+/* ------- FONTS ------- */
+/* ------- BORDERS ------- */
+/* ------- BACKGROUNDS ------- */
+/* ------- COLORS ------- */
+/* ------- Indents ------- */
+/* ------- Product Elements ------- */
+/* ------- Buttons ------- */
+/* ------- Buttons +/- ------ */
+/* ------- Button Small ------- */
+/* ------- Button exclusive-medium ------- */
+/* ------- My Account List bg ------- */
+/* ------- Product Listing ------- */
+/* ------- Grid/List vars ------- */
+/* ------- Pagination vars ------- */
+/* ------- Product Info ------- */
+/* ------- Cart Steps ------- */
+/* ------- sub heading (h2,h3) define ------- */
+/* ------- Image vars ------- */
+/* Home hook CSS */
+#htmlcontent_home ul {
+  margin: 0 -5px;
+}
+#htmlcontent_home ul li {
+  padding: 0 5px 10px;
+}
+@media (max-width: 479px) {
+  #htmlcontent_home ul li {
+    width: 100%;
+  }
+}
+#htmlcontent_home ul li img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 479px) {
+  #htmlcontent_home ul li img {
+    min-width: 100%;
+  }
+}
+#htmlcontent_home ul li.htmlcontent-item-5 {
+  width: 66.6667%;
+}
+@media (max-width: 479px) {
+  #htmlcontent_home ul li.htmlcontent-item-5 {
+    width: 100%;
+  }
+}
+
+/* Top hook CSS */
+#htmlcontent_top {
+  padding: 0 0 3px 0;
+}
+@media (max-width: 767px) {
+  #htmlcontent_top {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  #htmlcontent_top ul {
+    margin: 0 -5px;
+  }
+}
+#htmlcontent_top ul li {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  #htmlcontent_top ul li {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+  }
+}
+#htmlcontent_top ul li:last-child {
+  margin-bottom: 0;
+}
+#htmlcontent_top ul li a {
+  display: block;
+}
+@media (max-width: 992px) {
+  #htmlcontent_top ul li a {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 480px) {
+  #htmlcontent_top ul li a {
+    font-size: 0.5em;
+  }
+}
+#htmlcontent_top ul li a img {
+  max-width: 100%;
+  height: auto;
+}
+#htmlcontent_top ul li a .item-html {
+  border-bottom: 3px solid #3f4a4d;
+}
+#htmlcontent_top ul li a .item-html h2 {
+  margin: 0 0 0 0;
+  padding: 0 0 5px 0;
+  color: #3f4a4d;
+  font: 300 2.154em/1.1em "Ubuntu", "sans-serif";
+}
+#htmlcontent_top ul li a .item-html h2:after {
+  display: inline-block;
+  font-size: 0.643em;
+  font-family: "FontAwesome";
+  vertical-align: 0px;
+  content: "\f0a9";
+  margin-left: 8px;
+  color: #ff5857;
+}
+#htmlcontent_top ul li a:hover .item-html {
+  border-bottom: 3px solid #ff5857;
+}
+#htmlcontent_top ul li a:hover h2 {
+  color: #ff5857;
+}
+
+/* Left hook CSS */
+/* Right hook CSS */
+/* Footer hook CSS */
