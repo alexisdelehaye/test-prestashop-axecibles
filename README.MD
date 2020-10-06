@@ -1,21 +1,13 @@
-Le projet étant toujours en cours de développement, veullez utilisé la branche develop du projet pour accéder aux derniers développements en date.
-
-```sh
-$ cd test-prestashop-axecibles
-$ git checkout develop
-$
-```
-
 **Installation de la boutuqie Prestashop sous Docker**
 
 Cette boutique Prestashop utilise Docker pour être installer et utiliser, à travers 3 conteneurs :
 - Un conteneur contenant la boutique Prestashop en version 1.6.1.24, ainsi que toutes les éléments nécessaires à son lancement.
-- Un conteneur MySql 5
-- Un compte PhpMyAdmin permettant de gérer facilement la base de données
+- Un conteneur MySql 5.
+- Un compte PhpMyAdmin permettant de gérer facilement la base de données.
 
 Pour lancer le projet, installer au préalable Docker sur votre machine.
 
-Pour lancer les différents conteneurs, mettez-vous à la racine du répertoire et executez la commande suivante :
+Pour lancer les différents conteneurs, mettez-vous à la racine du répertoire et éxécutez la commande suivante :
 
 **Lancement des différents conteneurs du projet**
 ```sh
@@ -37,7 +29,7 @@ $ login : user
 $ password : test
 $
 ```
-Sélectionnez ensuite le schéma prestashop, supprimer tous ces tables et importer ensuite le script sql , se travant dans le répertoire /mysql-data (prénommée prestashop-install.sql)
+Sélectionnez ensuite le schéma prestashop et importer ensuite le script sql , se travant dans le répertoire /mysql-data (prénommée prestashop-install.sql).
 
 
 **Accès à la boutique Prestashop**
