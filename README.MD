@@ -1,4 +1,4 @@
-**Installation de la boutuqie Prestashop sous Docker**
+**Installation de la boutique Prestashop sous Docker**
 
 Cette boutique Prestashop utilise Docker pour être installer et utiliser, à travers 3 conteneurs :
 - Un conteneur contenant la boutique Prestashop en version 1.6.1.24, ainsi que toutes les éléments nécessaires à son lancement.
