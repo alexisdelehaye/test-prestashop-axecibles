@@ -485,7 +485,7 @@
         <div class="col-lg-9">
             <div class="checkbox">
                 <label for="cart_plus">
-                    <input type="checkbox" name="cart_plus" id="cart_plus" value="0" {if $product->cart_plus}checked="checked"{/if} >
+                    <input type="checkbox" name="cart_plus" id="cart_plus"  value="{$product->cart_plus}" {if $product->cart_plus}checked="checked"{/if} >
                     {l s='Ce produit est il compatible Panier plus ?'}</label>
             </div>
         </div>
